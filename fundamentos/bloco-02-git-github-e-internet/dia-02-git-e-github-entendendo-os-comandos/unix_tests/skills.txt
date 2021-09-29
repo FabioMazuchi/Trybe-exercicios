@@ -1,8 +1,3 @@
 - Unix
-- Bash
+- Bahh
 - Git
-- HTML
-- CSS
-- JavaScript
-- Front-End
-- React
