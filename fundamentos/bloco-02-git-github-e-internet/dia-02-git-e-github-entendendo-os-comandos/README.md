@@ -1,3 +1,7 @@
-# Dia 2
+# Dia 2 📆
 
-Neste dia aprendi a copiar repositórios do GitHub para o computador, abrir Pull Requests e trabalhar em um projeto com mais de uma pessoa, de forma assíncrona e distribuída.
+### Neste dia aprendi:
+
+* Copiar um repositório já existente no **GitHub** para o meu computador
+* Abrir **Pull Requests**
+* Trabalhar em um mesmo projeto, com mais de uma pessoa, de forma assíncrona e distribuída
