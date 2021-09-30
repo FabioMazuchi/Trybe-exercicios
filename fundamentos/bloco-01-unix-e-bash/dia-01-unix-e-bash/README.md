@@ -1,3 +1,7 @@
-# Dia 1
+# Dia 1 📅:
 
-Neste dia aprendi a executar comandos no terminal para navegar entre diretórios, manipular diretórios e arquivos e realizar buscas.
+### Neste dia aprendi:
+
+* Executar comandos no terminal para navegar entre diretórios.
+* Executar comandos no terminal para criar e manipular arquivos e diretórios.
+* Executar comandos no terminal para realizar buscas.
