@@ -1,3 +1,7 @@
-# Dia 2
+# Dia 2 📆
 
-Neste dia aprendi a utilizar o comando find, utilizar os operadores > (maior), >> (maior maior), | (pipe) no terminal, alterar permissões de arquivos, verificar o status e enviar sinais a processos UNIX.
+### Neste dia aprendi:
+
+* Utilizar o comando **find**.
+* Alterar as permissões de arquivos e diretórios.
+* Verificar o status e enviar sinais a processos UNIX.
