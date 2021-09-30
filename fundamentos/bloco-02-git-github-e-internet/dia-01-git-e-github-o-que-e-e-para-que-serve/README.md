@@ -1,3 +1,7 @@
-# Dia 1
+# Dia 1 📆
 
-Neste dia aprendi a configurar e instalar o git no meu computador, salvar meus projetos no repositório GIT local, controlar as alterações e versõe dos arquivos e enviar projetos para o repositório remoto do GITHUB.
+### Neste dia aprendi:
+
+* Instalar e configurar o **Git** no meu computador
+* Controlar as alterações e versões dos arquivos
+* Enviar projetos para o repositório remoto do **GitHub**
