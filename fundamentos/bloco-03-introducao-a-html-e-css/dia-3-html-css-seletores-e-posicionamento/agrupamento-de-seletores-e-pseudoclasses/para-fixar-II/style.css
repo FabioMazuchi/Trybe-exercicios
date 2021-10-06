@@ -1,0 +1,37 @@
+div:nth-of-type(1):hover{
+    border: 3px solid steelblue;
+}
+
+div:nth-of-type(2):hover{
+    border: 3px solid springgreen;
+}
+
+div:nth-of-type(3):hover{
+    border: 3px solid tan;
+}
+
+div:nth-of-type(4):hover{
+    border: 3px solid tomato;
+}
+
+div:nth-of-type(5):hover{
+    border: 3px solid turquoise;
+}
+
+h3{
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: yellow;
+}
+
+div:nth-of-type(odd) h3{
+    font-style: italic;
+}
+
+div{
+    width: 400px;
+}
+
+div:nth-of-type(3){
+    width: 100%;
+}

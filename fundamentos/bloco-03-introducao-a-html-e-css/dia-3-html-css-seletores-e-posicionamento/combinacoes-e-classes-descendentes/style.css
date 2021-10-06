@@ -1,0 +1,61 @@
+ol li{
+    background: yellow;
+}
+
+ol li:nth-of-type(even){
+    color: green;
+}
+
+ol li:nth-of-type(odd){
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: red;
+}
+
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+
+ul.linguagens li:nth-child(n+1):nth-child(-n+3){
+    color: blue;
+}
+
+ul.linguagens li span{
+    background-color: pink;
+}
+
+ul.aliados li:hover{
+    font-weight: bold;
+}
+
+ul.aliados li:nth-of-type(1) a:hover{
+    color: #F3862F;
+}
+
+ul.aliados li:nth-of-type(2) a:hover{
+    color: #379963;
+}
+
+ul.aliados li:nth-of-type(3) a:hover{
+    color: black;
+}
+
+ul.aliados li:nth-of-type(4) a:hover{
+    color: yellow;
+}
+
+ul.aliados li:nth-of-type(5) a:hover{
+    color: #226B52;
+}
+
