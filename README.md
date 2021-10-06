@@ -22,4 +22,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - 3-1: Estruturas de página
 - 3-2: Primeiros passos com CSS
 - 3-3: Seletores e posicionamento
-- 3-4 HTML semântico
+- 3-4: HTML Semântico
