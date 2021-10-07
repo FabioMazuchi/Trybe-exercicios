@@ -24,16 +24,21 @@
 }
 /****************************/
 
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 header{
     padding: 15px 0;
     background-color: #FE621D;
     text-align: center;
 }
 
-header section h1{
-    font-size: 30px;
+header h1{
     color: white;
-    text-transform: uppercase;
 }
 
 header ul{
@@ -57,30 +62,43 @@ header ul li a:hover{
 
 .sobre{
     padding: 80px 40px;
-    background-color: #AF3800;
     color: white;
+    background-color: #FD5200;
 }
 
 .sobre-conteudo{
     width: 45%;
-    padding: 10px;
+    padding: 0 15px;
+}
+
+h2{
+    font-size: 35px;
+    border-bottom: 1px solid;
+    margin-bottom: 12px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: lighter;
 }
 
 .sobre-tabela{
     width: 45%;
+    padding: 0 15px;
 }
 
 .sobre-tabela table{    
     border-collapse: collapse;
     width: 100%;
-    text-align: center;
+    text-align: left;
     background-color: #FD5200;
     color: white;
+    font-weight: lighter;
 }
 
 .sobre-tabela table td, th{
     border: 1px solid white;
-    padding: 2px;
+    padding-left: 4px;
 }
 
 .sobre-tabela img{
@@ -89,4 +107,47 @@ header ul li a:hover{
     height: 200px;
     margin-top: 5px;
 }
+
+.fatos{
+    padding: 70px 0;
+}
+
+
+.fatos-single{
+    width: 30%;
+    padding: 30px 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.fatos h1{
+    color: #FE621D;
+    border-bottom: 1px solid;
+    margin-bottom: 40px;
+}
+
+.fatos-single h2{
+    border-bottom: 0;
+    color: #FD5200;
+}
+
+.fatos-single img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #FE621D;
+    display: block;
+    margin: auto;
+}
+
+.fatos-single p{
+    max-width: 80%;
+    margin: 10px auto;
+    color: #FE621D;
+    font-weight: normal;
+}
+
+
+
+
 
