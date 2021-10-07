@@ -56,22 +56,37 @@ header ul li a:hover{
 }
 
 .sobre{
-    padding: 80px;
+    padding: 80px 40px;
     background-color: #AF3800;
     color: white;
 }
 
-.sobre h2{
-    font-size: 35px;
+.sobre-conteudo{
+    width: 45%;
+    padding: 10px;
 }
 
-.sobre p{
-    max-width: 700px;
-    float: left;
-    font-size: 20px;
+.sobre-tabela{
+    width: 45%;
 }
 
-.sobre img{
-    width: 400px;
-    margin-left: 15px;
+.sobre-tabela table{    
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    background-color: #FD5200;
+    color: white;
 }
+
+.sobre-tabela table td, th{
+    border: 1px solid white;
+    padding: 2px;
+}
+
+.sobre-tabela img{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    margin-top: 5px;
+}
+
