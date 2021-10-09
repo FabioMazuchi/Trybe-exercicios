@@ -1,5 +1,4 @@
-// 1 - Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b , definidas no começo com os valores que serão operados. Faça programas para:
-
+/////// EXERCÍCIO 01 ////////
 // const a = 13;
 // const b = 7;
 
@@ -23,8 +22,8 @@
 // let modulo = a % b;
 // console.log(modulo);
 
-// 2 - Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
 
+/////// EXERCÍCIO 02 ////////
 // const n1 = 10;
 // const n2 = 9;
 
@@ -34,8 +33,8 @@
 //  console.log(n2);
 // 
 
-// 3 - Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
 
+/////// EXERCÍCIO 03 ////////
 // const n1 = 43;
 // const n2 = 34;
 // const n3 = 133;
@@ -48,8 +47,8 @@
 //  console.log(n3);
 // }
 
-// 4 - Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
 
+/////// EXERCÍCIO 04 ////////
 // const valor = -7;
 
 // if(valor < 0)
@@ -57,10 +56,8 @@
 // else
 //   console.log('positive');
 
-// 5 - Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 
-// NOTA: a soma dos angulos internos é sempre 180°
-
+/////// EXERCÍCIO 05 ////////
 // const a = 60;
 // const b = 60;
 // const c = 60;
@@ -75,8 +72,8 @@
 //   } 
 // }
 
-// 6 - Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
 
+/////// EXERCÍCIO 06 ////////
 // let peca = 'tore';
 // let pecaLower = peca.toLocaleLowerCase();
 
@@ -103,33 +100,51 @@
 //     console.log('Inválido, não existe esta peça :(');  
 // }
 
-// 7 - Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
 
-// Porcentagem >= 90 -> A
-// Porcentagem >= 80 -> B
-// Porcentagem >= 70 -> C
-// Porcentagem >= 60 -> D
-// Porcentagem >= 50 -> E
-// Porcentagem < 50 -> F
+/////// EXERCÍCIO 07 ////////
+// let nota = -1;
 
-// O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
+// if(nota < 0 || nota > 100) {
+//   console.log('Erro, valor inválido :(');
+// }else{
+//   if(nota >= 90) {
+//     console.log('A');
+//   }else if(nota >= 80) {
+//     console.log('B');
+//   }else if(nota >= 70) {
+//     console.log('C');
+//   }else if(nota >= 60) {
+//     console.log('D');
+//   }else if(nota >= 50) {
+//     console.log('E');
+//   }else{
+//     console.log('F');
+//   }
+// }
 
-let nota = -1;
 
-if(nota < 0 || nota > 100) {
-  console.log('Erro, valor inválido :(');
-}else{
-  if(nota >= 90) {
-    console.log('A');
-  }else if(nota >= 80) {
-    console.log('B');
-  }else if(nota >= 70) {
-    console.log('C');
-  }else if(nota >= 60) {
-    console.log('D');
-  }else if(nota >= 50) {
-    console.log('E');
-  }else{
-    console.log('F');
-  }
-}
+/////// EXERCÍCIO 08 ////////
+// const n1 = 3;
+// const n2 = 4;
+// const n3 = 3;
+
+// if(n1 % 2 == 0 || n2 % 2 == 0 || n3 % 2 == 0) 
+//   console.log(true);
+// else
+//   console.log(false);
+
+
+/////// EXERCÍCIO 09 ////////
+// const n1 = 4;
+// const n2 = 4;
+// const n3 = 7;
+
+// if(n1 % 2 == 1 || n2 % 2 == 1 || n3 % 2 == 1) 
+//   console.log(true);
+// else
+//   console.log(false);
+
+
+/////// EXERCÍCIO 10 ////////
+
+
