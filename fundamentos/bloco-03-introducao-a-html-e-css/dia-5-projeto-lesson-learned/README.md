@@ -9,4 +9,4 @@
 
 # Projeto 1 - Lesson Learned 🚀
 
-![Logo do Markdown](images/projeto-01-lesson-learned.png)
+![projeto lesson learned](images/projeto-01-lesson-learned.png)
