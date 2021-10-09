@@ -161,5 +161,36 @@
 
 /////// EXERCÍCIO 11 ////////
 
+let salBruto = 3000;
+
+// Calculos do INSS
+if(salBruto <= 1556.94) {
+  salBase = salBruto - (0.08 * salBruto);
+}else if(salBruto > 1556.94 && salBruto <= 2594.92) {
+  salBase = salBruto - (0.09 * salBruto);  
+}else if(salBruto > 2594.93 && salBruto <= 5189.82) {
+  salBase = salBruto - (0.11 * salBruto);
+}else {
+  salBase = salBruto - 570.88;
+}
+
+// Clculo IR
+if(salBase <= 1903.98) {
+  salDescontos = 0;
+}else {
+  if(salBase > 1903.98 && salBase <= 2826.65) {
+    salDescontos = (0.075 * salBase) - 142.8
+  }else if(salBase > 2826.66 && salBase <= 3751.05) {
+    salDescontos = (0.15 * salBase) - 354.8   
+  }else if(salBase > 3751.06 && salBase <= 4664.68) {
+    salDescontos = (0.22 * salBase) - 636.13;    
+  }else [
+    salDescontos = (0.27 * salBase) - 869.36
+  ]
+}
+
+salarioLiquido = (salBase - salDescontos);
+
+console.log(salarioLiquido);
 
 
