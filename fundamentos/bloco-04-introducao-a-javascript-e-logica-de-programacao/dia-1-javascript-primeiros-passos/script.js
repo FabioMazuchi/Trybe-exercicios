@@ -147,4 +147,16 @@
 
 /////// EXERCÍCIO 10 ////////
 
+const custoProduto = 0;
+const valoVenda = -2;
+
+let valorCustoTotal = custoProduto + (0.2 * custoProduto);
+let lucroVenda = valoVenda - valorCustoTotal
+let lucroPorMil = lucroVenda * 1000;
+
+if(custoProduto < 0 || valoVenda < 0) 
+  console.log('Erro, valor negativo não é permitido :(')
+else
+  console.log('Lucro total ao vender 1000: '+lucroPorMil);
+
 
