@@ -190,6 +190,10 @@ aside a {
     text-decoration: none;
 }
 
+aside p a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #d34a0f;
     padding: 15px 0;

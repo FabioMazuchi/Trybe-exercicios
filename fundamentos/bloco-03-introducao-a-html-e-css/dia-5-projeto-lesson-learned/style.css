@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+.lado-esquerdo {
+  float: left;
+}
+
+.lado-direito {
+  float: right;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+}
+
+#cabecalho {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(78, 19, 84);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.fabio {
+  width: 700px;
+  margin: auto;
+}
+
+img {
+  display: inline-block;
+  margin: 140px auto 40px;
+  height: 250px;
+  width: 300px;
+  border: 3px solid rgb(56, 12, 61);
+  vertical-align: middle;
+}
+
+table {
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  text-align: left;
+}
+
+table td , th {
+  padding: 2px 18px;
+  font-family: Times New Roman, Times, serif;
+  font-size: 22px;
+}
+
+.listas {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+ol , ul {
+  list-style-position: inside;
+}
+
+section {
+  padding: 30px 0;
+}
+
+.aprendizados {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.aprendizados h2 {
+  font-size: 35px;
+  border-bottom: 1px solid;
+}
+
+.aprendizado-single {
+  width: 45%;
+  padding: 15px;
+}
+
+.aprendizado-single p {
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 16px 0;
+  color: white;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+
