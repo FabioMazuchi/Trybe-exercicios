@@ -27,3 +27,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
 - 4-1: Primeiros passos
+- 4-2: Array e loop For
