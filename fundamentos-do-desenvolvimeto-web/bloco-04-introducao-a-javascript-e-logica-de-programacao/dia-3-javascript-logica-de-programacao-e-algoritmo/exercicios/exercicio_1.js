@@ -13,12 +13,12 @@ de tamanho n. Por exemplo:
 
 */
 
-let n = 7;
+let n = 5;
 let asterisco = '';
 
 for(let k = 0; k < n; k++){
 	for(let i = 0; i < n; i++) {
-		asterisco += '* ';	
+		asterisco += '*';	
 	}
 	console.log(asterisco);
 	asterisco = '';
