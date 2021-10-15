@@ -20,7 +20,7 @@ let posicao = n;
 for (let i = 0; i < n; i++) {
 	for (let coluna = 0; coluna <= n; coluna++) {
 		if (coluna < posicao) {
-			linha += linha;
+			linha += ' ';
 		} else {
 			linha += string;
 		}
