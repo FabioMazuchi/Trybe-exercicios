@@ -8,11 +8,11 @@
 
 */
 
-console.log(menor([2, 4, 6, 7, 10, 0, -3]));
+console.log(menor([-22, 4, 6, 7, 10, 0, -3]));
 
 function menor(array) {
 	let menor = array[0];
-	let posicao;
+	let posicao = array[0];
 
 	for (let i = 0; i < array.length; i++) {
 		if (array[i] < menor) {

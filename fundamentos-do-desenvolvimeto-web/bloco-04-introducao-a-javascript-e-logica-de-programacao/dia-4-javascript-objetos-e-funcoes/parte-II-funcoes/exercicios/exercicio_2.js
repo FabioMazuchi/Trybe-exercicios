@@ -12,7 +12,7 @@ console.log(maior([2, 3, 6, 7, 10, 1]))
 
 function maior(array) {
 	let maior = array[0];
-	let posicao;
+	let posicao = array[0];
 
 	for (let i = 0; i < array.length; i++) {
 		if (array[i] > maior) {
