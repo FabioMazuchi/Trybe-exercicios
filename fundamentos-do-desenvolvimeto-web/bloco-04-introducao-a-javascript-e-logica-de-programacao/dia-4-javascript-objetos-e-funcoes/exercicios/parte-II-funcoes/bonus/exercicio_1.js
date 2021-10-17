@@ -29,56 +29,9 @@ Dicas:
 - Atenção! Quando você tem um número pequeno à direita de um número grande, eles devem ser somados. Exemplo: XI = 10 + 1 = 11. No entanto, se o número pequeno está à esquerda de um número maior que ele, ele deve ser subtraído. Exemplo: IX = 10 - 1 = 9.
 
 */
-// console.log(convertRomanos('q'));
 
-// // function convertRomanos(string) {
-// // 	let algarismo = string.toLocaleUpperCase();
-// // 	let resultado;
-
-// // 	switch(algarismo) {
-// // 		case 'I':
-// // 			resultado = 1;
-// // 			break;
-// // 		case 'II':
-// // 			resultado = 2;
-// // 			break;
-// // 		case 'III':
-// // 			resultado = 3;
-// // 			break;
-// // 		case 'V':
-// // 			resultado = 5;
-// // 			break;	
-// // 		case 'X':
-// // 			resultado = 10;
-// // 			break;
-// // 		case 'L':
-// // 			resultado = 50;
-// // 			break;
-// // 		case 'C':
-// // 			resultado = 100;
-// // 			break;
-// // 		case 'D':
-// // 			resultado = 500;
-// // 			break;
-// // 		case 'M':
-// // 			resultado = 1000;
-// // 			break;
-// // 		default:
-// // 			resultado = 'Valor inválido :(';				
-// // 	}
-
-// // 	if(resultado === 'Valor inválido :('){
-// // 		return 'Errrrrouuuuu';	
-// // 	}else{
-
-// // 	}
-
-// // }
-
-let algarismos = {
+let numerosRomanos = {
 	i: 1,
-	ii: 2,
-	iii: 3,
 	v: 5,
 	x: 10,
 	l: 50,
@@ -87,17 +40,22 @@ let algarismos = {
 	m: 1000
 }
 
-console.log(convert('v'));
+console.log(romanoParaDecimal('xv'));
+console.log(romanoParaDecimal('MMXVII'));
 
-function convert(string) {
-	let resultado;
-	for (let al in algarismos) {
-		if(string !== al){
-			resultado = algarismos[al];
-		}else{
-
+function romanoParaDecimal(numero) {
+	numero = numero.toLowerCase();
+	const len = numero.length;
+	let soma = numerosRomanos[numero[len - 1]];
+	let atual = numerosRomanos[numero[len - 1]];
+	for (let i = 2; i <= len; i += 1) {
+		const prox = numerosRomanos[numero[len - i]];
+		if (atual <= prox) {
+			soma += prox;
+		} else {
+			soma -= prox;
 		}
+		atual = prox;
 	}
-	return resultado;
+	return soma;
 }
-
