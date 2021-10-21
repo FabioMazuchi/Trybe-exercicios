@@ -72,7 +72,11 @@
 		section.classList.add('center-content');
 		main.appendChild(section);
 
-		console.log(main.childNodes);
+		let paragrafo = document.createElement('p');
+		paragrafo.innerText = 'Algum texto!';
+		section.appendChild(paragrafo);
+
+		console.log(paragrafo);
 	</script>
 </body>
 
