@@ -1,4 +1,4 @@
-# Trybe Ecercícios
+# Trybe Exercícios
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Fabio](https://www.linkedin.com/feed/) enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
