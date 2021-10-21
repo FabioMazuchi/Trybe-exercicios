@@ -61,8 +61,12 @@
       let h1 = document.createElement('h1');
       h1.innerText = 'Exercício 5.2 - JavaScript DOM';
       body.appendChild(h1);
-      
-      console.log(h1.innerText);
+
+      let main = document.createElement('main');
+      main.classList.add('main-content');
+      body.appendChild(main);
+
+      console.log(body.childNodes);
     </script>
   </body>
 </html>
