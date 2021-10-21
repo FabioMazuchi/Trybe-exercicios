@@ -76,7 +76,11 @@
 		paragrafo.innerText = 'Algum texto!';
 		section.appendChild(paragrafo);
 
-		console.log(paragrafo);
+		let section1 = document.createElement('section');
+		section1.classList.add('left-content');
+		main.appendChild(section1);
+
+		console.log(main.childNodes);
 	</script>
 </body>
 
