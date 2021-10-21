@@ -84,7 +84,12 @@
 		section2.classList.add('right-content');
 		main.appendChild(section2);
 
-		console.log(main.childNodes);
+		let imagem = document.createElement('img');
+		imagem.setAttribute('src', 'https://picsum.photos/200');
+		imagem.classList.add('small-image');
+		section1.appendChild(imagem);
+
+		console.log(imagem);
 	</script>
 </body>
 
