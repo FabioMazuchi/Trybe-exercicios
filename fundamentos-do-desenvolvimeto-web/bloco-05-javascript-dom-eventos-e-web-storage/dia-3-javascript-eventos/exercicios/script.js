@@ -30,8 +30,7 @@ function criandoDiasDoMes() {
 			diaLi.classList.add('friday');
 		}
 
-
-		diaLi.classList.add('day');
+		diaLi.classList.add('days');
 		diaLi.innerHTML = dia;
 
 		diasMes.appendChild(diaLi);
@@ -91,6 +90,17 @@ function trcaTextoSexta(sextaArray) {
 
 let sextou = [ 4, 11, 18, 25 ];
 trcaTextoSexta(sextou);
+
+function zoomEfeito() {
+	let diasMes = document.querySelectorAll('.day');
+
+	for (let index = 0; index < diasMes.length; index++) {
+		
+	}
+	
+}
+
+zoomEfeito();
 
 
 
