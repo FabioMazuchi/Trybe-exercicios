@@ -40,20 +40,20 @@ function criandoDiasDoMes() {
 
 criandoDiasDoMes();
 
-function criaBotaoFeriado(nomeBotao) {
+function criaBotao(nomeBotao, id) {
 	const botao = document.createElement('button');
 	botao.innerHTML = nomeBotao;
-	botao.id = 'btn-holiday';
+	botao.id = id;
 	containerBotao = document.querySelector('.buttons-container');
 
 	containerBotao.appendChild(botao);
 }
 
-criaBotaoFeriado('Feriados');
+criaBotao('Feriados', 'btn-holiday');
 
 let botao = document.getElementById('btn-holiday');
 let clicou = true;
-cont = 0;
+cont = 1;
 
 botao.addEventListener('click', function(){
 	let feriados = document.getElementsByClassName('holiday');
@@ -69,6 +69,9 @@ botao.addEventListener('click', function(){
 		}
 	}
 });
+
+criaBotao('Sexta-feira', 'btn-friday');
+
 
 
 
