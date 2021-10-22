@@ -39,3 +39,15 @@ function criandoDiasDoMes() {
 }
 
 criandoDiasDoMes();
+
+function criaBotaoFeriado(feriados) {
+	const botao = document.createElement('button');
+	botao.innerHTML = 'Feriados';
+	botao.id = 'btn-holiday';
+	containerBotao = document.querySelector('.buttons-container');
+
+	containerBotao.appendChild(botao);
+	console.log(containerBotao);
+}
+
+criaBotaoFeriado();
