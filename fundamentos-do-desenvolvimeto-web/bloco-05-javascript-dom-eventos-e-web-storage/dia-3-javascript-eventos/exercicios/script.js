@@ -128,16 +128,20 @@ function adicionarTarefa() {
 
 adicionarTarefa()
 
-function legenda(cor) {
+function legenda(tarefa) {
+	let span = document.createElement('span');
 	let div = document.createElement('div');
 	const divPai = document.querySelector('.my-tasks');
+	
+	span.innerHTML = tarefa;
 	div.classList.add('task');
-	div.style.backgroundColor = cor;
+	div.style.backgroundColor = 'blue';
 
+	divPai.appendChild(span);
 	divPai.appendChild(div);
 }
 
-legenda('blue');
+legenda('Projeto');
 
 function adicionaClasse() {
 	let task = document.querySelector('.task');
@@ -149,6 +153,8 @@ function adicionaClasse() {
 		task.classList.add = 'selected';
 	}
 }
+
+adicionaClasse();
 
 function adicionaEvento() {
 	let task = document.querySelector('.task');
@@ -167,3 +173,24 @@ function adicionaEvento() {
 }
 
 adicionaEvento();
+
+function corLegenda(){
+	let legendaSelecionada = document.getElementsByClassName('task');
+	let dias = document.querySelector('#days');
+	let divtask = document.querySelector('.task');
+	let corTask = divtask.style.backgroundColor;
+
+	console.log(legendaSelecionada);
+
+	dias.addEventListener('click', function(e){
+		let corTargetEvento = e.target.style.color;
+		if(legendaSelecionada.length > 0 && corTargetEvento !== corTask){
+			let cor = legendaSelecionada[0].style.backgroundColor;
+			e.target.style.color = cor;
+		}else if(corTargetEvento === corTask && legendaSelecionada.length !== 0){
+			e.target.style.color = 'rgb(119,119,119)';
+		}
+	});
+}
+
+corLegenda();
