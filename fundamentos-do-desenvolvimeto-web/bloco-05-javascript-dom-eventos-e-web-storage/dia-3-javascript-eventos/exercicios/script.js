@@ -110,29 +110,11 @@ function zoom() {
 
 zoom();
 
-function adicionarTarefa() {
-	const input = document.getElementById('task-input');
-	const btn = document.getElementById('btn-add');
-
-	btn.addEventListener('click', adicionar)
-
-	function adicionar() {
-		let compromisso = input.value;
-		const span = document.createElement('span');
-		const div = document.querySelector('.my-tasks');
-
-		span.innerHTML = compromisso;
-		div.appendChild(span);
-	}
-}
-
-adicionarTarefa()
-
 function legenda(tarefa) {
 	let span = document.createElement('span');
 	let div = document.createElement('div');
 	const divPai = document.querySelector('.my-tasks');
-	
+
 	span.innerHTML = tarefa;
 	div.classList.add('task');
 	div.style.backgroundColor = 'blue';
@@ -147,7 +129,6 @@ function adicionaClasse() {
 	let task = document.querySelector('.task');
 
 	task.addEventListener('click', adiciona);
-	console.log(task);
 
 	function adiciona() {
 		task.classList.add = 'selected';
@@ -161,7 +142,7 @@ function adicionaEvento() {
 	let classes = task.classList;
 	let contc = 0;
 
-	task.addEventListener('click', function(){
+	task.addEventListener('click', function () {
 		if (contc % 2 == 0) {
 			task.classList.remove(classes[1]);
 			contc += 1;
@@ -174,23 +155,54 @@ function adicionaEvento() {
 
 adicionaEvento();
 
-function corLegenda(){
+function corLegenda() {
 	let legendaSelecionada = document.getElementsByClassName('task');
 	let dias = document.querySelector('#days');
 	let divtask = document.querySelector('.task');
 	let corTask = divtask.style.backgroundColor;
 
-	console.log(legendaSelecionada);
-
-	dias.addEventListener('click', function(e){
+	dias.addEventListener('click', function (e) {
 		let corTargetEvento = e.target.style.color;
-		if(legendaSelecionada.length > 0 && corTargetEvento !== corTask){
+		if (legendaSelecionada.length > 0 && corTargetEvento !== corTask) {
 			let cor = legendaSelecionada[0].style.backgroundColor;
 			e.target.style.color = cor;
-		}else if(corTargetEvento === corTask && legendaSelecionada.length !== 0){
+		} else if (corTargetEvento === corTask && legendaSelecionada.length !== 0) {
 			e.target.style.color = 'rgb(119,119,119)';
 		}
 	});
 }
 
 corLegenda();
+
+
+function adicionarCompromisso() {
+	const input = document.querySelector('#task-input');
+	const btn = document.getElementById('btn-add');
+
+	input.addEventListener('keydown', pressEnter);
+	btn.addEventListener('click', adicionar);
+
+
+	function pressEnter(event) {
+		let teclado = event.key;
+		if (teclado === 'Enter') {
+			adicionar();
+
+		}
+	};
+
+	function adicionar() {
+		let compromisso = input.value;
+		let li = document.createElement('li');
+		let ul = document.querySelector('.task-list');
+
+		li.innerHTML = compromisso;
+		if (compromisso === '') {
+			alert('Campo compromisso está vazio.')
+		} else {
+			ul.appendChild(li);
+		}
+	};
+}
+
+adicionarCompromisso();
