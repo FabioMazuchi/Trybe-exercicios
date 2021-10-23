@@ -127,3 +127,17 @@ function adicionarTarefa() {
 }
 
 adicionarTarefa()
+
+function legenda(cor) {
+	let div = document.createElement('div');
+	const divPai = document.querySelector('.my-tasks');
+	div.classList.add('task');
+	div.style.backgroundColor = cor;
+
+	divPai.appendChild(div);
+
+	console.log(div);
+
+}
+
+legenda('blue');
