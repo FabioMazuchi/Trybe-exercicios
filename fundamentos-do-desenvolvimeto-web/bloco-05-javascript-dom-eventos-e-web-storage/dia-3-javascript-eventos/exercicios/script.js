@@ -73,27 +73,27 @@ feriadoBackground();
 criaBotao('Sexta-feira', 'btn-friday');
 
 function trcaTextoSexta(sextaArray) {
-  let btnSexta = document.querySelector('#btn-friday');
-  let sextas = document.getElementsByClassName('friday');
-  let texto = 'Sextou!';
+	let btnSexta = document.querySelector('#btn-friday');
+	let sextas = document.getElementsByClassName('friday');
+	let texto = 'Sextou!';
 
-  btnSexta.addEventListener('click', function() {
-  for (let i = 0; i < sextas.length; i ++) {
-    if (sextas[i].innerHTML !== texto) {
-        sextas[i].innerHTML = texto;
-    } else {
-        sextas[i].innerHTML = sextaArray[i];
-      }
-    }
-  })
+	btnSexta.addEventListener('click', function () {
+		for (let i = 0; i < sextas.length; i++) {
+			if (sextas[i].innerHTML !== texto) {
+				sextas[i].innerHTML = texto;
+			} else {
+				sextas[i].innerHTML = sextaArray[i];
+			}
+		}
+	})
 };
 
-let sextou = [ 4, 11, 18, 25 ];
+let sextou = [4, 11, 18, 25];
 trcaTextoSexta(sextou);
 
 function zoom() {
 	const li = document.getElementsByClassName('days');
-	
+
 	for (let l of li) {
 		l.addEventListener('mouseenter', aumenta)
 		l.addEventListener('mouseout', diminui)
@@ -110,4 +110,20 @@ function zoom() {
 
 zoom();
 
+function adicionarTarefa() {
+	const input = document.getElementById('task-input');
+	const btn = document.getElementById('btn-add');
 
+	btn.addEventListener('click', adicionar)
+
+	function adicionar() {
+		let compromisso = input.value;
+		const span = document.createElement('span');
+		const div = document.querySelector('.my-tasks');
+
+		span.innerHTML = compromisso;
+		div.appendChild(span);
+	}
+}
+
+adicionarTarefa()
