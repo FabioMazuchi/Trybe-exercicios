@@ -91,20 +91,23 @@ function trcaTextoSexta(sextaArray) {
 let sextou = [ 4, 11, 18, 25 ];
 trcaTextoSexta(sextou);
 
-function zoomEfeito() {
-	let diasMes = document.querySelectorAll('.day');
-
-	for (let index = 0; index < diasMes.length; index++) {
-		
-	}
+function zoom() {
+	const li = document.getElementsByClassName('days');
 	
+	for (let l of li) {
+		l.addEventListener('mouseenter', aumenta)
+		l.addEventListener('mouseout', diminui)
+	}
+
+	function aumenta(e) {
+		e.target.style.fontSize = '35px';
+	}
+
+	function diminui(e) {
+		e.target.style.fontSize = '20px';
+	}
 }
 
-zoomEfeito();
-
-
-
-
-
+zoom();
 
 
