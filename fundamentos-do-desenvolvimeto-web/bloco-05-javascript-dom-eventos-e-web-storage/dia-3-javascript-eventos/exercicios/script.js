@@ -135,9 +135,35 @@ function legenda(cor) {
 	div.style.backgroundColor = cor;
 
 	divPai.appendChild(div);
-
-	console.log(div);
-
 }
 
 legenda('blue');
+
+function adicionaClasse() {
+	let task = document.querySelector('.task');
+
+	task.addEventListener('click', adiciona);
+	console.log(task);
+
+	function adiciona() {
+		task.classList.add = 'selected';
+	}
+}
+
+function adicionaEvento() {
+	let task = document.querySelector('.task');
+	let classes = task.classList;
+	let contc = 0;
+
+	task.addEventListener('click', function(){
+		if (contc % 2 == 0) {
+			task.classList.remove(classes[1]);
+			contc += 1;
+		} else {
+			task.classList.add('selected');
+			contc += 1;
+		}
+	})
+}
+
+adicionaEvento();
