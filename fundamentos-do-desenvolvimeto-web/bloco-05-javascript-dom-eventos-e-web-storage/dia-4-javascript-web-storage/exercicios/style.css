@@ -2,65 +2,19 @@
 	margin: 0;
 	box-sizing: border-box;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
 }
 
 html,body{
 	height: 100%;
 }
 
-/**** CLASSES AUXILIARES ****/
-.preto {
-	background-color: black;
-}
-
-.verde {
-	background-color: rgb(67, 212, 108);
-}
-
-.azul {
-	background-color: rgb(151, 182, 196);
-}
-
-.branco {
-	background-color: white;
-}
-
-.courier {
-	font-family: 'Courier New', Courier, monospace;
-}
-
-.gil-sans {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;	
-}
-
-.arial {
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.fonte-p {
-	font-size: 15px;
-}
-
-.fonte-m {
-	font-size: 20px;
-}
-
-.fonte-g {
-	font-size: 25px;
-}
-/****************************/
-
-.lateral{
-	width: 20%;
-	min-height: 580px;
-	float: left;
+header {
 	background: #5d8878;
 	color: white;
-	padding: 25px 0 0 10px;
+	padding: 10px 30px;
 }
 
-.lateral h2{
+header h2 {
 	text-align: center;
 	font-size: 25px;
 	margin-bottom: 22px;
@@ -68,44 +22,12 @@ html,body{
 	color: #dae0fc;
 }
 
-.sinle-person {
-	margin-bottom: 15px;
-}
-
-.sinle-person div { 
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
+.single-person {
 	display: inline-block;
-	margin-right: 10px;
-	cursor: pointer;
+	margin-left: 20px;
 }
 
-.sinle-person span {
-	padding: 1px 4px;
-	margin-right: 10px;
-	border-radius: 50%;
-	cursor: pointer;
-	font-size: 16px;
-}
-
-.tipo-fonte span{
-	display: block;
-	margin-bottom: 5px;
-	background-color: wheat;
-	border-radius: 0;
-	color: black;
-	width: 120px;
-	text-align: center;
-	cursor: pointer;
-}
-
-.conteudo{
-	position: relative;
-	width: 80%;
-	min-height: 580px;
-	float: left;
-	margin: auto;
+main {
 	padding: 20px 40px;
 }
 
@@ -117,5 +39,4 @@ h1 {
 
 p {
 	font-size: 15px;
-	line-height: 30px;
 }

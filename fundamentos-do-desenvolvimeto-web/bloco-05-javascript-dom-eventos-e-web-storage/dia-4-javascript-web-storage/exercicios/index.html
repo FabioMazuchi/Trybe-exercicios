@@ -10,44 +10,50 @@
 </head>
 
 <body>
-	<main>
-		<aside class="lateral">
-			<h2>Personalização</h2>
-				<div class="sinle-person">
-					<p>Cor de fundo da tela:</p>
-					<div class="preto fundo"></div><div class="verde fundo"></div><div class="branco fundo"></div>
-				</div><!--single-person-->
-				<div class="sinle-person">
-					<p>Cor do texto:</p>
-					<div class="preto"></div><div class="verde"></div><div class="branco"></div>
-				</div><!--single-person-->
-				<div class="sinle-person">
-					<p>Tamanho da fonte:</p>
-					<span class="fonte-p">P</span>
-					<span class="fonte-m">M</span>
-					<span class="fonte-g">G</span>
-				</div><!--single-person-->
-				<div class="sinle-person">
-					<p>Altura da linha:</p>
-					<span class="p">P</span>
-					<span class="m">M</span>
-					<span class="g">G</span>
-				</div><!--single-person-->
-				<div class="tipo-fonte sinle-person">
-					<p>Tipo da fonte:</p>
-					<span class="courier">Courier New</span>
-					<span class="gil-sans">Gil Sans</span>
-					<span class="arial">Arial</span>
-				</div><!--single-person-->
-		</aside><!--lateral-->
-		<article class="conteudo">
-			<section>
-				<h1>Leitura</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat vel autem blanditiis voluptas repellendus, fugit laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores earum, veniam laudantium consequuntur delectus eos iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat vel autem blanditiis voluptas repellendus, fugit laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores earum, veniam laudantium consequuntur delectus eos iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat vel autem blanditiis voluptas repellendus, fugit laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores earum, veniam laudantium consequuntur delectus eos iusto.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat vel autem blanditiis voluptas repellendus, fugit laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores earum, veniam laudantium consequuntur delectus eos iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat vel autem blanditiis voluptas repellendus, fugit laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores earum, veniam laudantium consequuntur delectus eos iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat vel autem blanditiis voluptas repellendus, fugit laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores earum, veniam laudantium consequuntur delectus eos iusto.</p>
-			</section>
-		</article><!--conteudo-->
-	</main>
+	<header>
+		<div class="single-person">
+			<label>Cor de fundo da tela:</label>
+			<select>
+				<option value="white">Branco</option>
+				<option value="blue">Azul</option>
+				<option value="black">Preto</option>
+				<option value="green">Verde</option>
+			</select>
+		</div><!--single-person-->
+
+		<div class="single-person">
+			<label>Cor do texto:</label>
+			<select id="texto-cor">
+				<option value="white">Branco</option>
+				<option value="blue">Azul</option>
+				<option value="black">Preto</option>
+				<option value="green">Verde</option>
+			</select>
+		</div><!--single-person-->
+
+		<div class="single-person">
+			<label>Tamanho da fonte:</label>
+			<input type="number" name="fontTamanho" min="1" max="40">
+		</div><!--single-person-->
+	</header>
+
+	<main class="conteudo">
+		<section>
+			<h1>Leitura</h1>
+			<p class="texto-alvo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat vel autem
+				blanditiis voluptas repellendus, fugit laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores
+				earum, veniam laudantium consequuntur delectus eos iusto. Lorem ipsum dolor sit amet consectetur adipisicing
+				elit. Consequatur repellat vel autem blanditiis voluptas repellendus, fugit laudantium omnis eveniet laboriosam.
+				Reiciendis accusamus asperiores earum, veniam laudantium consequuntur delectus eos iusto. Lorem ipsum dolor sit
+				amet consectetur adipisicing elit. Consequatur repellat vel autem blanditiis voluptas repellendus, fugit
+				laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores earum, veniam laudantium consequuntur
+				delectus eos iusto.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat vel autem blanditiis voluptas
+				repellendus, fugit laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores earum, veniam laudantium
+				consequuntur delectus eos iusto. Lorem ipsum dolor sit amet consectetur adipisicing eliasperiores earum, veniam
+				laudantium consequuntur delectus eos iusto.</p>
+		</section>
+	</main><!--conteudo-->
 	<script src="script.js"></script>
 </body>
 
