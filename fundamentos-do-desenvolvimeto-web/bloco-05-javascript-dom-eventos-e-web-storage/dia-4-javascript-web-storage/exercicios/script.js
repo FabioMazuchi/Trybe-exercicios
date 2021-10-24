@@ -29,8 +29,15 @@ window.onload = function () {
 		p.style.lineHeight = altura+'px';
 		localStorage.setItem('alturaLinha', altura+'px');
 	});
-	
 
+	let inputFontFamily = document.querySelector('#tipo-fonte');
+	inputFontFamily.addEventListener('change', function () {
+		let tipoFonte = inputFontFamily.value;
+		p.style.fontFamily = tipoFonte;
+		console.log(tipoFonte);
+		localStorage.setItem('tipoFonte', tipoFonte);
+	});
+	
 	let article = document.querySelector('.conteudo');
 	let cor = localStorage.getItem('corFundo');
 	article.style.backgroundColor = cor;
@@ -44,6 +51,8 @@ window.onload = function () {
 
 	let alturaLinha = localStorage.getItem('alturaLinha');
 	p.style.lineHeight = alturaLinha;
-	console.log(alturaLinha);
+
+	let tipoFonte = localStorage.getItem('tipoFonte');
+	p.style.fontFamily = tipoFonte;
 }
 
