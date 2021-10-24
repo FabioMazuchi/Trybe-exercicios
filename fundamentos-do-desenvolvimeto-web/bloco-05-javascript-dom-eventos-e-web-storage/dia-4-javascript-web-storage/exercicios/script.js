@@ -20,8 +20,14 @@ window.onload = function () {
 		p = document.querySelector('.texto-alvo');
 		let corFonte = selectTexto.value;
 		p.style.color = corFonte;
-		console.log(corFonte);
 		localStorage.setItem('corFonte', corFonte);
+	});
+
+	let inputAltura = document.querySelector('input[name="espaco-linha"]');
+	inputAltura.addEventListener('change', function () {
+		let altura = inputAltura.value;
+		p.style.lineHeight = altura+'px';
+		localStorage.setItem('alturaLinha', altura+'px');
 	});
 	
 
@@ -35,5 +41,9 @@ window.onload = function () {
 
 	let corFonte = localStorage.getItem('corFonte');
 	p.style.color = corFonte;
+
+	let alturaLinha = localStorage.getItem('alturaLinha');
+	p.style.lineHeight = alturaLinha;
+	console.log(alturaLinha);
 }
 
