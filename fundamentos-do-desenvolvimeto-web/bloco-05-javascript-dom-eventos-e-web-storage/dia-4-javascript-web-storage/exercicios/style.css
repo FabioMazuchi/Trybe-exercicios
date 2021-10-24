@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+.lateral{
+	width: 20%;
+	min-height: 580px;
+	float: left;
+	background: #5d8878;
+	color: white;
+	padding: 25px 0 0 10px;
+}
+
+.lateral h2{
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 22px;
+	font-weight: 700;
+	color: #dae0fc;
+}
+
+.conteudo{
+	position: relative;
+	width: 80%;
+	min-height: 580px;
+	float: left;
+	margin: auto;
+	padding: 20px 40px;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 30px;
+}
