@@ -9,6 +9,40 @@ html,body{
 	height: 100%;
 }
 
+/**** CLASSES AUXILIARES ****/
+.preto {
+	background-color: black;
+}
+
+.verde {
+	background-color: rgb(67, 212, 108);
+}
+
+.azul {
+	background-color: rgb(151, 182, 196);
+}
+
+.branco {
+	background-color: white;
+}
+
+.roxo {
+	background-color: rgb(175, 138, 201);
+}
+
+.courier {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.gil-sans {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;	
+}
+
+.arial {
+	font-family: Arial, Helvetica, sans-serif;
+}
+/****************************/
+
 .lateral{
 	width: 20%;
 	min-height: 580px;
@@ -24,6 +58,38 @@ html,body{
 	margin-bottom: 22px;
 	font-weight: 700;
 	color: #dae0fc;
+}
+
+.sinle-person {
+	margin-bottom: 15px;
+}
+
+.sinle-person div { 
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.sinle-person span {
+	padding: 1px 4px;
+	margin-right: 10px;
+	font-size: 14px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.tipo-fonte span{
+	display: block;
+	margin-bottom: 5px;
+	background-color: wheat;
+	border-radius: 0;
+	color: black;
+	width: 120px;
+	text-align: center;
+	cursor: pointer;
 }
 
 .conteudo{
