@@ -26,10 +26,6 @@ html,body{
 	background-color: white;
 }
 
-.roxo {
-	background-color: rgb(175, 138, 201);
-}
-
 .courier {
 	font-family: 'Courier New', Courier, monospace;
 }
@@ -40,6 +36,18 @@ html,body{
 
 .arial {
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+.fonte-p {
+	font-size: 15px;
+}
+
+.fonte-m {
+	font-size: 20px;
+}
+
+.fonte-g {
+	font-size: 25px;
 }
 /****************************/
 
@@ -76,9 +84,9 @@ html,body{
 .sinle-person span {
 	padding: 1px 4px;
 	margin-right: 10px;
-	font-size: 14px;
 	border-radius: 50%;
 	cursor: pointer;
+	font-size: 16px;
 }
 
 .tipo-fonte span{
@@ -108,6 +116,6 @@ h1 {
 }
 
 p {
-	font-size: 18px;
+	font-size: 15px;
 	line-height: 30px;
 }
