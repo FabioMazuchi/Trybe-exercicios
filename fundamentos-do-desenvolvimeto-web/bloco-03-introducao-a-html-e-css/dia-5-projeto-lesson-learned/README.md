@@ -7,6 +7,6 @@
 * Realizar manutenções em páginas já existentes
 * Aplicar Layout e Box Model na prática
 
-# Projeto 1 - Lesson Learned 🚀
+## Projeto 1 - Lesson Learned 🚀
 
 ![projeto lesson learned](images/projeto-01-lesson-learned.png)
