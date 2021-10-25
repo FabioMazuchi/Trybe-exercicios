@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+	<title>Exercício Web Storage</title>
+</head>
+
+<body>
+	<header>
+		<div class="single-person">
+			<label>Cor de fundo da tela:</label>
+			<select>
+				<option value="white">Branco</option>
+				<option value="blue">Azul</option>
+				<option value="black">Preto</option>
+				<option value="green">Verde</option>
+			</select>
+		</div><!--single-person-->
+
+		<div class="single-person">
+			<label>Cor do texto:</label>
+			<select id="texto-cor">
+				<option value="white">Branco</option>
+				<option value="blue">Azul</option>
+				<option value="black">Preto</option>
+				<option value="green">Verde</option>
+			</select>
+		</div><!--single-person-->
+
+		<div class="single-person">
+			<label>Tamanho da fonte:</label>
+			<input type="number" min="1" max="50">
+		</div><!--single-person-->
+
+		<div class="single-person">
+			<label>Espaçamento entre linhas:</label>
+			<input type="number" name="espaco-linha" min="1" max="50">
+		</div><!--single-person-->
+
+		<div class="single-person">
+			<label>Tipo de fonte:</label>
+			<select id="tipo-fonte">
+				<option value="courier">Courier</option>
+				<option value="helvetica">Helvetica</option>
+				<option value="Herr Von Muellerhoff">Herr Von Muellerhoff</option>
+			</select>
+		</div><!--single-person-->
+
+	</header>
+
+	<main class="conteudo">
+		<section>
+			<h1>Leitura</h1>
+			<p class="texto-alvo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat vel autem
+				blanditiis voluptas repellendus, fugit laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores
+				earum, veniam laudantium consequuntur delectus eos iusto. Lorem ipsum dolor sit amet consectetur adipisicing
+				elit. Consequatur repellat vel autem blanditiis voluptas repellendus, fugit laudantium omnis eveniet laboriosam.
+				Reiciendis accusamus asperiores earum, veniam laudantium consequuntur delectus eos iusto. Lorem ipsum dolor sit
+				amet consectetur adipisicing elit. Consequatur repellat vel autem blanditiis voluptas repellendus, fugit
+				laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores earum, veniam laudantium consequuntur
+				delectus eos iusto.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat vel autem blanditiis voluptas
+				repellendus, fugit laudantium omnis eveniet laboriosam. Reiciendis accusamus asperiores earum, veniam laudantium
+				consequuntur delectus eos iusto. Lorem ipsum dolor sit amet consectetur adipisicing eliasperiores earum, veniam
+				laudantium consequuntur delectus eos iusto.</p>
+		</section>
+	</main><!--conteudo-->
+	<script src="script.js"></script>
+</body>
+
+</html>
