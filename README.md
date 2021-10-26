@@ -38,3 +38,5 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 5-2: Trabalhando com elementos
 - 5-3: Eventos
 - 5-4: Web Storage
+- 5-5: Projeto - Pixel Art
+- 5-6: Projeto - Lista de Tarefas
