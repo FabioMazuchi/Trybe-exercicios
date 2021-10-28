@@ -6,25 +6,25 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 
 ## Fundamentos do Desenvolvimento Web
 
-##### Bloco 1: Introdução - Unix & Shell
+#### Bloco 1: Introdução - Unix & Shell
 
 - 1-3: Unix & Shell- Parte 1
 - 1-4: Unix & Shell- Parte 2
 
-##### Bloco 2: Git & GitHub
+#### Bloco 2: Git & GitHub
 
 - 2-1: O que é e para que serve?
 - 2-2: Entendendo os comandos
 - 2-3: Internet - Entendendo como ela funciona
 
-##### Bloco 3: Introdução a HTML e CSS
+#### Bloco 3: Introdução a HTML e CSS
 
 - 3-1: Estruturas de página
 - 3-2: Primeiros passos com CSS
 - 3-3: Seletores e posicionamento
 - 3-4: HTML Semântico
 
-##### Bloco 4: Introdução à JavaScript e Lógica de Programação
+#### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
 - 4-1: Primeiros passos
 - 4-2: Array e loop For
@@ -32,7 +32,7 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 4-4: Objetos e Funções
 - 4-5: Projeto - Playground Functions
 
-##### Bloco 5: JavaScript - DOM, Eventos e Web Storage
+#### Bloco 5: JavaScript - DOM, Eventos e Web Storage
 
 - 5-1: DOM e seletores
 - 5-2: Trabalhando com elementos
@@ -40,4 +40,9 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 5-4: Web Storage
 - 5-5: Projeto - Pixel Art
 - 5-6: Projeto - Lista de Tarefas
-- 5-7: (Bônus) Projeto - Meme Generator
+- 5-7: Projetos Bônus
+- * Meme Generator
+- * Adivinhe a Cor
+- * Carta Misteriosa
+
+#### Bloco 6: HTML e CSS - Forms, Flexbox e Responsivo
