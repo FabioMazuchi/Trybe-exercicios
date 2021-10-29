@@ -46,3 +46,6 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - * Carta Misteriosa
 
 #### Bloco 6: HTML e CSS - Forms, Flexbox e Responsivo
+
+- 6-1: HTML e CSS - Forms
+- 6-2: Bibliotecas JavaScript e Frameworks CSS
