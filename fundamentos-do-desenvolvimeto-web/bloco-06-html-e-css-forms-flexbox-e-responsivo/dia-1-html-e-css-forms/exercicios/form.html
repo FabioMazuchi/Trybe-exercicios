@@ -7,6 +7,12 @@
     <title>Exercício 6.1</title>
   </head>
   <body>
+    <div class="sucesso">
+
+    </div>
+    <header>
+      <h1>Currículo</h1>
+    </header>
     <form>
       <fieldset>
         <legend>Dados Pessoais</legend>
@@ -26,16 +32,30 @@
         <input type="text" name="cidade" maxlength="28" required />
         <br />
         <label for="estado">Estado:</label>
-        <select name="estado" id="estados" required>
-
-				</select>
-        <br>
-				<input type="radio" name="moradia" id="casa" required value="casa">
+        <select name="estado" id="estados" required></select>
+        <br />
+        <input type="radio" name="moradia" id="casa" required value="casa" />
         <label for="casa">Casa</label>
-        <br>
-        <input type="radio" name="moradia" id="apartamento" required value="apartamento">
+        <br />
+        <input type="radio" name="moradia" id="apartamento" required value="apartamento"/>
         <label for="apartamento">Apartamento</label>
       </fieldset>
+      <fieldset>
+        <legend>Último Emprego</legend>
+        <label for="resumo">Resumo:</label>
+        <br>
+        <textarea id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
+        <br>
+        <label for="cargo">Cargo:</label>
+        <input type="text" name="cargo" id="cargo" maxlength="40" required>
+        <br>
+        <label for="descricao_cargo">Descrição do Cargo:</label>
+        <input type="text" name="descricao_cargo" id="descricao_cargo" maxlength="500" required>
+        <br>
+        <label for="data_inicio">Data de Início:</label>
+        <input type="text" name="data_inicio" id="data_inicio" required>
+      </fieldset>
+      <button type="submit" id="enviar">Enviar</button>
     </form>
     <script src="script.js"></script>
   </body>
