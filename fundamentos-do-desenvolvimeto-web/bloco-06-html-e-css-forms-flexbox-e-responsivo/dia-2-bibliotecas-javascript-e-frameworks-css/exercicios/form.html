@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
     <title>Exercício 6.2</title>
   </head>
   <body>
@@ -15,7 +17,7 @@
       <h1 class="text-center">Currículo</h1>
     </header>
     <form>
-      <div class="container border border-3 mb-3 p-5 col-8">
+      <div class="shadow p-3 mb-5 bg-body rounded container border border-3 mb-3 p-5 col-8">
         <h3>Dados Pessoais</h3>
         <div class="mb-3">
           <label class="form-label" for="nome">Nome:</label>
@@ -51,7 +53,7 @@
         </div>
       </div>
 
-      <div class="container border border-3 p-5 mb-3 col-8">
+      <div class="shadow p-3 mb-5 bg-body rounded container border border-3 p-5 mb-3 col-8">
         <h3>Último Emprego</h3>
         <div class="form-floating mb-3">
           <textarea class="form-control" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
@@ -67,7 +69,8 @@
         </div>
         <div class="mb-3">
           <label class="form-label" for="data_inicio">Data de Início:</label>
-          <input class="form-control" type="text" name="data_inicio" id="data_inicio" required>
+          <input class="form-control" type="text" id="datepicker">
+
         </div>
         <button class="btn btn-primary" type="submit" id="enviar">Enviar</button>
       </div>
@@ -76,6 +79,14 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script src="js/script.js"></script>
+    <script src="pikaday.js"></script>
+<script>
+    var picker = new Pikaday({ field: document.getElementById('datepicker') });
+</script>
+
+    
+
   </body>
 </html>
