@@ -1,5 +1,4 @@
-const dataInput = document.querySelector("#data_inicio");
-const divErro = document.querySelector('.erro');
+const divErro = document.querySelector(".erro");
 const select = document.querySelector("#estados");
 
 function criarEstados() {
@@ -43,8 +42,8 @@ function criarEstados() {
   }
 }
 
-function alert(msg) {
-  const divAlert = document.querySelector(".alert");
+function alerta(msg) {
+  const divAlert = document.querySelector(".alerta");
 
   divAlert.innerHTML = msg;
 }
@@ -69,11 +68,11 @@ function getSelected() {
 }
 
 function getRadio() {
-  const selectMoradia = document.querySelectorAll('input[name=moradia]');
+  const selectMoradia = document.querySelectorAll("input[name=moradia]");
   let resultado;
 
   for (let i = 0; i < selectMoradia.length; i++) {
-    if(selectMoradia[i].checked){
+    if (selectMoradia[i].checked) {
       resultado = selectMoradia[i].value;
     }
   }
@@ -89,69 +88,74 @@ function enviarDados(event) {
   let cidade = document.querySelector("[name=cidade]").value;
   let estado = getSelected();
   let moradia = getRadio();
+  let resumo = document.querySelector("#resumo").value;
+  let cargo = document.querySelector("[name=cargo]").value;
+  let descricaoCargo = document.querySelector("[name=descricao_cargo]").value;
 
-  if (nome.length === 0) {
-    alert("Campo nome vazio!");
-  } else if (nome.length > 40) {
-    alert("Valor de nome inválido");
-  } else if (email.length === 0) {
-    alert("Campo email vazio!");
-  } else if (email.length > 50) {
-    alert("Valor de email inválido!");
-  }else if (cpf.length === 0) {
-    alert('Campo CPF vazio!');
-  }else if (cpf.length > 11) {
-    alert('Valor de CPF inválido');
-  }else if (endereco.length === 0) {
-    alert('Campo endereço vazio');
-  }else if (endereco.length > 28){
-    alert('Valor de endereço inválido!');
-  }else if (cidade.length === 0){
-    alert('Campo cidade vazio!');
-  }else if (cidade.length > 28){
-    alert('Valor de cidade inválido!');
-  } else if (estado === 'Nenhum') {
-    alert("Estado não selecionado!");
-  }else if(moradia === undefined){
-    alert('Moradia não selecionada!');
+  if (nome.length === 0 || nome.length > 40) {
+    alerta("Valor de nome inválido!");
+  } else if (email.length === 0 || email.length > 50) {
+    alerta("Valor de email inválido!");
+  } else if (cpf.length === 0 || cpf.length > 11) {
+    alerta("Valor de CPF inválido!");
+  } else if (endereco.length === 0 || endereco.length > 28) {
+    alerta("Valor de endereço inválido");
+  } else if (cidade.length === 0 || cidade.length > 28) {
+    alerta("Valor de cidade inválido!");
+  } else if (estado === "Nenhum") {
+    alerta("Estado não selecionado!");
+  } else if (moradia === undefined) {
+    alerta("Moradia não selecionada!");
+  } else if (resumo.length === 0 || resumo.length > 1000) {
+    alerta("Valor de resumo inválido!");
+  } else if (cargo.length === 0 || cargo.length > 40) {
+    alerta("Valor de cargo inválido!");
+  } else if (descricaoCargo.length === 0 || descricaoCargo.length > 500) {
+    alerta("Valor da descrição inválido!");
   } else {
-    // Exibir as informações em uma div
-    exibirInfo("Nome: ", nome);
-    exibirInfo("E-mail: ", email);
-    exibirInfo("CPF: ", cpf);
-    exibirInfo("Endedreço: ", endereco);
-    exibirInfo("Cidade: ", cidade);
-    exibirInfo("Estado: ", estado);
-    exibirInfo("Moradia: ", moradia);
-   
+    let data = document.querySelector("#data_inicio").value;
+    let valorData = validarData(data);
+    if(valorData !== false){
+      // Exibir as informações em uma div
+      exibirInfo("Nome: ", nome);
+      exibirInfo("E-mail: ", email);
+      exibirInfo("CPF: ", cpf);
+      exibirInfo("Endedreço: ", endereco);
+      exibirInfo("Cidade: ", cidade);
+      exibirInfo("Estado: ", estado);
+      exibirInfo("Moradia: ", moradia);
+      exibirInfo("Resumo: ", resumo);
+      exibirInfo("Cargo: ", cargo);
+      exibirInfo("Descrição do cargo: ", descricaoCargo);
+      exibirInfo("Data: ", data);
+    }
   }
 }
 
-// function validarData(event) {
-//   event.preventDefault();
-//   let data = dataInput.value;
-
-//   for (let i = 0; i < data.length; i++) {
-//     if (data[2] !== "/" || data[5] !== "/" || data.length !== 10) {
-//       alert("Erro, formato inválido");
-//       break;
-//     } else {
-//       if ((data[0] <= 0 && data[1] <= 0) || (data[0] >= 3 && data[1] > 1)) {
-//         alert("Erro, dia com valor inválido");
-//         break;
-//       } else if (
-//         (data[3] <= 0 && data[4] <= 0) ||
-//         (data[3] >= 1 && data[4] > 2)
-//       ) {
-//         alert("Erro, mês com valor inválido");
-//         break;
-//       } else if (data[6] < 0 || data[7] < 0 || data[8] < 0 || data[9] < 0) {
-//         alert("Erro, ano com valor inválido");
-//         break;
-//       }
-//     }
-//   }
-// }
+function validarData(data) {
+  console.log(data);
+  if(data.length === 0){
+    alert('Campo data vazio!');
+    return false;
+  }else{
+    for (let i = 0; i < data.length; i += 1) {
+    }if (data[2] !== "/" || data[5] !== "/" || data.length !== 10) {
+      alert("Erro, formato de data inválido");
+      return false;
+    } else {
+      if ((data[0] <= 0 && data[1] <= 0) || (data[0] >= 3 && data[1] > 1)) {
+        alert("Erro, dia com valor inválido");
+        return false;
+      } else if ((data[3] <= 0 && data[4] <= 0) || (data[3] >= 1 && data[4] > 2)) {
+        alert("Erro, mês com valor inválido");
+        return false;
+      } else if (data[6] < 0 || data[7] < 0 || data[8] < 0 || data[9] < 0) {
+        alert("Erro, ano com valor inválido");
+        return false;
+      }
+    }
+  }
+}
 
 window.onload = function () {
   criarEstados();
