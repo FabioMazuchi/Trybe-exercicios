@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	margin-top: 40px;
+}
+
+.alert {
+	text-align: center;
+	background-color: rgb(243, 67, 67);
+	color: white;
+	padding: 5px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	font-size: 20px;
+	border: 2px solid rgb(236, 26, 26);
+}

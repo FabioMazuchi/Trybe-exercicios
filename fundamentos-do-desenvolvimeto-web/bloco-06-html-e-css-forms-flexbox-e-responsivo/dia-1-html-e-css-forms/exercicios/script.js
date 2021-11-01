@@ -1,9 +1,11 @@
 const dataInput = document.querySelector("#data_inicio");
+const divErro = document.querySelector('.erro');
+const select = document.querySelector("#estados");
 
 function criarEstados() {
   // Fonte: https://mundoeducacao.uol.com.br/geografia/estados-brasil.htm
   const estados = [
-    { sigla: " NM", estado: "Nenhum" },
+    { sigla: "NM", estado: "Nenhum" },
     { sigla: " AC", estado: "Acre" },
     { sigla: "AL", estado: "Alagoas" },
     { sigla: "AP", estado: "Amapá" },
@@ -33,7 +35,6 @@ function criarEstados() {
     { sigla: "DF", estado: "Distrito Federal" },
   ];
 
-  const select = document.querySelector("#estados");
   for (let i = 0; i < estados.length; i += 1) {
     const option = document.createElement("option");
     option.value = estados[i].sigla;
@@ -42,91 +43,89 @@ function criarEstados() {
   }
 }
 
+function alert(msg) {
+  const divAlert = document.querySelector(".alert");
+
+  divAlert.innerHTML = msg;
+}
+
+function exibirInfo(key, valor) {
+  const divInfo = document.querySelector("#info");
+  const p = document.createElement("p");
+  p.innerHTML = key + valor;
+  divInfo.appendChild(p);
+  console.log(divInfo);
+}
+
+function getSelected() {
+  let selecinado;
+
+  for (let i = 0; i < select.length; i++) {
+    if (select[i].selected === true) {
+      selecinado = select[i].innerHTML;
+    }
+  }
+  return selecinado;
+}
+
+function getRadio() {
+  const selectMoradia = document.querySelectorAll('input[name=moradia]');
+  let resultado;
+
+  for (let i = 0; i < selectMoradia.length; i++) {
+    if(selectMoradia[i].checked){
+      resultado = selectMoradia[i].value;
+    }
+  }
+  return resultado;
+}
+
 function enviarDados(event) {
   event.preventDefault();
-  // validarNome();
-  // validarEmail();
-  // validarCpf();
-  // validarEndereco();
-  // validarCidade();
-  validarEstado();
-}
+  let nome = document.querySelector("[name=nome]").value;
+  let email = document.querySelector("[name=email]").value;
+  let cpf = document.querySelector("[name=cpf]").value;
+  let endereco = document.querySelector("[name=endereco]").value;
+  let cidade = document.querySelector("[name=cidade]").value;
+  let estado = getSelected();
+  let moradia = getRadio();
 
-function validarNome() {
-  const input = document.querySelector("[name=nome]");
-  let valor = input.value;
-
-  if (valor.length <= 0) {
-    alert("Nome vazio.");
-  } else if (valor.length > 40) {
-    alert("Nome com tamanho inválido.");
+  if (nome.length === 0) {
+    alert("Campo nome vazio!");
+  } else if (nome.length > 40) {
+    alert("Valor de nome inválido");
+  } else if (email.length === 0) {
+    alert("Campo email vazio!");
+  } else if (email.length > 50) {
+    alert("Valor de email inválido!");
+  }else if (cpf.length === 0) {
+    alert('Campo CPF vazio!');
+  }else if (cpf.length > 11) {
+    alert('Valor de CPF inválido');
+  }else if (endereco.length === 0) {
+    alert('Campo endereço vazio');
+  }else if (endereco.length > 28){
+    alert('Valor de endereço inválido!');
+  }else if (cidade.length === 0){
+    alert('Campo cidade vazio!');
+  }else if (cidade.length > 28){
+    alert('Valor de cidade inválido!');
+  } else if (estado === 'Nenhum') {
+    alert("Estado não selecionado!");
+  }else if(moradia === undefined){
+    alert('Moradia não selecionada!');
+  } else {
+    // Exibir as informações em uma div
+    exibirInfo("Nome: ", nome);
+    exibirInfo("E-mail: ", email);
+    exibirInfo("CPF: ", cpf);
+    exibirInfo("Endedreço: ", endereco);
+    exibirInfo("Cidade: ", cidade);
+    exibirInfo("Estado: ", estado);
+    exibirInfo("Moradia: ", moradia);
+   
   }
 }
-
-function validarEmail() {
-  const input = document.querySelector("[name=email]");
-  let valor = input.value;
-
-  if (valor.length <= 0) {
-    alert("E-mail vazio.");
-  } else if (valor.length > 50) {
-    alert("E-mail com tamanho inválido.");
-  }
-}
-
-function validarCpf() {
-  const input = document.querySelector("[name=cpf]");
-  let valor = input.value;
-
-  if (valor.length <= 0) {
-    alert("CPF vazio.");
-  } else if (valor.length > 11) {
-    alert("CPF com tamanho inválido.");
-  }
-}
-
-function validarEndereco() {
-  const input = document.querySelector("[name=endereco]");
-  let valor = input.value;
-
-  if (valor.length <= 0) {
-    alert("Endereço vazio.");
-  } else if (valor.length > 28) {
-    alert("Endereço com tamanho inválido.");
-  }
-}
-
-function validarCidade() {
-  const input = document.querySelector("[name=cidade]");
-  let valor = input.value;
-
-  if (valor.length <= 0) {
-    alert("Cidade vazio.");
-  } else if (valor.length > 28) {
-    alert("Cidade com tamanho inválido.");
-  }
-}
-
-function validarEstado() {
-	console.log(selected);
-}
-
-window.onload = function () {
-  criarEstados();
-
-	let selected;
-  const input = document.querySelector("[name=estado]");
-  let estados = input.children;
-  for (let estado of estados) {
-    addEventListener("change", function (event) {
-      selected = event.target.value;
-
-    });
-  }
-
-  const btnEnviar = document.querySelector("#enviar");
-  btnEnviar.addEventListener("click", enviarDados);
-};
 
 // function validarData(event) {
 //   event.preventDefault();
@@ -153,3 +152,11 @@ window.onload = function () {
 //     }
 //   }
 // }
+
+window.onload = function () {
+  criarEstados();
+
+  const btnEnviar = document.querySelector("#enviar");
+
+  btnEnviar.addEventListener("click", enviarDados);
+};
