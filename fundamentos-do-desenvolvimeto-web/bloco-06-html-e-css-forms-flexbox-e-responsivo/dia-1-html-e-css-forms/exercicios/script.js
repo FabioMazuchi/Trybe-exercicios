@@ -196,12 +196,12 @@ function limpaSelecionado() {
 }
 
 function limmparDadosGerados() {
-  let paragrafos = divInfo.getElementsByTagName('p');
-  console.log(paragrafos);
+  let paragrafos = divInfo.getElementsByTagName("p");
+  const tamanho = paragrafos.length;
 
-  for (let i = 0; i < paragrafos.length; i += 1) {
+  for (let i = 0; i <= tamanho; i += 1) {
     console.log(i);
-    divInfo.removeChild(paragrafos[i]);
+    divInfo.removeChild(divInfo.firstChild);
   }
 }
 
