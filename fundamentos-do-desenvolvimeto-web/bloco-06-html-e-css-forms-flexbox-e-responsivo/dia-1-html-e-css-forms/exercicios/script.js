@@ -1,5 +1,6 @@
 const divErro = document.querySelector(".erro");
 const select = document.querySelector("#estados");
+const divInfo = document.querySelector("#info");
 
 function criarEstados() {
   // Fonte: https://mundoeducacao.uol.com.br/geografia/estados-brasil.htm
@@ -44,16 +45,14 @@ function criarEstados() {
 
 function alerta(msg) {
   const divAlert = document.querySelector(".alerta");
-  divAlert.style.display = 'block';
+  divAlert.style.display = "block";
   divAlert.innerHTML = msg;
 }
 
 function exibirInfo(key, valor) {
-  const divInfo = document.querySelector("#info");
   const p = document.createElement("p");
   p.innerHTML = key + valor;
   divInfo.appendChild(p);
-  console.log(divInfo);
 }
 
 function getSelected() {
@@ -77,6 +76,16 @@ function getRadio() {
     }
   }
   return resultado;
+}
+
+function limpaRadio() {
+  const selectMoradia = document.querySelectorAll("input[name=moradia]");
+
+  for (let i = 0; i < selectMoradia.length; i += 1) {
+    if (selectMoradia[i].checked === true) {
+      selectMoradia[i].checked = false;
+    }
+  }
 }
 
 function enviarDados(event) {
@@ -115,7 +124,7 @@ function enviarDados(event) {
   } else {
     let data = document.querySelector("#data_inicio").value;
     let valorData = validarData(data);
-    if(valorData !== false){
+    if (valorData !== false) {
       // Exibir as informações em uma div
       exibirInfo("Nome: ", nome);
       exibirInfo("E-mail: ", email);
@@ -128,29 +137,30 @@ function enviarDados(event) {
       exibirInfo("Cargo: ", cargo);
       exibirInfo("Descrição do cargo: ", descricaoCargo);
       exibirInfo("Data: ", data);
-      // const divSucesso = document.querySelector('.sucesso');
-      // divSucesso.style.display = 'block'
+
       const divAlert = document.querySelector(".alerta");
-      divAlert.style.display = 'none';
+      divAlert.style.display = "none";
     }
   }
 }
 
 function validarData(data) {
-  console.log(data);
-  if(data.length === 0){
-    alert('Campo data vazio!');
+  if (data.length === 0) {
+    alert("Campo data vazio!");
     return false;
-  }else{
-    for (let i = 0; i < data.length; i += 1) {
-    }if (data[2] !== "/" || data[5] !== "/" || data.length !== 10) {
+  } else {
+    for (let i = 0; i < data.length; i += 1) {}
+    if (data[2] !== "/" || data[5] !== "/" || data.length !== 10) {
       alert("Erro, formato de data inválido");
       return false;
     } else {
       if ((data[0] <= 0 && data[1] <= 0) || (data[0] >= 3 && data[1] > 1)) {
         alert("Erro, dia com valor inválido");
         return false;
-      } else if ((data[3] <= 0 && data[4] <= 0) || (data[3] >= 1 && data[4] > 2)) {
+      } else if (
+        (data[3] <= 0 && data[4] <= 0) ||
+        (data[3] >= 1 && data[4] > 2)
+      ) {
         alert("Erro, mês com valor inválido");
         return false;
       } else if (data[6] < 0 || data[7] < 0 || data[8] < 0 || data[9] < 0) {
@@ -161,26 +171,37 @@ function validarData(data) {
   }
 }
 
-function limparDados (e) {
+function limpaGeral(e) {
   e.preventDefault();
-  const inputs = document.getElementsByTagName('input');
-  const textarea = document.querySelector('#resumo');
+  const inputs = document.getElementsByTagName("input");
+  const textarea = document.querySelector("#resumo");
 
-  for (let i = 0; i < inputs.length; i+= 1) {
-    inputs[i].value = '';
+  for (let i = 0; i < inputs.length; i += 1) {
+    inputs[i].value = "";
   }
 
   limpaSelecionado();
+  limpaRadio();
+  limmparDadosGerados();
 
-  textarea.value = '';
-
+  textarea.value = "";
 }
 
 function limpaSelecionado() {
   for (let s = 0; s < select.length; s += 1) {
-    if(select[s].selected === true) {
+    if (select[s].selected === true) {
       select[s].selected = false;
-    } 
+    }
+  }
+}
+
+function limmparDadosGerados() {
+  let paragrafos = divInfo.getElementsByTagName('p');
+  console.log(paragrafos);
+
+  for (let i = 0; i < paragrafos.length; i += 1) {
+    console.log(i);
+    divInfo.removeChild(paragrafos[i]);
   }
 }
 
@@ -190,6 +211,6 @@ window.onload = function () {
   const btnEnviar = document.querySelector("#enviar");
   const btnlimpar = document.querySelector("#limpar");
 
-  btnlimpar.addEventListener('click', limparDados);
+  btnlimpar.addEventListener("click", limpaGeral);
   btnEnviar.addEventListener("click", enviarDados);
 };
