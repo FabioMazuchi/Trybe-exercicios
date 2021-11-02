@@ -41,9 +41,9 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 5-5: Projeto - Pixel Art
 - 5-6: Projeto - Lista de Tarefas
 - 5-7: Projetos Bônus
-- * Meme Generator
-- * Adivinhe a Cor
-- * Carta Misteriosa
+  * Meme Generator
+  * Adivinhe a Cor
+  * Carta Misteriosa
 
 #### Bloco 6: HTML e CSS - Forms, Flexbox e Responsivo
 
