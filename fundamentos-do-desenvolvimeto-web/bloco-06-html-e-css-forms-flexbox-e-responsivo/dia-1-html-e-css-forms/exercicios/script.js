@@ -161,10 +161,35 @@ function validarData(data) {
   }
 }
 
+function limparDados (e) {
+  e.preventDefault();
+  const inputs = document.getElementsByTagName('input');
+  const textarea = document.querySelector('#resumo');
+
+  for (let i = 0; i < inputs.length; i+= 1) {
+    inputs[i].value = '';
+  }
+
+  limpaSelecionado();
+
+  textarea.value = '';
+
+}
+
+function limpaSelecionado() {
+  for (let s = 0; s < select.length; s += 1) {
+    if(select[s].selected === true) {
+      select[s].selected = false;
+    } 
+  }
+}
+
 window.onload = function () {
   criarEstados();
 
   const btnEnviar = document.querySelector("#enviar");
+  const btnlimpar = document.querySelector("#limpar");
 
+  btnlimpar.addEventListener('click', limparDados);
   btnEnviar.addEventListener("click", enviarDados);
 };
