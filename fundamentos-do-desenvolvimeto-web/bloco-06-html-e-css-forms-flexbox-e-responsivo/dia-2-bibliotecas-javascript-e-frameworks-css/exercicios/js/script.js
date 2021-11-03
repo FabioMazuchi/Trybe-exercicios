@@ -46,6 +46,7 @@ function alerta(msg) {
   const divAlert = document.querySelector(".alerta");
 
   divAlert.innerHTML = msg;
+  divAlert.classList.replace('d-none','d-block');
 }
 
 function exibirInfo(key, valor) {
