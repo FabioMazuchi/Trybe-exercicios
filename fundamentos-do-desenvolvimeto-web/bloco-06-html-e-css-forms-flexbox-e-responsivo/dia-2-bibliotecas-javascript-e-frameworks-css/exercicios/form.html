@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 6.1</title>
+  </head>
+  <body>
+    <div class="alerta">
+      
+    </div>
+    <div class="sucesso">
+      Currículo preenchido com sucesso!
+    </div>
+    <header>
+      <h1>Currículo</h1>
+    </header>
+    <form>
+        <div class="center">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" maxlength="40" required />
+          <label for="email">E-mail:</label>
+          <input type="text" name="email" maxlength="50" required />
+          <label for="cpf">CPF:</label>
+          <input type="text" name="cpf" maxlength="11" required />
+          <label for="endereco">Endereço:</label>
+          <input type="text" name="endereco" maxlength="28" required />
+          <label for="cidade">Cidade:</label>
+          <input type="text" name="cidade" maxlength="28" required />
+          <label for="estado">Estado:</label>
+          <select name="estado" id="estados" required>
+        
+          </select>
+          <label class="moradia">Moradia:</label>
+          <input type="radio" name="moradia" id="casa" required value="casa" />
+          <label for="casa">Casa</label>
+          <input type="radio" name="moradia" id="apartamento" required value="apartamento"/>
+          <label for="apartamento">Apartamento</label>
+        </fieldset>
+        
+        <fieldset class="right">
+          <legend>Último Emprego</legend>
+          <label for="resumo">Resumo:</label>
+          <textarea id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
+          <label for="cargo">Cargo:</label>
+          <input type="text" name="cargo" id="cargo" maxlength="40" required>
+          <label for="descricao_cargo">Descrição do Cargo:</label>
+          <input type="text" name="descricao_cargo" id="descricao_cargo" maxlength="500" required>
+          <label for="data_inicio">Data de Início:</label>
+          <input type="text" name="data_inicio" id="data_inicio" required>
+        </fieldset>
+        <div class="clear"></div>
+        <div class="botao">
+          <button type="submit" id="enviar">Enviar</button>
+          <button id="limpar">Limpar</button>
+        </div>
+        <div id="info">
+
+        </div>
+      </div><!--center-->
+    </form>
+      
+    <script src="script.js"></script>
+  </body>
+</html>
