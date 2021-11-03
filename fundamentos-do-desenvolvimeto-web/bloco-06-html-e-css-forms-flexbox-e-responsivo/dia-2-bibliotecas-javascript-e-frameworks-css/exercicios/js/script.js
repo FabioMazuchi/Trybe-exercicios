@@ -212,4 +212,6 @@ window.onload = function () {
 
   btnlimpar.addEventListener("click", limpaGeral);
   btnEnviar.addEventListener("click", enviarDados);
+
+ 
 };
