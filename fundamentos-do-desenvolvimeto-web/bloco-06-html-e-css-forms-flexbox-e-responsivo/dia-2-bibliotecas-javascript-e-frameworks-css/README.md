@@ -1,5 +1,6 @@
-# Dia 1 📆
+# Dia 2 📆
 
 ### Neste dia aprendi:
 
-* Criar formulários em **HTML** com as **tags**: *input*, *button*, *textarea*, *select* e *form*
+* Adicionar e utilizar bibliotecas **JavaScript** e **CSS**
+* Utilizar bibliotecas **JavaScript** externas a partir de uma *CDN*
