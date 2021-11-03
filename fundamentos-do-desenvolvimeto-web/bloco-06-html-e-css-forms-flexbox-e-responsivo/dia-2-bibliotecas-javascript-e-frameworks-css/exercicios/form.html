@@ -51,9 +51,7 @@
           <input class="form-check-input" type="radio" name="moradia" id="apartamento" required value="apartamento"/>
           <label class="form-check-label" for="apartamento">Apartamento</label>
         </div>
-      </div>
 
-      <div class="shadow p-3 mb-5 bg-body rounded container border border-3 p-5 mb-3 col-8">
         <h3>Último Emprego</h3>
         <div class="form-floating mb-3">
           <textarea class="form-control" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
@@ -70,23 +68,15 @@
         <div class="mb-3">
           <label class="form-label" for="data_inicio">Data de Início:</label>
           <input class="form-control" type="text" id="datepicker">
-
         </div>
         <button class="btn btn-primary" type="submit" id="enviar">Enviar</button>
       </div>
     </form>
     
-
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script src="js/script.js"></script>
-    <script src="pikaday.js"></script>
-<script>
-    var picker = new Pikaday({ field: document.getElementById('datepicker') });
-</script>
-
-    
-
+    <script src="js/pickaday.js"></script>
   </body>
 </html>
