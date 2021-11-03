@@ -113,9 +113,6 @@ function enviarDados(event) {
   } else if (descricaoCargo.length === 0 || descricaoCargo.length > 500) {
     alerta("Valor da descrição inválido!");
   } else {
-    let data = document.querySelector("#data_inicio").value;
-    let valorData = validarData(data);
-    if(valorData !== false){
       // Exibir as informações em uma div
       exibirInfo("Nome: ", nome);
       exibirInfo("E-mail: ", email);
@@ -128,31 +125,6 @@ function enviarDados(event) {
       exibirInfo("Cargo: ", cargo);
       exibirInfo("Descrição do cargo: ", descricaoCargo);
       exibirInfo("Data: ", data);
-    }
-  }
-}
-
-function validarData(data) {
-  console.log(data);
-  if(data.length === 0){
-    alert('Campo data vazio!');
-    return false;
-  }else{
-    for (let i = 0; i < data.length; i += 1) {
-    }if (data[2] !== "/" || data[5] !== "/" || data.length !== 10) {
-      alert("Erro, formato de data inválido");
-      return false;
-    } else {
-      if ((data[0] <= 0 && data[1] <= 0) || (data[0] >= 3 && data[1] > 1)) {
-        alert("Erro, dia com valor inválido");
-        return false;
-      } else if ((data[3] <= 0 && data[4] <= 0) || (data[3] >= 1 && data[4] > 2)) {
-        alert("Erro, mês com valor inválido");
-        return false;
-      } else if (data[6] < 0 || data[7] < 0 || data[8] < 0 || data[9] < 0) {
-        alert("Erro, ano com valor inválido");
-        return false;
-      }
     }
   }
 }
