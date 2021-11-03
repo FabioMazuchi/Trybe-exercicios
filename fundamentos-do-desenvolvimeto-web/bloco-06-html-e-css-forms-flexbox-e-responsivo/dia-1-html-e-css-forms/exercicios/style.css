@@ -1,21 +1,139 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+body {
+  color: white;
+  background-color: rgb(76, 102, 150);
 }
 
 header {
-	margin-top: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 .alerta {
-	text-align: center;
-	background-color: rgb(243, 67, 67);
-	color: white;
-	padding: 5px 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	font-size: 20px;
-	border: 2px solid rgb(236, 26, 26);
+  text-align: center;
+  background-color: rgba(238, 28, 28, 0.8);
+  color: white;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+  border: 2px solid rgb(170, 33, 33);
+  display: none;
+  font-weight: 600;
+}
+
+.sucesso {
+  text-align: center;
+  background-color: rgba(102, 172, 61, 0.7);
+  color: white;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+  border: 2px solid rgb(67, 237, 67);
+  display: none;
+}
+
+form {
+  padding: 0 2%;
+  margin-top: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+.center {
+  width: 1000px;
+  margin: auto;
+}
+
+legend {
+  font-size: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+fieldset {
+  padding: 10px 20px;
+  width: 45%;
+  float: left;
+  border: 0;
+}
+
+.right {
+  float: right;
+}
+
+input,
+select {
+  width: 100%;
+  margin: 5px 0 10px 0;
+  padding: 8px;
+  font-size: 18px;
+}
+
+option {
+  font-size: 17px;
+}
+
+input[type="radio"] {
+  width: 20px;
+}
+
+input,
+textarea:focus {
+  outline: none;
+}
+
+.moradia {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.botao {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  padding: 5px 15px;
+  background-color: rgb(10, 48, 44);
+  margin-bottom: 30px;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#info {
+  padding: 20px;
+  background-color: rgb(76, 102, 150);
+  margin-bottom: 30px;
+}
+
+p {
+  color: white;
+  font-size: 20px;
 }
