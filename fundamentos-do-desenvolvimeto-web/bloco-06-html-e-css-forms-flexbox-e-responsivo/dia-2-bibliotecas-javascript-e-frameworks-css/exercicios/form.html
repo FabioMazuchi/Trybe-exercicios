@@ -7,66 +7,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Exercício 6.1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Exercício 6.2</title>
   </head>
   <body>
-    <div class="alerta">
+    <div class="fixed-top alerta alert alert-danger text-center">
       
     </div>
-    <div class="sucesso">
-      Currículo preenchido com sucesso!
-    </div>
-    <header>
-      <h1>Currículo</h1>
+    <header class="mb-4">
+      <h1 class="text-center">Currículo</h1>
     </header>
-    <form>
-        <div class="center">
-        <fieldset>
-          <legend>Dados Pessoais</legend>
-          <label for="nome">Nome:</label>
-          <input type="text" name="nome" maxlength="40" required />
-          <label for="email">E-mail:</label>
-          <input type="text" name="email" maxlength="50" required />
-          <label for="cpf">CPF:</label>
-          <input type="text" name="cpf" maxlength="11" required />
-          <label for="endereco">Endereço:</label>
-          <input type="text" name="endereco" maxlength="28" required />
-          <label for="cidade">Cidade:</label>
-          <input type="text" name="cidade" maxlength="28" required />
-          <label for="estado">Estado:</label>
-          <select name="estado" id="estados" required>
-        
-          </select>
-          <label class="moradia">Moradia:</label>
-          <input type="radio" name="moradia" id="casa" required value="casa" />
-          <label for="casa">Casa</label>
-          <input type="radio" name="moradia" id="apartamento" required value="apartamento"/>
-          <label for="apartamento">Apartamento</label>
-        </fieldset>
-        
-        <fieldset class="right">
-          <legend>Último Emprego</legend>
-          <label for="resumo">Resumo:</label>
-          <textarea id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
-          <label for="cargo">Cargo:</label>
-          <input type="text" name="cargo" id="cargo" maxlength="40" required>
-          <label for="descricao_cargo">Descrição do Cargo:</label>
-          <input type="text" name="descricao_cargo" id="descricao_cargo" maxlength="500" required>
-          <label for="data_inicio">Data de Início:</label>
-          <input type="text" name="data_inicio" id="data_inicio" required>
-        </fieldset>
-        <div class="clear"></div>
-        <div class="botao">
-          <button type="submit" id="enviar">Enviar</button>
-          <button id="limpar">Limpar</button>
+    <div class="container col-md-8 shadow p-3 mb-5 bg-body rounded border"">
+      <form class="p-3">
+        <h2 class="text-center">Dados Pessoais</h2>
+        <div class="mb-3">
+          <label class="form-label" for="nome">Nome:</label>
+          <input class="form-control" type="text" name="nome" maxlength="40" required />
         </div>
-        <div id="info">
-
+        <div class="mb-3">
+          <label class="form-label" for="email">E-mail:</label>
+          <input class="form-control" type="text" name="email" maxlength="50" required />
         </div>
-      </div><!--center-->
-    </form>
+        <div class="mb-3">
+          <label class="form-label" for="cpf">CPF:</label>
+          <input class="form-control" type="text" name="cpf" maxlength="11" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="endereco">Endereço:</label>
+          <input class="form-control" type="text" name="endereco" maxlength="28" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="cidade">Cidade:</label>
+          <input class="form-control" type="text" name="cidade" maxlength="28" required />
+        </div>
+        <div class="mb-3">
+          <label class="formlabel" for="estado">Estado:</label>
+          <select class="form-select" name="estado" id="estados" required>
       
+          </select>
+        </div>
+        <div class="mb-3">
+          <label>Tipo de moradia:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="moradia" id="casa" required value="casa" />
+            <label class="form-check-label" for="casa">Casa</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="moradia" id="apartamento" required value="apartamento"/>
+            <label class="form-check-label" for="apartamento">Apartamento</label>
+          </div>
+        </div>
+        <h2 class="text-center">Último Emprego</h2>
+        <div class="mb-3">
+          <div class="form-floating">
+            <textarea class="form-control" id="resumo" cols="30" rows="10" maxlength="1000" id="floatingTextarea" required></textarea>
+            <label for="floatingTextarea">Resumo:</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="cargo">Cargo:</label>
+          <input class="form-control" type="text" name="cargo" id="cargo" maxlength="40" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="descricao_cargo">Descrição do Cargo:</label>
+          <input class="form-control" type="text" name="descricao_cargo" id="descricao_cargo" maxlength="500" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="data_inicio">Data de Início:</label>
+          <input class="form-control" type="text" name="data_inicio" id="data_inicio" required>
+        </div>
+        <div class="mb-3 text-center">
+          <button class="btn btn-success" type="submit" id="enviar">Enviar</button>
+          <button class="btn btn-primary id="limpar">Limpar</button>
+        </div>
+        <div class="mb-3" id="info">
+        </div><!--info-->
+      </form>
+      
+    </div>
+    <script src="js/bootstrap.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
