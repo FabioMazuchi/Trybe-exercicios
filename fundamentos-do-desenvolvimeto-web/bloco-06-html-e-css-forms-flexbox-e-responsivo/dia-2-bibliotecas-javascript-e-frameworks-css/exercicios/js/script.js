@@ -209,9 +209,6 @@ window.onload = function () {
   const btnlimpar = document.querySelector("#limpar");
   const btnEnviar = document.querySelector("#enviar");
  
-
   btnlimpar.addEventListener("click", limpaGeral);
   btnEnviar.addEventListener("click", enviarDados);
-
- 
 };
