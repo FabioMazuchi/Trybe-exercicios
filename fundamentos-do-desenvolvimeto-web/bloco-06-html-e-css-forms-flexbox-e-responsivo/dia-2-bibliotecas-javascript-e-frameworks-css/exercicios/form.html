@@ -20,23 +20,23 @@
       <h1 class="text-center">Currículo</h1>
     </header>
     <div class="container col-md-8 shadow p-3 mb-5 bg-body rounded border"">
-      <form class="p-3">
+      <form action="#" class="p-3 js-form">
         <h2 class="text-center">Dados Pessoais</h2>
         <div class="mb-3">
           <label class="form-label" for="nome">Nome:</label>
-          <input class="form-control" type="text" name="nome" maxlength="40" required />
+          <input class="form-control" data-validate-field="name" type="text" name="name" maxlength="40" required />
         </div>
         <div class="mb-3">
           <label class="form-label" for="email">E-mail:</label>
-          <input class="form-control" type="text" name="email" maxlength="50" required />
+          <input class="form-control" data-validate-field="email" type="text" name="email" maxlength="50" required />
         </div>
         <div class="mb-3">
           <label class="form-label" for="cpf">CPF:</label>
-          <input class="form-control" type="text" name="cpf" maxlength="11" required />
+          <input class="form-control" data-validate-field="cpf" type="text" name="cpf" maxlength="11" required />
         </div>
         <div class="mb-3">
           <label class="form-label" for="endereco">Endereço:</label>
-          <input class="form-control" type="text" name="endereco" maxlength="28" required />
+          <input class="form-control" type="text" data-validate-field="endereco" name="endereco" maxlength="28" required />
         </div>
         <div class="mb-3">
           <label class="form-label" for="cidade">Cidade:</label>
@@ -91,7 +91,6 @@
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script src="js/datepicker.js"></script>
-    <script src="js/script.js"></script>
-    <script src="./path/to/just-validate.min.js"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
