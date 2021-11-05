@@ -95,4 +95,56 @@ footer p:nth-of-type(2) {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  header p {
+    font-size: 30px;
+  }
+
+  header ul li {
+    font-size: 23px;
+  }
+
+  .aside-one {
+    margin-top: 130px;
+  }
+
+  .aside-one h2 {
+    font-size: 37px;
+  }
+
+  .aside-one ul li {
+    font-size: 25px;
+  }
+
+  .aside-two h2 {
+    font-size: 36px;
+  }
+
+  .aside-two ul li {
+    font-size: 23px;
+  }
+
+  .main-content {
+    margin-top: 30px
+  }
+
+  .main-content h1 {
+    font-size: 38px;
+  }
+
+  .main-content p {
+    line-height: 30px;
+    font-size: 25px;
+  }
+
+  footer h3 {
+    font-size: 30px;
+  }
+
+  footer p {
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+
 
