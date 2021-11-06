@@ -94,3 +94,41 @@
 		width: 100%;
 	}
 }
+
+@media screen and (min-width: 240px) {
+  /* O elemento com id aside deve desaparecer */
+  #aside {
+    display: none;
+  }
+
+  /* O elemento body não deve ter padding */
+  body {
+    padding: 0;
+  }
+  
+  /* O elemento body não deve ter padding */
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  /* Os itens dentro do elemento navigation devem aparecer cada um em sua própria linha */
+  #navigation li a {
+    float: none;
+  }
+
+  /* O elemento com id header deve ser fixo, de forma que ele fique aparecendo sempre no topo da tela mesmo após o usuário rolar a página */
+  #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 75px;
+  }
+}
