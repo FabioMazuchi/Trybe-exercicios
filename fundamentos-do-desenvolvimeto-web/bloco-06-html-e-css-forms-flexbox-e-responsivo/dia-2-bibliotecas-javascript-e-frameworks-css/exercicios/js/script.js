@@ -44,50 +44,53 @@ function criarEstados() {
   }
 }
 
-function exibirInfo() {
-  let array = [];
+function getInfoInputs() {
+  const array = [];
+  const nome = [];
+  const value = [];
+  const select = getSelected();
   const inputs = document.getElementsByTagName('input');
   
   for (let i = 0; i < inputs.length; i++) {
-    array.push(inputs[i].name);
-    array.push(inputs[i].value); 
+    if(inputs[i].name === 'moradia' && !inputs[i].checked){
+      continue;
+    }
+    nome.push(inputs[i].name);
+    value.push(inputs[i].value); 
   }
-
+  array.push(nome);
+  array.push(value);
+  array[0][4] = 'Estado';
+  array[1][4] = select;
   console.log(array);
-  
-  // for (let i = 0; i < inputs.length; i++) {
-  //   obj.name = inputs[i].name;
-  //   obj.value = inputs[i].value;
-  //   array.push(obj);
-  //   console.log(array);   
-  // }
-  
+  return array;
 }
 
-exibirInfo();
+function exibirInfo() {
+  const info = getInfoInputs();
+  const tamanho = info[0].length;
+ 
+  for (let i = 0; i < tamanho; i++) {
+    const divinfo = document.querySelector('#info');
+    const pInfo = document.createElement('p');
+    let nome =info[0][i];
+    let valor = info[1][i];
+    pInfo.innerHTML = nome + ': ' + valor;
+    divinfo.appendChild(pInfo);
+  }
+}
 
-// function getSelected() {
-//   let selecinado;
+function getSelected() {
+  let selecinado;
 
-//   for (let i = 0; i < select.length; i++) {
-//     if (select[i].selected === true) {
-//       selecinado = select[i].innerHTML;
-//     }
-//   }
-//   return selecinado;
-// }
+  for (let i = 0; i < select.length; i++) {
+    if (select[i].selected === true) {
+      selecinado = select[i].innerHTML;
+    }
+  }
+  return selecinado;
+}
 
-// function getRadio() {
-//   const selectMoradia = document.querySelectorAll("input[name=moradia]");
-//   let resultado;
-
-//   for (let i = 0; i < selectMoradia.length; i++) {
-//     if (selectMoradia[i].checked) {
-//       resultado = selectMoradia[i].value;
-//     }
-//   }
-//   return resultado;
-// }
 
 // function limpaRadio() {
 //   const selectMoradia = document.querySelectorAll("input[name=moradia]");
@@ -207,7 +210,7 @@ function enviarDados() {
       },
       cargo: {
         required: 'Campo cargo obrigatório.',
-        maxLength: 40,
+        maxLength: 'Cargo máxomo com 40 letras.',
       },
       descricaoCargo: {
         required: 'Campo descrição do cargo obrigatório',
