@@ -1,54 +1,70 @@
 import '../node_modules/just-validate/dist/js/just-validate.js';
 
-// const select = document.querySelector("#estados");
+const select = document.querySelector("#estado");
 // const divInfo = document.querySelector("#info");
 
-// function criarEstados() {
-//   // Fonte: https://mundoeducacao.uol.com.br/geografia/estados-brasil.htm
-//   const estados = [
-//     { sigla: "NM", estado: "Nenhum" },
-//     { sigla: " AC", estado: "Acre" },
-//     { sigla: "AL", estado: "Alagoas" },
-//     { sigla: "AP", estado: "Amapá" },
-//     { sigla: "AM", estado: "Amazonas" },
-//     { sigla: "BA", estado: "Bahia" },
-//     { sigla: "CE", estado: "Ceará" },
-//     { sigla: "ES", estado: "Espírito Santo" },
-//     { sigla: "GO", estado: "Goiás" },
-//     { sigla: "MA", estado: "Maranhão" },
-//     { sigla: "MT", estado: "Mato Grosso" },
-//     { sigla: "MS", estado: "Mato Grosso do Sul" },
-//     { sigla: "MG", estado: "Minas Gerais" },
-//     { sigla: "PA", estado: "Pará" },
-//     { sigla: "PB", estado: "Paraíba" },
-//     { sigla: "PR", estado: "Paraná" },
-//     { sigla: "PE", estado: "Pernambuco" },
-//     { sigla: "PI", estado: "Piauí" },
-//     { sigla: "RJ", estado: "Rio de Janeiro" },
-//     { sigla: "RN", estado: "Rio Grande do Norte" },
-//     { sigla: "RS", estado: "Rio Grande do Sul" },
-//     { sigla: "RO", estado: "Rondônia" },
-//     { sigla: "RR", estado: "Roraima" },
-//     { sigla: "SC", estado: "Santa Catarina" },
-//     { sigla: "SP", estado: "São Paulo" },
-//     { sigla: "SE", estado: "Sergipe" },
-//     { sigla: "TO", estado: "Tocantins" },
-//     { sigla: "DF", estado: "Distrito Federal" },
-//   ];
+function criarEstados() {
+  // Fonte: https://mundoeducacao.uol.com.br/geografia/estados-brasil.htm
+  const estados = [
+    { sigla: "NM", estado: "Nenhum" },
+    { sigla: " AC", estado: "Acre" },
+    { sigla: "AL", estado: "Alagoas" },
+    { sigla: "AP", estado: "Amapá" },
+    { sigla: "AM", estado: "Amazonas" },
+    { sigla: "BA", estado: "Bahia" },
+    { sigla: "CE", estado: "Ceará" },
+    { sigla: "ES", estado: "Espírito Santo" },
+    { sigla: "GO", estado: "Goiás" },
+    { sigla: "MA", estado: "Maranhão" },
+    { sigla: "MT", estado: "Mato Grosso" },
+    { sigla: "MS", estado: "Mato Grosso do Sul" },
+    { sigla: "MG", estado: "Minas Gerais" },
+    { sigla: "PA", estado: "Pará" },
+    { sigla: "PB", estado: "Paraíba" },
+    { sigla: "PR", estado: "Paraná" },
+    { sigla: "PE", estado: "Pernambuco" },
+    { sigla: "PI", estado: "Piauí" },
+    { sigla: "RJ", estado: "Rio de Janeiro" },
+    { sigla: "RN", estado: "Rio Grande do Norte" },
+    { sigla: "RS", estado: "Rio Grande do Sul" },
+    { sigla: "RO", estado: "Rondônia" },
+    { sigla: "RR", estado: "Roraima" },
+    { sigla: "SC", estado: "Santa Catarina" },
+    { sigla: "SP", estado: "São Paulo" },
+    { sigla: "SE", estado: "Sergipe" },
+    { sigla: "TO", estado: "Tocantins" },
+    { sigla: "DF", estado: "Distrito Federal" },
+  ];
 
-//   for (let i = 0; i < estados.length; i += 1) {
-//     const option = document.createElement("option");
-//     option.value = estados[i].sigla;
-//     option.innerHTML = estados[i].estado;
-//     select.appendChild(option);
-//   }
-// }
+  for (let i = 0; i < estados.length; i += 1) {
+    const option = document.createElement("option");
+    option.value = estados[i].sigla;
+    option.innerHTML = estados[i].estado;
+    select.appendChild(option);
+  }
+}
 
-// function exibirInfo(key, valor) {
-//   const p = document.createElement("p");
-//   p.innerHTML = key + valor;
-//   divInfo.appendChild(p);
-// }
+function exibirInfo() {
+  let array = [];
+  const inputs = document.getElementsByTagName('input');
+  
+  for (let i = 0; i < inputs.length; i++) {
+    array.push(inputs[i].name);
+    array.push(inputs[i].value); 
+  }
+
+  console.log(array);
+  
+  // for (let i = 0; i < inputs.length; i++) {
+  //   obj.name = inputs[i].name;
+  //   obj.value = inputs[i].value;
+  //   array.push(obj);
+  //   console.log(array);   
+  // }
+  
+}
+
+exibirInfo();
 
 // function getSelected() {
 //   let selecinado;
@@ -79,89 +95,6 @@ import '../node_modules/just-validate/dist/js/just-validate.js';
 //   for (let i = 0; i < selectMoradia.length; i += 1) {
 //     if (selectMoradia[i].checked === true) {
 //       selectMoradia[i].checked = false;
-//     }
-//   }
-// }
-
-// function enviarDados(event) {
-//   event.preventDefault();
-//   let nome = document.querySelector("[name=nome]").value;
-//   let email = document.querySelector("[name=email]").value;
-//   let cpf = document.querySelector("[name=cpf]").value;
-//   let endereco = document.querySelector("[name=endereco]").value;
-//   let cidade = document.querySelector("[name=cidade]").value;
-//   let estado = getSelected();
-//   let moradia = getRadio();
-//   let resumo = document.querySelector("#resumo").value;
-//   let cargo = document.querySelector("[name=cargo]").value;
-//   let descricaoCargo = document.querySelector("[name=descricao_cargo]").value;
-
-//   if (nome.length === 0 || nome.length > 40) {
-//     alerta("Valor de nome inválido!");
-//   } else if (email.length === 0 || email.length > 50) {
-//     alerta("Valor de email inválido!");
-//   } else if (cpf.length === 0 || cpf.length > 11) {
-//     alerta("Valor de CPF inválido!");
-//   } else if (endereco.length === 0 || endereco.length > 28) {
-//     alerta("Valor de endereço inválido");
-//   } else if (cidade.length === 0 || cidade.length > 28) {
-//     alerta("Valor de cidade inválido!");
-//   } else if (estado === "Nenhum") {
-//     alerta("Estado não selecionado!");
-//   } else if (moradia === undefined) {
-//     alerta("Moradia não selecionada!");
-//   } else if (resumo.length === 0 || resumo.length > 1000) {
-//     alerta("Valor de resumo inválido!");
-//   } else if (cargo.length === 0 || cargo.length > 40) {
-//     alerta("Valor de cargo inválido!");
-//   } else if (descricaoCargo.length === 0 || descricaoCargo.length > 500) {
-//     alerta("Valor da descrição inválido!");
-//   } else {
-//     let data = document.querySelector("#data_inicio").value;
-//     let valorData = validarData(data);
-//     if (valorData !== false) {
-//       // Exibir as informações em uma div
-//       exibirInfo("Nome: ", nome);
-//       exibirInfo("E-mail: ", email);
-//       exibirInfo("CPF: ", cpf);
-//       exibirInfo("Endedreço: ", endereco);
-//       exibirInfo("Cidade: ", cidade);
-//       exibirInfo("Estado: ", estado);
-//       exibirInfo("Moradia: ", moradia);
-//       exibirInfo("Resumo: ", resumo);
-//       exibirInfo("Cargo: ", cargo);
-//       exibirInfo("Descrição do cargo: ", descricaoCargo);
-//       exibirInfo("Data: ", data);
-
-//       const divAlert = document.querySelector(".alerta");
-//       divAlert.style.display = "none";
-//     }
-//   }
-// }
-
-// function validarData(data) {
-//   if (data.length === 0) {
-//     alert("Campo data vazio!");
-//     return false;
-//   } else {
-//     for (let i = 0; i < data.length; i += 1) {}
-//     if (data[2] !== "/" || data[5] !== "/" || data.length !== 10) {
-//       alert("Erro, formato de data inválido");
-//       return false;
-//     } else {
-//       if ((data[0] <= 0 && data[1] <= 0) || (data[0] >= 3 && data[1] > 1)) {
-//         alert("Erro, dia com valor inválido");
-//         return false;
-//       } else if (
-//         (data[3] <= 0 && data[4] <= 0) ||
-//         (data[3] >= 1 && data[4] > 2)
-//       ) {
-//         alert("Erro, mês com valor inválido");
-//         return false;
-//       } else if (data[6] < 0 || data[7] < 0 || data[8] < 0 || data[9] < 0) {
-//         alert("Erro, ano com valor inválido");
-//         return false;
-//       }
 //     }
 //   }
 // }
@@ -199,14 +132,96 @@ import '../node_modules/just-validate/dist/js/just-validate.js';
 //   }
 // }
 
+function enviarDados() {
+  new JustValidate('.js-form', {
+    rules: {
+      nome: {
+        required: true,
+        maxLength: 40,
+      },
+      email: {
+        required: true,
+        maxLength: 50,
+      },
+      cpf: {
+        required: true,
+        maxLength: 11,
+      },
+      endereco: {
+        required: true,
+        maxLength: 28,
+      },
+      cidade: {
+        required: true,
+        maxLength: 28,
+      },
+      estado: {
+        required: true,
+      },
+      moradia: {
+        required: true,
+      },
+      resumo: {
+        required: true,
+        maxLength: 1000,
+      },
+      cargo: {
+        required: true,
+        maxLength: 40,
+      },
+      descricaoCargo: {
+        required: true,
+        maxLength: 500,
+      }
+    },
+    messages: {
+      nome: {
+        required: 'Campo nome obrigatório.',
+        maxLength: 'Nome máximo com 40 letras.',
+      },
+      email: {
+        required: 'Campo e-mail obrigatório.',
+        maxLength: 'E-mail máximo com 50 letras.',
+      },
+      cpf: {
+        required: 'Campo CPF obrigatório.',
+        maxLength: 'CPF máximo com 11 letras.',
+      },
+      endereco: {
+        required: 'Campo endereço obrigatório',
+        maxLength: 'Endereço máximo com 28 letras.'
+      },
+      cidade: {
+        required: 'Campo cidade obrigatório',
+        maxLength: 'Cidade máxima com 28 letras.',
+      },
+      estado: {
+        required: 'Obrigatório selecionar um estado.',
+      },
+      moradia: {
+        required: 'Obrigatório selecionar um tipo de moradia.'
+      },
+      resumo: {
+        required: 'Campo resumo obrigatório.',
+        maxLength: 'Resumo máximo com 1000 letras.',
+      },
+      cargo: {
+        required: 'Campo cargo obrigatório.',
+        maxLength: 40,
+      },
+      descricaoCargo: {
+        required: 'Campo descrição do cargo obrigatório',
+        maxLength: 'Descrição do cargo máximo com 500 letras.'
+      }
+    }
+  });
+}
+
 window.onload = function () {
-  // criarEstados();
+  criarEstados();
   // const btnlimpar = document.querySelector("#limpar");
-  // const btnEnviar = document.querySelector("#enviar");
+  const btnEnviar = document.querySelector("#enviar");
  
   // btnlimpar.addEventListener("click", limpaGeral);
-  // btnEnviar.addEventListener("click", enviarDados);
-
-  new JustValidate('.js-form');
-
+  btnEnviar.addEventListener("click", enviarDados);
 };
