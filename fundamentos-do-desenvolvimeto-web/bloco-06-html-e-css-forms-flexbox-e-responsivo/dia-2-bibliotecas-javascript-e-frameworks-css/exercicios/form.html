@@ -20,7 +20,7 @@
       <h1 class="text-center">Currículo</h1>
     </header>
     <div class="container col-md-8 shadow p-3 mb-5 bg-body rounded border"">
-      <form action="#" class="p-3 js-form">
+      <form action="#" class="p-3 js-form form">
         <h2 class="text-center">Dados Pessoais</h2>
         <div class="mb-3">
           <label class="form-label" for="nome">Nome:</label>
@@ -55,7 +55,7 @@
             <label class="form-check-label" for="casa">Casa</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" data-validate-field="moradia" type="radio" name="moradia" checked id="apartamento" required value="apartamento"/>
+            <input class="form-check-input" data-validate-field="moradia" type="radio" name="moradia" id="apartamento" required value="apartamento"/>
             <label class="form-check-label" for="apartamento">Apartamento</label>
           </div>
         </div>
@@ -76,7 +76,7 @@
         </div>
         <div class="mb-3">
           <label class="form-label" for="data_inicio">Data de Início:</label>
-          <input class="form-control" type="text" name="data_inicio" id="datepicker">
+          <input class="form-control" data-validate-field="data" type="text" name="data_inicio" id="datepicker">
         </div>
         <div class="mb-3 text-center">
           <button class="btn btn-success" type="submit" id="enviar">Enviar</button>
