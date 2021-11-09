@@ -15,21 +15,23 @@
   </head>
 
   <body>
-    <header class="conteiner">
-      <section class="col-sm-12 py-4">
-        <h1 class="text-center">Soco a 80km/h: Conheça a Stomatopoda</h1>
+    <header class="container">
+      <section class="row">
+        <div class="col-12 p-2">
+          <h1 class="text-center">Soco a 80km/h: Conheça a Stomatopoda</h1>
+        </div> 
+        <nav class="nav justify-content-center col-12">
+          <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+          <a class="nav-link" href="#">Sobre</a>
+          <a class="nav-link" href="#">Contato</a>
+        </nav>
       </section>
-      <nav class="nav justify-content-center">
-        <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
-        <a class="nav-link" href="#">Sobre</a>
-        <a class="nav-link" href="#">Contato</a>
-      </nav>
     </header>
 
     <main>
       <section class="container">
         <article class="row">
-          <div class="col-sm-8 p-4 col-xs-12">
+          <div class="col-md p-4">
             <h2>Sobre</h2>
             <p>
               Stomatopoda (ou estomatópode) nome científico
@@ -41,36 +43,36 @@
               lembrando uma pata de louva-a-deus.
             </p>
           </div>
-          <div class="col-sm-4 p-4 col-xs-12 d-none">
-            <img
-              width="50px"
-              src="images/stomatopoda_tabela.jpg"
-              alt="Stomotopoda"
-            />
-            <table>
-              <tr>
-                <th>Reino</th>
-                <th>Filo</th>
-                <th>Subfilo</th>
-                <th>Classe</th>
-                <th>Subclasse</th>
-                <th>Ordem</th>
-              </tr>
-              <tr>
-                <td>Animalia</td>
-                <td>Anthropoda</td>
-                <td>Crustacea</td>
-                <td>Malacostraca</td>
-                <td>Hoplocarida</td>
-                <td>Stomatopoda</td>
-              </tr>
+          <div class="col-md d-none d-md-block">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Reino</th>
+                  <th scope="col">Filo</th>
+                  <th scope="col">Subfilo</th>
+                  <th scope="col">Classe</th>
+                  <th scope="col">Subclasse</th>
+                  <th scope="col">Ordem</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Animália</td>
+                  <td>Anthropoda</td>
+                  <td>Crustacea</td>
+                  <td>Malacostraca</td>
+                  <td>Hoplocarida</td>
+                  <td>Stomatopoda</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </article>
-
+      </section>
+      <section class="container">
         <article class="fatos p-1 row text-center">
           <h2 class="mb-3">Fatos sobre o Stomotopoda</h2>
-          <div class="col-sm-4 px-3">
+          <div class="col-lg-4 p-3">
             <h2>Visão Apurada</h2>
             <img class="img-fluid mb-3" src="images/stomatopada_visao.jpeg" alt="Stomotopoda" />
             <p>
@@ -82,7 +84,7 @@
               espécies maiores.
             </p>
           </div>
-          <div class="col-sm-4 p-5">
+          <div class="col-lg-4 p-3">
             <h2>Valente Boxeador</h2>
             <img class="img-fluid mb-3" src="images/stomatopoda_boxe.jpg" alt="Stomotopoda" />
             <p>
@@ -95,7 +97,7 @@
               >.
             </p>
           </div>
-          <div class="col-sm-4 p-5">
+          <div class="col-lg-4 p-3">
             <h2>Perfurador e Esmagador</h2>
             <img class="img-fluid mb-3" src="images/stomatopoda_perfurador.jpg" alt="Stomotopoda" />
             <p>
@@ -112,11 +114,11 @@
       </section>
 
       <section class="referencias container p-4">
-        <header class="col-sm-12">
+        <header class="col-sm p-3">
           <h2>Referências Bibliográficas</h2>
         </header>
         <div class="row">
-          <article class="col-sm-8">
+          <article class="col-sm">
             <nav>
               <ul>
                 <li>
@@ -128,7 +130,7 @@
               </ul>
             </nav>
           </article>
-          <aside class="col-sm-4">
+          <aside class="col-sm">
             <nav>
               <p>
                 Confira a <strong>Stomatopoda</strong> em ação neste
@@ -137,7 +139,7 @@
             </nav>
           </aside>
         </div>
-      </section><!--referencias-->
+      </section>
     </main>
 
     <footer class="col-sm-12 p-4 text-center">
