@@ -52,3 +52,4 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 6-3: CSS Flexbox Parte I
 - 6-4: CSS Flexbox Parte II
 - 6-5: CSS Responsivo - Mobile First
+- 6-6: Projeto Trybewarts
