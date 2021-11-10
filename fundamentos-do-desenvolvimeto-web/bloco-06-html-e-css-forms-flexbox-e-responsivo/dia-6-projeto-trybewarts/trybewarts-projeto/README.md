@@ -1,3 +1,3 @@
 ## Projeto Trybewarts 🚀
 
-[projeto trybewarts](images/trybewarts.png)
+![projeto trybewarts](images/trybewarts.png)
