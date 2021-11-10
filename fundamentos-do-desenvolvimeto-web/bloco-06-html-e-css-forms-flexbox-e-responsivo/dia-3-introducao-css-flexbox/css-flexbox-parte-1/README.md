@@ -1,4 +1,4 @@
-# Dia 1 📆
+# Dia 3 📆
 
 ### Neste dia aprendi:
 
