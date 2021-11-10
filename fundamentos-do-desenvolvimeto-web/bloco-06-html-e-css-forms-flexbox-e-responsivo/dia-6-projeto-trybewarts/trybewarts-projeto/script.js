@@ -1,18 +1,31 @@
-window.onload = function () {
-	const btnForm = document.querySelector('.botao-entrar');
+const entrar = document.querySelector('.entrar');
+const email = document.querySelector('.email');
+const senha = document.querySelector('.senha');
+const checkbox = document.querySelector('#agreement');
+const btn = document.querySelector('#submit-btn');
+const textarea = document.querySelector('#textarea');
+const contador = document.querySelector('#counter');
 
-	btnForm.addEventListener('click', validarLogin);
-};
-
-function validarLogin(e) {
-	e.preventDefault();
-	const email = document.querySelector('input[name=email]').value;
-	const senha = document.querySelector('input[name=password]').value;
-
-	if(email === 'tryber@teste.com' && senha === '123456') {
-		alert('Olá, Tryber!');
-	}else{
-		alert('Email ou senha inválidos.')
-	}
-	console.log(senha);
+function login() {
+  if (email.value === 'tryber@teste.com' && senha.value === '123456') {
+    window.alert('Olá, Tryber!');
+  } else {
+    window.alert('Email ou senha inválidos.');
+  }
 }
+entrar.addEventListener('click', login);
+
+function habilitarBotao() {
+  if (checkbox.checked === true) {
+    btn.disabled = false;
+  } else {
+    btn.disabled = true;
+  }
+}
+checkbox.addEventListener('click', habilitarBotao);
+
+const wordCounter = 500;
+textarea.addEventListener('input', () => {
+  const textAreaValue = textarea.value;
+  contador.innerHTML = wordCounter - textAreaValue.length;
+});
