@@ -53,3 +53,7 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 6-4: CSS Flexbox Parte II
 - 6-5: CSS Responsivo - Mobile First
 - 6-6: Projeto Trybewarts
+
+#### Bloco 7: Introdução à JavaScript ES6 e testes unitários
+
+- 1-1: JavaScript ES6 - let, const, arrow functions e template literals
