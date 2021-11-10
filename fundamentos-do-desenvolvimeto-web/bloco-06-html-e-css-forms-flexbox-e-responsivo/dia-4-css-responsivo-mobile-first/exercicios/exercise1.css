@@ -1,0 +1,41 @@
+body {
+    font-size: 20px;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 28px;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 25px 0;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 25px;
+    }
+
+    h1, h2 {
+        font-size: 35px;
+    }
+
+    section, header, main {
+        padding: 20px;
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    figure {
+        flex-basis: 40%;
+    }
+}

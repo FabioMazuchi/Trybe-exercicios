@@ -1,0 +1,134 @@
+#container {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+}
+
+#header {
+  background: #ccc;
+  padding: 20px;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+#navigation {
+  float: left;
+  width: 100%;
+  background: #333;
+}
+
+#navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+#navigation li a {
+  display: block;
+  float: left;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid #fff;
+}
+
+#navigation li a:hover {
+  background: #383;
+}
+
+#content-container {
+  float: left;
+  width: 100%;
+  background: #fff;
+}
+
+#content {
+  clear: left;
+  float: left;
+  width: 60%;
+  padding: 20px 0;
+  margin: 0 0 0 4%;
+  display: inline;
+}
+
+#content h2 {
+  margin: 0;
+}
+
+#aside {
+  float: right;
+  width: 33%;
+  padding: 20px 0;
+  margin: 0 3% 0 0;
+  display: inline;
+}
+
+#aside h3 {
+  margin: 0;
+}
+
+#footer {
+  clear: left;
+  background: #ccc;
+  text-align: right;
+  padding: 20px;
+  height: 1%;
+}
+
+@media print {
+  #header, #navigation, #footer {
+    display: none;
+  }
+	#content {
+		width: 100%;
+	}
+
+	#aside {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 240px) {
+  /* O elemento com id aside deve desaparecer */
+  #aside {
+    display: none;
+  }
+
+  /* O elemento body não deve ter padding */
+  body {
+    padding: 0;
+  }
+  
+  /* O elemento body não deve ter padding */
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  /* Os itens dentro do elemento navigation devem aparecer cada um em sua própria linha */
+  #navigation li a {
+    float: none;
+  }
+
+  /* O elemento com id header deve ser fixo, de forma que ele fique aparecendo sempre no topo da tela mesmo após o usuário rolar a página */
+  #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 75px;
+  }
+}
