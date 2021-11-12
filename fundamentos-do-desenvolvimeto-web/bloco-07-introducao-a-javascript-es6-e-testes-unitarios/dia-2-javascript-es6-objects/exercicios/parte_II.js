@@ -20,13 +20,16 @@ const lesson3 = {
 
 const adicionaTurno = (lesson, key, value) => lesson[key] = value;
 
+adicionaTurno(lesson2, 'turno', 'noite');
+
 const listarKeys = (object) => Object.keys(object);
 
 const objectLenght = (object) => Object.keys(object).length;
 
 const listValues = (object) => Object.values(object);
 
-console.log(listValues(lesson2));
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 
-adicionaTurno(lesson2, 'turno', 'noite');
+console.log(allLessons);
+
 
