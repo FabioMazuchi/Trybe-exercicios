@@ -30,6 +30,15 @@ const listValues = (object) => Object.values(object);
 
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 
-console.log(allLessons);
+const totalEstudantes = (object) => {
+	const arrayObj = Object.entries(object);
+	let soma = 0;
+	for(let i = 0; i < arrayObj.length; i += 1){
+		soma += arrayObj[i][1].numeroEstudantes;
+	}
+	return soma;
+}
+
+console.log(totalEstudantes(allLessons));
 
 
