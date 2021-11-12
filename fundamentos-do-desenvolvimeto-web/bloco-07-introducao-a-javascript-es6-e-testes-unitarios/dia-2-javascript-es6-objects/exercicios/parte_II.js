@@ -44,6 +44,15 @@ const getValue = (object, pos) => {
 	return keys[pos][1];
 } 
 
-getValue(lesson1, 0);
+const verifyPar = (object, key, value) => {
+	const obj = Object.entries(object);
+	for(let i = 0; i < obj.length; i += 1){
+		if(obj[i][0] === key && obj[i][1] === value){
+			return true;
+		}else {
+			return false;
+		}
+	}
+}
 
-
+console.log(verifyPar(lesson3, 'turno', 'Matemática'));
