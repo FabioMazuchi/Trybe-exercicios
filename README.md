@@ -57,3 +57,5 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 #### Bloco 7: Introdução à JavaScript ES6 e testes unitários
 
 - 1-1: JavaScript ES6 - let, const, arrow functions e template literals
+- 1-2: JavaScript ES6 - Object
+- 1-3: Primeiros passos em Jest
