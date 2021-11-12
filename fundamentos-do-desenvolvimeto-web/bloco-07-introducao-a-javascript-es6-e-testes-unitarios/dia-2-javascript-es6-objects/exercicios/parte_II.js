@@ -22,7 +22,9 @@ const adicionaTurno = (lesson, key, value) => lesson[key] = value;
 
 const listarKeys = (object) => Object.keys(object);
 
-console.log(listarKeys(lesson3));
+const objectLenght = (object) => Object.keys(object).length;
+
+console.log(objectLenght(lesson3));
 
 adicionaTurno(lesson2, 'turno', 'noite');
 
