@@ -42,18 +42,19 @@ const customerInfo = (order) => {
   const number = order.address.number;
   const apartment = order.address.apartment;
 
-  console.log(`Olá ${deliveryPerson}, entrega para: ${name}, Telefone: ${phoneNumber}, ${street}, Nº: ${number}, AP: ${apartment}.`);
+  return `Olá ${deliveryPerson}, entrega para: ${name}, Telefone: ${phoneNumber}, ${street}, Nº: ${number}, AP: ${apartment}.`;
 }
 
 customerInfo(order);
 
-// const orderModifier = (order) => {
-//   const newOrder = Object.assign({}, order);
-// 	newOrder.name = 'Luiz Silva';
-// 	newOrder.payment = 50;
-	
-// 	console.log(`Olá ${newOrder.name}, o total do seu pedido de ${newOrder.order.pizza.marguerita.price}`);
+const orderModifier = (order) => {
+  const newOrder = Object.assign({}, order);
+	const name = newOrder.name = 'Luiz Silva';
+	const payment = newOrder.payment = 50;
+  const pizzas = Object.keys(order.order.pizza);
+  const drink = order.order.drinks.coke.type;
 
-// }
+	return `Olá ${name}, o total do seu pedido de ${pizzas[0]}, ${pizzas[1]} e ${drink} é R$ ${payment},00.`;
+}
 
-// orderModifier(order);
+orderModifier(order);
