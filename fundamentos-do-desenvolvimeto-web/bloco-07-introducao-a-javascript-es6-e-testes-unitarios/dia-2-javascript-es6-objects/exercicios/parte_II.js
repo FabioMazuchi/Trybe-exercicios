@@ -39,6 +39,11 @@ const totalEstudantes = (object) => {
 	return soma;
 }
 
-console.log(totalEstudantes(allLessons));
+const getValue = (object, pos) => {
+	const keys = Object.entries(object);
+	return keys[pos][1];
+} 
+
+getValue(lesson1, 0);
 
 
