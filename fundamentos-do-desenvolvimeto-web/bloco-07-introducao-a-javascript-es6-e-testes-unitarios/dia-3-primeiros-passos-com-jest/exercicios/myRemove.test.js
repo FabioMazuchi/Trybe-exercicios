@@ -10,5 +10,4 @@ describe('Testes da funçao myRemove', () => {
 	it('Verifica se ao passar como parâmetro os valores ([1, 2, 3, 4], 5) retorna [1, 2, 3, 4]', () => {
 		expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
 	});
-
 })
