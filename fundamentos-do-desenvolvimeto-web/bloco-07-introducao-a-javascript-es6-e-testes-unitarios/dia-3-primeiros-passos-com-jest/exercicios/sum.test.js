@@ -1,7 +1,6 @@
-const { expect } = require("@jest/globals");
 const sum = require("./sum");
 
-describe("Teste da função sum", () => {
+describe("Testes da função sum", () => {
   it("Verifica se (4, 5) retorna 9", () => {
     expect(sum(4, 5)).toBe(9);
   });
