@@ -1,4 +1,4 @@
-const myFizzBuzz = require("./myFizzBuzz");
+const myFizzBuzz = require("../js/myFizzBuzz");
 
 describe("Testes relativos a função myFizzBuzz", () => {
 	it('Verifica se ao passar como parâmetros o valor 15 retorne fizzbuzz', () => {

@@ -1,4 +1,4 @@
-const decode = require("./decode");
+const decode = require("../js/decode");
 
 describe("Testes relativos a função decode", () => {
   it("Verifica se decode é uma função", () => {

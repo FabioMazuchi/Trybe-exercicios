@@ -1,4 +1,4 @@
-const myRemove = require('./myRemove');
+const myRemove = require('../js/myRemove');
 
 describe('Testes da funçao myRemove', () => {
 	it('Verifica se ao passar como parâmetro os valores ([1, 2, 3, 4], 3) retorna [1, 2, 4]', () => {
