@@ -40,6 +40,12 @@ const professionalBoard = [
 
 // Pesquisa
 const searchEmployee = (id, detail) => {
+	if(id === '' || detail === ''){
+		throw Error('Valores que não sejam strings não são permitidos')
+	}	
+	if(!isNaN(id) || isNaN(detail)){
+		throw Error('Valores que não sejam strings não são permitidos')
+	}
 	const obj = Object.entries(professionalBoard);
 	for (let i = 0; i < obj.length; i++) {
 		if(obj[i][1].id === id){
