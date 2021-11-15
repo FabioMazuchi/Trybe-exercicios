@@ -1,3 +1,3 @@
 ## Exercício - Trybe Tech Gallery
 
-![projeto lesson learned](images/tech-gallery.png)
+![Tech Gallery](images/tech-galery.png)
