@@ -2,7 +2,6 @@
 
 ### Neste dia aprendi:
 
-* Utilizar corretamente **let** e **const**
-* Simplificar o código com **arrow functions**
-* Simplificar a construção de strings com **template literals**
-* Criar expressões condicionais simplificadas com **ternary operator**
+* Utilizar funções de diferentes formas
+* Reutilizar lógicas de códigos
+* Aplicar o conceito **Higher Order Functions**
