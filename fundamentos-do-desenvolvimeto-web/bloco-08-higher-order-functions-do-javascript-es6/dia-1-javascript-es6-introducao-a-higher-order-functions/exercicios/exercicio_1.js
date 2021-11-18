@@ -8,7 +8,7 @@ const newEmployes = (func) => {
 };
 
 const pessoa = (nomeCompleto) => {
-	const nome = nomeCompleto.split(' ').join('').toLowerCase();
+	const nome = nomeCompleto.split(' ').join('_').toLowerCase();
 	return { nome: nomeCompleto, email: `${nome}@trybe.com`};
 };
 
