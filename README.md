@@ -56,11 +56,12 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 
 #### Bloco 7: Introdução à JavaScript ES6 e testes unitários
 
-- 1.1: JavaScript ES6 - let, const, arrow functions e template literals
-- 1.2: JavaScript ES6 - Object
-- 1.3: Primeiros passos em Jest
-- 1.4: Projeto - JavaScript Testes Unitários
+- 7.1: JavaScript ES6 - let, const, arrow functions e template literals
+- 7.2: JavaScript ES6 - Object
+- 7.3: Primeiros passos em Jest
+- 7.4: Projeto - JavaScript Testes Unitários
 
 #### Bloco 8: Higher Order Functions do JavaScript ES6
 
-- 1.1: JavaScript ES6 - introdução a Higher Order Functions
+- 8.1: JavaScript ES6 - introdução a Higher Order Functions
+- 8.2: JavaScript ES6 - introdução a Higher Order Functions - forEach, find, some, every, sort
