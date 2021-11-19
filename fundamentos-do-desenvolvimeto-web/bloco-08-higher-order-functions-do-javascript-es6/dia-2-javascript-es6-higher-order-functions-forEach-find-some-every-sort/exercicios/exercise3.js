@@ -61,4 +61,5 @@ const books = [
   },
 ];
 
-const authorBornIn1947 = () => books.find(elemento => elemento.author.birthYear === 1947).author.name;
+const getNamedBook = () => books.find((book) => book.name.length === 26);
+console.log(getNamedBook());
