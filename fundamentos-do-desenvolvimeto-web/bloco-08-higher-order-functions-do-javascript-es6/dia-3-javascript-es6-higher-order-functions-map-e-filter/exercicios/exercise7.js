@@ -61,5 +61,11 @@ const books = [
   },
 ];
 
-const oldBooks = () =>
-  books.filter((book) => 2021 - book.releaseYear > 60).map((book) => book.name);
+const authorWith3DotsOnName = () =>
+  books.find(
+    (book) =>
+      book.author.name.split(" ").filter((palavra) => palavra.endsWith("."))
+        .length === 3
+  ).name;
+
+console.log(authorWith3DotsOnName());
