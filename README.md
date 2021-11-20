@@ -65,3 +65,4 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 
 - 8.1: JavaScript ES6 - introdução a Higher Order Functions
 - 8.2: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+- 8.3: JavaScript ES6 - Higher Order Functions - map e filter
