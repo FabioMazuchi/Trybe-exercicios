@@ -61,6 +61,7 @@ const books = [
   },
 ];
 
-const oldBooks = () => books.filter ((book) => (2021 - book.releaseYear) > 60).map((book) => book.name);
+const fantasyOrScienceFictionAuthors = () =>
+	books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia').map((book) => book.author.name).sort();
 
-console.log(oldBooks());
+console.log(fantasyOrScienceFictionAuthors());	
