@@ -9,4 +9,3 @@ function flatten() {
 }
 
 console.log(flatten());
-
