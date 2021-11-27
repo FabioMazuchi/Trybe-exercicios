@@ -68,3 +68,4 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 8.3: JavaScript ES6 - Higher Order Functions - map e filter
 - 8.4: JavaScript ES6 - Higher Order Functions - reduce
 - 8.5: JavaScript ES6 - spread operator, parâmetro rest, object destructuring, array destructuring, default destructuring, object property shorthand e default parameters
+- 8.6: Projeto - Zoo functions
