@@ -10,5 +10,4 @@
 * 06 - Html e CSS: Form, Flexbox e Responsivo
 * 07 - Introdução à JavaScript ES6 e Testes Unitários
 * 08 - Higher Order Functions do Javascript ES6
-* 09 - JavaScript Assìncrono e Promises
-* 10 - Testes automatizados com Jest 
+* 09 - JavaScript Assíncrono e Promises
