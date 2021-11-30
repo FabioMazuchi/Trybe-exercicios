@@ -69,3 +69,10 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 8.4: JavaScript ES6 - Higher Order Functions - reduce
 - 8.5: JavaScript ES6 - spread operator, parâmetro rest, object destructuring, array destructuring, default destructuring, object property shorthand e default parameters
 - 8.6: Projeto - Zoo functions
+
+#### Bloco 9: javaScript e Testes Assíncronos
+
+- 9.1: JavaScript Assíncrono e Callbacks
+- 9.2: JavaScript Assíncrono - Fetch API e async/await
+- 9.3: Jest: Testes Assíncronos
+- 9.4: Projeto - Carrinho de Compras
