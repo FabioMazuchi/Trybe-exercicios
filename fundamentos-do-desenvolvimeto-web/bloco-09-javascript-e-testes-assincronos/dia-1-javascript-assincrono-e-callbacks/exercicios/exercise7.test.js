@@ -4,8 +4,6 @@ const uppercase = (str, callback) => {
   }, 500);
 };
 
-// console.log(uppercase('fabio'));
-
 it('uppercase  "test" to equal "TEST"', (done) => {
   uppercase("test", (str) => {
     try {
