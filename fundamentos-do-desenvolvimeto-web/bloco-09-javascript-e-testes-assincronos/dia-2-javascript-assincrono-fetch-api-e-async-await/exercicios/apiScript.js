@@ -6,7 +6,7 @@ const fetchJoke = () => {
     headers: { Accept: "application/json" },
   };
 
-  const res = fetch(API_URL, myOject)
+  fetch(API_URL, myOject)
     .then((response) => response.json())
     .then((data) => {
       const h2 = document.querySelector("#jokeContainer");
