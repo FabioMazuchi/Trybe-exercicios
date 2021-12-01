@@ -4,25 +4,28 @@ const fetchCrypto = async () => {
     .then((data) => data.data)
     .catch((erro) => console.log(`Erro ao acessa API: ${erro}`));
 
-	return crypto;	
+  return crypto;
 };
 
 const setCrypto = async () => {
   const cryptos = await fetchCrypto();
 
-	console.log(crypto);
+  console.log(crypto);
 
-	const listCoins = document.getElementById('crypto');
+  const listCoins = document.getElementById("crypto");
 
-	cryptos.filter((crypto) => Number(crypto.rank <= 10))
-	.forEach(crypto => {
-		const li = document.createElement('li');
-		const priceUsd = Number(crypto.priceUsd);
-		
-		li.innerText = `${crypto.name} (${crypto.symbol}): ${priceUsd.toFixed(2)}`;
+  cryptos
+    .filter((crypto) => Number(crypto.rank <= 10))
+    .forEach((crypto) => {
+      const li = document.createElement("li");
+      const priceUsd = Number(crypto.priceUsd);
 
-		listCoins.appendChild(li);
-	});
+      li.innerText = `${crypto.name} (${crypto.symbol}): ${priceUsd.toFixed(
+        2
+      )}`;
+
+      listCoins.appendChild(li);
+    });
 };
 
 window.onload = setCrypto;
