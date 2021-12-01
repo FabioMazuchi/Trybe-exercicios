@@ -8,11 +8,14 @@ const fetchCrypto = async () => {
 };
 
 const setCrypto = async () => {
-  const crypto = await fetchCrypto();
+  const cryptos = await fetchCrypto();
+
+	console.log(crypto);
 
 	const listCoins = document.getElementById('crypto');
 
-	crypto.forEach(crypto => {
+	cryptos.filter((crypto) => Number(crypto.rank <= 10))
+	.forEach(crypto => {
 		const li = document.createElement('li');
 		const priceUsd = Number(crypto.priceUsd);
 		
