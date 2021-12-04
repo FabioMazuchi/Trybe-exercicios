@@ -14,9 +14,21 @@ it('verifica se no resultado da busca contêm a string "sd-01-week4-5-project-to
   const esperado2 = ['sd-01-week4-5-project-todo-list'];
   
   expect(resultado).toEqual(
-    expect.arrayContaining(esperado1)
+    expect.arrayContaining(esperado1),
   );
   expect(resultado).toEqual(
     expect.arrayContaining(esperado2)
   );
 });
+
+// beforeEach(() => console.log('1 - beforeEach'));
+// afterEach(() => console.log('1 - afterEach'));
+
+// test('', () => console.log('1 - test'));
+
+// describe('Scoped / Nested block', () => {
+//   beforeEach(() => console.log('2 - beforeEach'));
+//   afterEach(() => console.log('2 - afterEach'));
+
+//   test('', () => console.log('2 - test'));
+// });
