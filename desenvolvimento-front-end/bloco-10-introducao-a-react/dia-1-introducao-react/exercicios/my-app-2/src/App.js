@@ -7,7 +7,7 @@ import Footer from './Footer';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className='pai'>
         <Header />
         <Content />
         <Footer />
