@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pai {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.content div {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.content span {
+  color: rgb(220, 55, 43);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.content div:nth-of-type(1) span {
+  color: rgb(41, 162, 41);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.content div:nth-of-type(2) span {
+  color: rgb(238, 242, 31);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.header {
+  background-color: rgb(80, 74, 74);
+  padding: 12px 0;
+  text-align: center;
+  color: white;
+}
+
+.footer {
+  background-color: rgb(22, 25, 26);
+  color: rgb(238, 107, 107);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
