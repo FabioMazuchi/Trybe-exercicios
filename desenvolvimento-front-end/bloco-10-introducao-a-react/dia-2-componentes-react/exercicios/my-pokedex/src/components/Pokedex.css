@@ -6,11 +6,11 @@
 section {
     display: flex;
     justify-content: center;
-    border: 1px solid rgb(235, 53, 53);
+    border: 2px solid rgb(235, 53, 53);
     width: 18%;
     margin: 5px;
     padding: 18px 8px;
-    background-color: rgba(235, 87, 54, 0.6);
+    background-color: rgba(235, 87, 54, 0.8);
 }
 
 section div {

@@ -8,7 +8,7 @@ function App() {
     <div>
       <h1>Pokedex</h1>
       <div className="App">
-        {pokemons.map((pokemon) => <Pokedex pokemon={pokemon} />)}
+        {pokemons.map((pokemon) => <Pokedex key={pokemon.id} pokemon={pokemon} />)}
       </div>
     </div>
   );
