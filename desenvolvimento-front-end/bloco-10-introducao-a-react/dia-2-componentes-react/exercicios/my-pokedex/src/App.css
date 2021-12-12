@@ -1,0 +1,12 @@
+h1 {
+  margin: 10px 0 25px;
+  text-align: center;
+  font-size: 45px;
+  color: rgb(220, 70, 70);
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
