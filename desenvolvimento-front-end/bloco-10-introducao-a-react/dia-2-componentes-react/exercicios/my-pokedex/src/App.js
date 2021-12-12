@@ -1,3 +1,4 @@
+import './Index.css';
 import './App.css';
 import Pokedex from './components/Pokedex';
 import pokemons from './data';

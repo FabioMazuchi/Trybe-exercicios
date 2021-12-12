@@ -15,7 +15,9 @@ class Pokedex extends React.Component {
             {pokemon.averageWeight.measurementUnit}
           </p>
         </div>
-        <img src={pokemon.image} alt={pokemon.moreInfo} />
+        <a href={pokemon.moreInfo}>
+          <img src={pokemon.image} alt={pokemon.name} />
+        </a>
       </section>
     );
   }
