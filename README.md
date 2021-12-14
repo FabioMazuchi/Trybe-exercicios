@@ -23,6 +23,7 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 3.2: Primeiros passos com CSS
 - 3.3: Seletores e posicionamento
 - 3.4: HTML Semântico
+- 3.5: Projeto - Lesson Learned :rocket: 
 
 #### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
@@ -30,7 +31,7 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 4.2: Array e loop For
 - 4.3: Lógica de Programação e Algoritmos
 - 4.4: Objetos e Funções
-- 4.5: Projeto - Playground Functions
+- 4.5: Projeto - Playground Functions :rocket:
 
 #### Bloco 5: JavaScript - DOM, Eventos e Web Storage
 
@@ -40,7 +41,7 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 5.4: Web Storage
 - 5.5: Projeto - Pixel Art
 - 5.6: Projeto - Lista de Tarefas
-- 5.7: Projetos Bônus
+- 5.7: Projetos Bônus :rocket:
   * Meme Generator
   * Adivinhe a Cor
   * Carta Misteriosa
@@ -52,14 +53,14 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 6.3: CSS Flexbox Parte I
 - 6.4: CSS Flexbox Parte II
 - 6.5: CSS Responsivo - Mobile First
-- 6.6: Projeto Trybewarts
+- 6.6: Projeto Trybewarts :rocket:
 
 #### Bloco 7: Introdução à JavaScript ES6 e testes unitários
 
 - 7.1: JavaScript ES6 - let, const, arrow functions e template literals
 - 7.2: JavaScript ES6 - Object
 - 7.3: Primeiros passos em Jest
-- 7.4: Projeto - JavaScript Testes Unitários
+- 7.4: Projeto - JavaScript Testes Unitários :rocket:
 
 #### Bloco 8: Higher Order Functions do JavaScript ES6
 
@@ -68,14 +69,14 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 8.3: JavaScript ES6 - Higher Order Functions - map e filter
 - 8.4: JavaScript ES6 - Higher Order Functions - reduce
 - 8.5: JavaScript ES6 - spread operator, parâmetro rest, object destructuring, array destructuring, default destructuring, object property shorthand e default parameters
-- 8.6: Projeto - Zoo functions
+- 8.6: Projeto - Zoo functions :rocket:
 
 #### Bloco 9: JavaScript e Testes Assíncronos
 
 - 9.1: JavaScript Assíncrono e Callbacks
 - 9.2: JavaScript Assíncrono - Fetch API e async/await
 - 9.3: Jest: Testes Assíncronos
-- 9.4: Projeto - Carrinho de Compras
+- 9.4: Projeto - Carrinho de Compras :rocket:
 
 ## Desenvolvimento Front-end
 
