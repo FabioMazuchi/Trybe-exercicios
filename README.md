@@ -23,7 +23,7 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 3.2: Primeiros passos com CSS
 - 3.3: Seletores e posicionamento
 - 3.4: HTML Semântico
-- 3.5: Projeto - Lesson Learned :rocket: 
+- [3.5: Projeto - Lessons Learned :rocket:](https://fabiomazuchi.github.io/projetos/lessons-learned/index.html)  
 
 #### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
@@ -31,7 +31,7 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 4.2: Array e loop For
 - 4.3: Lógica de Programação e Algoritmos
 - 4.4: Objetos e Funções
-- 4.5: Projeto - Playground Functions :rocket:
+- [4.5: Projeto - Playground Functions :rocket:](https://github.com/FabioMazuchi/trybe-exercicios/tree/master/fundamentos-do-desenvolvimeto-web/bloco-04-introducao-a-javascript-e-logica-de-programacao/dia-5-projeto-playground-functions)
 
 #### Bloco 5: JavaScript - DOM, Eventos e Web Storage
 
