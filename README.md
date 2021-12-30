@@ -40,11 +40,11 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 5.3: Eventos
 - 5.4: Web Storage
 - 5.5: Projeto - Pixel Art
-- 5.6: Projeto - Lista de Tarefas
+- [5.6: Projeto - Lista de Tarefas :rocket:](https://fabiomazuchi.github.io/projetos/todo-list/index.html)
 - 5.7: Projetos Bônus :rocket:
-  * Meme Generator
-  * Adivinhe a Cor
-  * Carta Misteriosa
+  * [Meme Generator](https://fabiomazuchi.github.io/projetos/meme-generator/index.html)  
+  * [Color Guess](https://fabiomazuchi.github.io/projetos/color-guess/index.html) 
+  * [Mistery Letter](https://fabiomazuchi.github.io/projetos/mistery-letter/index.html)
 
 #### Bloco 6: HTML e CSS - Forms, Flexbox e Responsivo
 
@@ -53,14 +53,14 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 6.3: CSS Flexbox Parte I
 - 6.4: CSS Flexbox Parte II
 - 6.5: CSS Responsivo - Mobile First
-- 6.6: Projeto Trybewarts :rocket:
+- [6.6: Projeto Trybewarts :rocket:](https://fabiomazuchi.github.io/projetos/trybewarts/index.html)
 
 #### Bloco 7: Introdução à JavaScript ES6 e testes unitários
 
 - 7.1: JavaScript ES6 - let, const, arrow functions e template literals
 - 7.2: JavaScript ES6 - Object
 - 7.3: Primeiros passos em Jest
-- 7.4: Projeto - JavaScript Testes Unitários :rocket:
+- [7.4: Projeto - JavaScript Testes Unitários :rocket:](https://github.com/FabioMazuchi/trybe-exercicios/tree/master/fundamentos-do-desenvolvimeto-web/bloco-07-introducao-a-javascript-es6-e-testes-unitarios/dia-4-projeto-javascript-testes-unitarios/exercicios)
 
 #### Bloco 8: Higher Order Functions do JavaScript ES6
 
@@ -69,14 +69,14 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 8.3: JavaScript ES6 - Higher Order Functions - map e filter
 - 8.4: JavaScript ES6 - Higher Order Functions - reduce
 - 8.5: JavaScript ES6 - spread operator, parâmetro rest, object destructuring, array destructuring, default destructuring, object property shorthand e default parameters
-- 8.6: Projeto - Zoo functions :rocket:
+- [8.6: Projeto - Zoo functions :rocket:](https://github.com/FabioMazuchi/trybe-exercicios/tree/master/fundamentos-do-desenvolvimeto-web/bloco-08-higher-order-functions-do-javascript-es6/dia-6-projeto-zoo-functions)
 
 #### Bloco 9: JavaScript e Testes Assíncronos
 
 - 9.1: JavaScript Assíncrono e Callbacks
 - 9.2: JavaScript Assíncrono - Fetch API e async/await
 - 9.3: Jest: Testes Assíncronos
-- 9.4: Projeto - Carrinho de Compras :rocket:
+- [9.4: Projeto - Carrinho de Compras :rocket:](https://fabiomazuchi.github.io/projetos/shopping-cart/index.html)
 
 ## Desenvolvimento Front-end
 
