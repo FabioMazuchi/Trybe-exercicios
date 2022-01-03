@@ -84,4 +84,4 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 
 - 10.1: 'Hello, world!' no React!
 - 10.2: Componentes React
-- 10.3: Projeto - Sistema Solar 🪐
+- [10.3: Projeto - Sistema Solar 🪐](https://github.com/FabioMazuchi/trybe-exercicios/tree/master/desenvolvimento-front-end/bloco-10-introducao-a-react/dia-3-projeto-solar-system)
