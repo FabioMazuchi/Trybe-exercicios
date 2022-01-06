@@ -1,3 +1,3 @@
 ## Pokedex
 
-![pokedex](pokedex/images/pokedex_dinamica.png)
+![pokedex-dinamica](pokedex/images/pokedex_dinamica.png)
