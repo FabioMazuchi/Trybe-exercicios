@@ -12,7 +12,7 @@ const states = [
 
 class DadosPessoais extends Component {
   render() {
-    const { handleUpdateState } = this.props;
+    const { changeHandler } = this.props;
 
     return (
       <fieldset>
@@ -24,7 +24,7 @@ class DadosPessoais extends Component {
             required
             type="text"
             name="nome"
-            onChange={handleUpdateState}
+            onChange={changeHandler}
           />
         </div>
         <div className="container">
@@ -34,17 +34,17 @@ class DadosPessoais extends Component {
             type="text"
             name="email"
             required
-            onChange={handleUpdateState}
+            onChange={changeHandler}
           />
         </div>
-        <div className="contaiiner">
+        <div className="container">
           CPF:
           <input
             maxLength="11"
             type="text"
             name="cpf"
             required
-            onChange={handleUpdateState}
+            onChange={changeHandler}
           />
         </div>
         <div className="container">
@@ -54,7 +54,7 @@ class DadosPessoais extends Component {
             type="text"
             name="endereco"
             required
-            onChange={handleUpdateState}
+            onChange={changeHandler}
           />
         </div>
         <div className="container">
@@ -64,7 +64,7 @@ class DadosPessoais extends Component {
             type="text"
             name="cidade"
             required
-            onChange={handleUpdateState}
+            onChange={changeHandler}
           />
         </div>
         <div className="container">
@@ -73,7 +73,7 @@ class DadosPessoais extends Component {
             required
             defaultValue=""
             name="estado"
-            onChange={handleUpdateState}
+            onChange={changeHandler}
           >
             <option value="">Selecione</option>
             {states.map((state, i) => (
@@ -82,11 +82,11 @@ class DadosPessoais extends Component {
           </select>
         </div>
         <div className="container">
-          <label htmlFor="casa" onChange={handleUpdateState}>
+          <label htmlFor="casa" onChange={changeHandler}>
             <input type="radio" id="casa" name="moradia" value="casa" />
             Casa
           </label>
-          <label htmlFor="apartamento" onChange={handleUpdateState}>
+          <label htmlFor="apartamento" onChange={changeHandler}>
             <input
               type="radio"
               id="apartamento"

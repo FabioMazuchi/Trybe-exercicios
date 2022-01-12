@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class DadosProfissionais extends Component {
   render() {
-    const { handleUpdateState } = this.props;
+    const { changeHandler } = this.props;
 
     return (
       <fieldset>
@@ -13,7 +13,7 @@ class DadosProfissionais extends Component {
             name="resumo"
             maxLength="1000"
             required
-            onChange={handleUpdateState}
+            onChange={changeHandler}
           />
         </div>
         <div className="container">
@@ -23,7 +23,7 @@ class DadosProfissionais extends Component {
             name="cargo"
             maxLength="40"
             required
-            onChange={handleUpdateState}
+            onChange={changeHandler}
           />
         </div>
         <div className="container">
@@ -32,7 +32,7 @@ class DadosProfissionais extends Component {
             name="descricaoCargo"
             maxLength="500"
             required
-            onChange={handleUpdateState}
+            onChange={changeHandler}
           />
         </div>
       </fieldset>
