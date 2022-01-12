@@ -1,3 +1,3 @@
 ## Formulário
 
-![Formulario](images/myForm_React.png)
+![Formulario](images/myForm.png)
