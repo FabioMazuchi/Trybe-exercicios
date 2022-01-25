@@ -5,6 +5,7 @@ class MyDogs extends Component {
     super();
     this.state = {
       data: "",
+      raca: '',
     };
     this.fetchDog = this.fetchDog.bind(this);
   }
@@ -24,7 +25,7 @@ class MyDogs extends Component {
     const { data } = this.state;
     localStorage.setItem('dogURL', data.message);
     const raca = data.message.split('/')[4];
-    alert(raca);
+    alert(raca)
   }
 
   fetchDog() {
@@ -35,7 +36,7 @@ class MyDogs extends Component {
 
   render() {
     const { data } = this.state;
-
+   console.log(this.componentDidUpdate);
     return (
       <div>
         {data === '' ? (
