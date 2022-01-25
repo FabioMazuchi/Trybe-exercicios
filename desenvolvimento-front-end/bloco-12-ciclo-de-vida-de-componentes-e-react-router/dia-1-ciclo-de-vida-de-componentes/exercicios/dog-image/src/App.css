@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  justify-content: space-between;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border:  3px solid rgb(232, 111, 18);
+}
+
+button {
+  padding: 6px;
+  background-color: chocolate;
+  cursor: pointer;
+  color: white;
+}
