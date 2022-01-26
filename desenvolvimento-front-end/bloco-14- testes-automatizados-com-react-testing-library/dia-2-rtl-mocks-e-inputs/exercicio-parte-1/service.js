@@ -1,4 +1,6 @@
-const numeroAleatorio = () => Math.floor(Math.random() * 100);
+function numeroAleatorio() {
+   return Math.floor(Math.random() * 100);
+}
 
 console.log(numeroAleatorio());
 

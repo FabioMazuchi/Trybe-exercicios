@@ -1,20 +1,18 @@
-const {numeroAleatorio} = require('./service');
+const service = require('./service');
 
 describe('Teste referentes a função "numeroAleatorio"', () => {
-    it('teste se a função foi chamada', () => {
-        const numeroAleatorio = jest.fn();
-        numeroAleatorio();
-        expect(numeroAleatorio).toHaveBeenCalled();
+    it('testando se a função foi chamada, qual seu retorno e quantas vezes foi chamada', () => {
+        service.numeroAleatorio = jest.fn().mockReturnValue(8)
+        
+        expect(service.numeroAleatorio()).toBe(8);
+        expect(service.numeroAleatorio).toHaveBeenCalled();
+        expect(service.numeroAleatorio).toHaveBeenCalledTimes(1);
     });
-    it('test se a função retorna 9', () => {
-        const numeroAleatorio = jest.fn().mockReturnValue(9);
-        expect(numeroAleatorio()).toBe(9);
-    });
-    it('teste se afunção foi chamada 3 vezes', () => {
-        const numeroAleatorio = jest.fn();
-        numeroAleatorio();
-        numeroAleatorio();
-        numeroAleatorio();
-        expect(numeroAleatorio).toHaveBeenCalledTimes(3);
+    
+    it('teste se afunção foi chamada e se a nova implementação foi aplicada', () => {
+        service.numeroAleatorio = jest.fn().mockImplementationOnce((a, b) => a / b);
+        expect(service.numeroAleatorio(4, 2)).toBe(2);
+        expect(service.numeroAleatorio).toHaveBeenCalled();
+        expect(service.numeroAleatorio).toHaveBeenCalledTimes(1);
     })
 })
