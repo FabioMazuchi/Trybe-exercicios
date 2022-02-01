@@ -53,7 +53,7 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 6.3: CSS Flexbox Parte I
 - 6.4: CSS Flexbox Parte II
 - 6.5: CSS Responsivo - Mobile First
-- [6.6: Projeto Trybewarts 📝 ](https://fabiomazuchi.github.io/projetos/trybewarts/index.html)
+- [6.6: Projeto Trybewarts 📝 ](https://fabiomazuchi.github.io/projetos/trybewarts/index.html) (dupla)
 
 #### Bloco 7: Introdução à JavaScript ES6 e testes unitários
 
@@ -85,3 +85,31 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 10.1: 'Hello, world!' no React!
 - 10.2: Componentes React
 - [10.3: Projeto - Sistema Solar 🪐](https://fabiomazuchi.github.io/solar-system/)
+
+#### Bloco 11: Componentes com Estado, Eventos e Formulários com React
+
+- 11.1: Componentes com estado e eventos
+- 11.2: Formulários no React
+- 11.3: Projeto - Tryunfo 🚀
+
+#### Bloco 12: Ciclo de Vida de Componentes e React Router
+
+- 12.1: Ciclo de vida de componentes
+- 12.2: React Router
+- [12.3: Projeto - Trybetunes 🎵](https://fabiomazuchi.github.io/trybetunes/)
+
+#### Bloco 13: Metodologias Ágeis
+
+- 13.1: Metodologias Ágeis
+- 13.2: Projeto - Frontend Online Store 🛒 (grupo)
+
+#### Bloco 14: Testes automatizados com React Testing Library
+
+- 14.1: RTL - Primeiros passos
+- 14.2: RTL - Mocks e Inputs
+- 14.3: RTL - Testando React Router
+- 14.4: Projeto - Testes em React 🧪
+
+#### Bloco 15: Gerenciamento de estado com Redux
+
+15.1: Introdução ao Redux - O estado global da aplicação
