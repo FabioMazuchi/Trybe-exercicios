@@ -16,6 +16,12 @@ const reducer = (state = ESTADO_INICIAL, action) => {
         ...state,
         index: state.index === 0 ? state.colors.length - 1 : state.index - 1,
       };
+    case "RANDOM_COLOR":
+      return {
+        ...state,
+        colors: [...state.colors, criarCor()],
+        index: state.colors.length,
+      }  
     default:
       return state;
   }
@@ -31,6 +37,10 @@ btnPrev.addEventListener("click", () =>
   store.dispatch({ type: "PREVIOUS_COLOR" })
 );
 
+const btnRandom = document.getElementById('random');
+btnRandom.addEventListener('click', () => store.dispatch({ type: "RANDOM_COLOR" }))
+console.log(btnRandom);
+
 // Precisei consultar o gabarito do course para fazer o subscribe.
 store.subscribe(() => {
   const { colors, index } = store.getState();
@@ -38,3 +48,15 @@ store.subscribe(() => {
   document.getElementById("container").style.backgroundColor = colors[index];
   console.log(colors);
 });
+
+function criarCor() {
+  const oneChar = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+  let cor = '#';
+  const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+  for (let i = 0; i < 6; i += 1) {
+      cor += oneChar[aleatorio()];
+  }
+  return cor;
+}
+
+console.log(criarCor());
