@@ -62,7 +62,7 @@ console.log(store.getState());
 window.onload = () => {
 	setTimeout(() => {
 		store.dispatch(alteraNomeSobrenome1('Fábio', 'Mazuchi'));
-		store.dispatch(alteraNomeSobrenome2('Maria', 'Souza'));
+		store.dispatch(alteraNomeSobrenome2('Rosa', 'Filipina'));
 	}, 3000)
 }
 
