@@ -119,4 +119,13 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 15.5: Testes em React-Redux
 - [15.6: Projeto - Trybewallet 💸](https://fabiomazuchi.github.io/trybewallet/)
 
+#### Bloco 16: Projeto Jogo de Trivia
 
+- [16.1: Projeto - Jogo de Trivia ❔](https://fabiomazuchi.github.io/trivia/)
+  
+#### Bloco 17: Context API e React Hooks
+
+- 17.1: Context API do React
+- 17.2: React Hooks - useState e useContext
+- 17.3: React Hooks - useEffect e Hooks customizados
+- [17.4: Projeto - StarWars Datatable com Context API e Hooks 🪐](https://fabiomazuchi.github.io/star-wars-planets/)
