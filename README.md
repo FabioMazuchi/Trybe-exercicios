@@ -129,3 +129,12 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 17.2: React Hooks - useState e useContext
 - 17.3: React Hooks - useEffect e Hooks customizados
 - [17.4: Projeto - StarWars Datatable com Context API e Hooks 🪐](https://fabiomazuchi.github.io/star-wars-planets/)
+
+## Desenvolvimento Back-end
+
+#### Bloco 19: Docker: Utilizando Containers
+- 19.1: Utilizando Containers - Docker
+- 19.2: Manipulação e Criação de Imagens no Docker
+- 19.3: Orquestrando Containers com Docker Compose
+- 19.4: Projeto - Docker Todo-List
+
