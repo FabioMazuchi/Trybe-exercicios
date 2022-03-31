@@ -10,3 +10,6 @@ SELECT 10 + 15;
 # Exercício 4
 SELECT 2 * 3 + 4 / 2;
 
+# Exercício 5
+USE Scientists;
+SELECT * FROM AssignedTo, Projects, Scientists;
