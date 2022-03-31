@@ -1,1 +1,0 @@
-SELECT 1 AS `n1`, 2 AS `n2`, 3 AS `n3`;
