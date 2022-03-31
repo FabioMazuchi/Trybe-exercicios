@@ -1,0 +1,1 @@
+O tipo de relação é muitos para um, N:1, ou seja, um pais tem muitas cidades.
