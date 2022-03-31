@@ -1,0 +1,1 @@
+A tabela que a coluna country_id faz referência é a tabela country
