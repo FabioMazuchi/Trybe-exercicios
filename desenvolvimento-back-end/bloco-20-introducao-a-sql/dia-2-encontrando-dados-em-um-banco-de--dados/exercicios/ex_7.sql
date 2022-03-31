@@ -1,2 +1,2 @@
 USE Scientists;
-SELECT * FROM Scientists ORDER BY name;
+SELECT name FROM Scientists ORDER BY name;
