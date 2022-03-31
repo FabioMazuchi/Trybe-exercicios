@@ -7,3 +7,6 @@ SELECT 1 AS `n1`, 2 AS `n2`, 3 AS `n3`;
 # Exercício 3
 SELECT 10 + 15;
 
+# Exercício 4
+SELECT 2 * 3 + 4 / 2;
+
