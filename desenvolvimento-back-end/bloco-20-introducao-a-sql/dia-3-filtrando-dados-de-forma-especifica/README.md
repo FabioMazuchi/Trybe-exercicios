@@ -5,5 +5,5 @@
 * Filtrar resultados de consultas com **WHERE**
 * Utilizar operadores booleanos e relacionais em consultas
 * Criar consultas dinâmicas e maleáveis com **LIKE**
-* Fazer consultas que englobam uma faixa de resultados com IN e BETWEEN
+* Fazer consultas que englobam uma faixa de resultados com **IN** e **BETWEEN**
 * Encontrar e separar resultados que incluem datas.
