@@ -144,3 +144,9 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 20.3: Filtrando dados de forma específica
 - 20.4: Manipulando tabelas
 - 20.5: Projeto - All For One
+
+#### Bloco 21: Funções SQL, JOINs e Normalização
+- 21.1: Funções mais usadas no SQL
+- 21.2: Descomplicando JOINs
+- 21.3: Transformando idéias em um modelo de banco de dados
+- 21.4: Aula ao vivo + Projeto - One For All
