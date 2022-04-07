@@ -1,1 +1,2 @@
-select max(SALARY) - min(SALARY) from hr.employees;
+select max(SALARY) - min(SALARY) 
+from hr.employees;
