@@ -1,0 +1,1 @@
+select max(SALARY) from hr.employees;
