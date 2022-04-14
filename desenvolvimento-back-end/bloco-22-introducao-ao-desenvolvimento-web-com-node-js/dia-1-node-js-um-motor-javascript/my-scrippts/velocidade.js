@@ -9,4 +9,4 @@ const calcVelocidade = () => {
 	console.log(`Velocidade média: ${vM} m/s`);
 }
 
-calcVelocidade();
+module.exports = calcVelocidade;

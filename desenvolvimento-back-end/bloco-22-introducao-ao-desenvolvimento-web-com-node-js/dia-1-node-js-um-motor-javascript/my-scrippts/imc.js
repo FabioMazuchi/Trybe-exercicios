@@ -30,4 +30,4 @@ const calculaImc = () => {
 	
 }
 
-calculaImc();
+module.exports = calculaImc;
