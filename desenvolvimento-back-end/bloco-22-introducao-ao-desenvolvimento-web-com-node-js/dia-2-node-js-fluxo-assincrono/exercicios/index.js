@@ -18,6 +18,20 @@ n1 = Math.floor(Math.random() * 100 + 1);
 n2 = Math.floor(Math.random() * 100 + 1);
 n3 = Math.floor(Math.random() * 100 + 1);
 
-calculator(n1, n2, n3)
-  .then((res) => console.log(`Resultado: ${res}`))
-  .catch((e) => console.log(e.message));
+// calculator(n1, n2, n3)
+//   .then((res) => console.log(`Resultado: ${res}`))
+//   .catch((e) => console.log(e.message));
+
+const calcular = async () => {
+	n1 = Math.floor(Math.random() * 100 + 1);
+	n2 = Math.floor(Math.random() * 100 + 1);	
+	n3 = Math.floor(Math.random() * 100 + 1);
+	
+	const res = await calculator(n1, n2, n3);
+
+	console.log(`Resultado: ${res}`);
+}	
+
+calcular();
+
+	
