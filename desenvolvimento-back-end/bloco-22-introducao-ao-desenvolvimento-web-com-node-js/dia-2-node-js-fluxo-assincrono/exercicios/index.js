@@ -14,6 +14,10 @@ const calculator = (n1, n2, n3) => {
   return promisse;
 };
 
-calculator(1, 2, 2)
-  .then((res) => console.log(res))
+n1 = Math.floor(Math.random() * 100 + 1);
+n2 = Math.floor(Math.random() * 100 + 1);
+n3 = Math.floor(Math.random() * 100 + 1);
+
+calculator(n1, n2, n3)
+  .then((res) => console.log(`Resultado: ${res}`))
   .catch((e) => console.log(e.message));
