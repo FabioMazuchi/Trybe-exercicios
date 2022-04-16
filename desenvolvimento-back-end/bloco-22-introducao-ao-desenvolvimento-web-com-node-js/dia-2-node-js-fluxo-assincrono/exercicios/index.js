@@ -4,34 +4,43 @@ const calculator = (n1, n2, n3) => {
       typeof n1 !== "number" ||
       typeof n2 !== "number" ||
       typeof n3 !== "number"
-    ) reject(new Error("Informe apenas números"));
+    ) reject("Informe apenas números");
 
     const res = (n1 + n2) * n3;
 
-		if (res < 50) reject(new Error('Valor muito baixo'))
+		if (res < 50) reject('Valor muito baixo')
     resolve(res);
   });
   return promisse;
 };
 
-n1 = Math.floor(Math.random() * 100 + 1);
-n2 = Math.floor(Math.random() * 100 + 1);
-n3 = Math.floor(Math.random() * 100 + 1);
+// calculator(8, 8, 8)
+//   .then(res => console.log(`Resultado: ${res}`))
+//   .catch(e => console.log(e));
 
-// calculator(n1, n2, n3)
-//   .then((res) => console.log(`Resultado: ${res}`))
-//   .catch((e) => console.log(e.message));
+// calculator(8, '8', 8)
+// .then(res => console.log(`Resultado: ${res}`))
+// .catch(e => console.log(e));  
+
+// calculator(2, 2, 2)
+// .then(res => console.log(`Resultado: ${res}`))
+// .catch(e => console.log(e));  
+
+const generatorRandomNum = () => {
+  return Math.floor(Math.random() * 100 + 1);
+};
 
 const calcular = async () => {
-	n1 = Math.floor(Math.random() * 100 + 1);
-	n2 = Math.floor(Math.random() * 100 + 1);	
-	n3 = Math.floor(Math.random() * 100 + 1);
+  // Não sabia doo Array.from, utilizei este exemplo do gabarito do course, pois reduziu a quantidade de linhas do meu código e ficou mais fácil de ler.
+  numbersRandom = Array.from({ length: 3}).map(generatorRandomNum);
+
+  try {
+    const res = await calculator(...numbersRandom);
+  
+    console.log(`Resultado: ${res}`);
+  } catch (e) {
+    console.error(e);
+  }
+}
 	
-	const res = await calculator(n1, n2, n3);
-
-	console.log(`Resultado: ${res}`);
-}	
-
 calcular();
-
-	
