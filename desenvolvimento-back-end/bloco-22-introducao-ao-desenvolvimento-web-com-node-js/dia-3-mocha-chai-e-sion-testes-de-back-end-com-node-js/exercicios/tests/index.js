@@ -34,4 +34,15 @@ describe('Testa a função "verifyNumbers"', () => {
 			expect(resposta).to.be.eq('neutro');
 		});
 	});
+
+	describe('Quando o parâmetro não for um número', () => {
+		it('retorna uma "string"', () => {
+			const resposta = verifyNumbers('0');
+			expect(resposta).to.be.a('string');
+		});
+		it('retorna "o valor deve ser um número"', () => {
+			const resposta = verifyNumbers('0');
+			expect(resposta).to.be.eq('o valor deve ser um número');
+		});
+	});
 });
