@@ -1,11 +1,24 @@
 const express = require('express');
+const generateToken = require('./generateToken');
 const { getSimpons, setSimpsons } = require('./helpers');
+const validateToken = require('./validateToken');
 
 const app = express();
 app.use(express.json());
+app.use(validateToken);
+
+const validateData = (req, res, next) => {
+	const { email, password, firstName, phone } = req.body;
+	
+	if (!email || !password || !firstName || !phone) return res.status(401).json({ message: 'missing fields' });
+
+	res.status(200).json({ token: generateToken() });
+};
+
+app.post('/signup', validateData, (req, res) => {
+});
 
 app.get('/ping', (req, res) => {
-	console.log('ping');
 	res.json({ message: 'Pong' });
 });
 
