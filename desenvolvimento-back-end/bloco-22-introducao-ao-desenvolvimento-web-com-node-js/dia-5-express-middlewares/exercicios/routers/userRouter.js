@@ -1,6 +1,4 @@
-const authEmail = require('../middlewares/authEmail');
-const authPassword = require('../middlewares/authPassword');
-const authUserName = require('../middlewares/authUserName');
+const { authUserName, authEmail, authPassword } = require('../middlewares/authUser');
 const loginSuccess = require('../middlewares/loginSuccess');
 const userCreated = require('../middlewares/userCreated');
 
