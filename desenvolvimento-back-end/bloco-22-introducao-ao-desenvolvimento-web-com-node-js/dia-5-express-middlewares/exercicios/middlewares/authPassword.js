@@ -1,5 +1,8 @@
 const authPassword = (req, res, next) => {
   const { password } = req.body;
+
+  if (!password) return res.status(400).json({ meessage: "invalid data" }); 
+  
   const stringPass = password.toString();
 
   if (
