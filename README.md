@@ -116,3 +116,9 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 22.3: Mocha, Chai e Sinon - Testes de Back-end com Node.js
 - 22.4: Express - HTTP com Node.js
 - 22.5: Express - Middlewares
+
+#### Bloco 23: Node.js - Camada de Serviço, Arquitetura Rest e Restful
+- 23.1: Arquitetura de Software - Camada de Model
+- 23.2: Arquitetura de Software - Camada de Controller e Service
+- 23.3: Arquitetura Web - Rest e Restful
+- 23.4: Arquitetura de Software - Testando as Camadas
