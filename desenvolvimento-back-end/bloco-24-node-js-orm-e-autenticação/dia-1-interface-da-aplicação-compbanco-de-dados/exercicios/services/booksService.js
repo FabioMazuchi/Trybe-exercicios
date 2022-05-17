@@ -6,6 +6,16 @@ const getAll = async () => {
 	return books;
 };
 
+const getById = async (id) => {
+	const book = await Book.findByPk(id);
+	const erro = { message: 'Book not found'};
+
+	if (book === null) throw erro;
+
+	return book;
+}
+
 module.exports = {
 	getAll,
+	getById,
 };
