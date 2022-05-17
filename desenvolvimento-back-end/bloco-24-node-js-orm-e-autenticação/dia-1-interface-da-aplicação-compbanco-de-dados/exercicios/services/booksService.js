@@ -21,8 +21,16 @@ const create = async (title, author, pageQuantity) => {
 	return newBook;
 };
 
+const update = async (title, author, pageQuantity, id) => {
+	const [updateBook] = await Book.update({ title, author,pageQuantity}, { where: { id } });
+	const erro = { message: 'Book not found!' };
+	
+	if (!updateBook) throw erro;
+};
+
 module.exports = {
 	getAll,
 	getById,
 	create,
+	update,
 };

@@ -37,4 +37,17 @@ router.post('/', async (req, res) => {
 	}
 })
 
+router.put('/:id', async (req, res) => {
+	try {
+		const { id } = req.params;
+		const { title, author, pageQuantity } = req.body;
+		await booksService.update(title, author, pageQuantity, id);
+
+		res.status(200).send('Book updated!');
+	} catch (e) {
+		console.log(e.message);
+		res.status(404).json({ message: e.message });
+	}
+})
+
 module.exports = router;
