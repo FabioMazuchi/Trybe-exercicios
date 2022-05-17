@@ -50,4 +50,16 @@ router.put('/:id', async (req, res) => {
 	}
 })
 
+router.delete('/:id', async (req, res) => {
+	try {
+		const { id } = req.params;
+		await booksService.remove(id);
+
+		res.status(200).send('Book Deleted!');
+	} catch (e) {
+		console.log(e.message);
+		res.status(500).json({ message: e.message });
+	}
+})
+
 module.exports = router;

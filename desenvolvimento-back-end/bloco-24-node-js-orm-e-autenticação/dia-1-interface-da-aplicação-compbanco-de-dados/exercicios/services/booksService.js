@@ -28,9 +28,17 @@ const update = async (title, author, pageQuantity, id) => {
 	if (!updateBook) throw erro;
 };
 
+const remove = async (id) => {
+	const deletedBook = await Book.destroy( { where: { id } });
+	const erro = { message: 'Algo deu errado' };
+	
+	if (!deletedBook) throw erro;
+};
+
 module.exports = {
 	getAll,
 	getById,
 	create,
 	update,
+	remove,
 };
