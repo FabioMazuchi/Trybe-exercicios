@@ -25,4 +25,16 @@ router.get('/:id', async (req, res) => {
 	}
 })
 
+router.post('/', async (req, res) => {
+	try {
+		const { title, author, pageQuantity } = req.body;
+		const newBook = await booksService.create(title, author, pageQuantity);
+
+		res.status(200).send(newBook);
+	} catch (e) {
+		console.log(e.message);
+		res.status(404).json({ message: e.message });
+	}
+})
+
 module.exports = router;
