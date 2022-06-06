@@ -1,3 +1,4 @@
+import exec from './utils';
 const unitsArea = ['km²', 'hm²', 'dam²', 'm²', 'dm²', 'cm²', 'mm²'];
 
 function convertArea(value:number, fromUnit:string, toUnit:string):number {
@@ -8,4 +9,4 @@ function convertArea(value:number, fromUnit:string, toUnit:string):number {
 	return value * Math.pow(100, expoent);
 }
 
-console.log(`50m² equivale a ${convertArea(50, 'm²', 'cm²')}cm²`);
+exec(unitsArea, convertArea);
