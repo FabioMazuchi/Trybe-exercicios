@@ -1,7 +1,7 @@
 type character = {
-	nickname: string;
-	class: string;
-	stats: { agi: number, str: number, int: number, hp: number, mp: number };
+	nickname:string;
+	class:string;
+	stats: { agi:number, str:number, int:number, hp:number, mp:number };
 	createdAt: Date;
 };
 
@@ -26,7 +26,7 @@ const characters: character[] = [
 	},
 ]
 
-function printCharacter(character: character, index: number) {
+function printCharacter(character:character, index:number) {
   const { nickname, class: cls, createdAt } = character;
 
   console.log(`\n\n===== Character: ${index + 1} ========`);
