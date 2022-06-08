@@ -128,3 +128,12 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 24.2: ORM - Associations
 - 24.3: JWT - (JSON Web Token)
 - 24.4: Testando APIs com Testes de Integração
+
+#### Bloco 25: Deployment
+- 25.1: Infraestrutura - Deploy com Heroku
+- 25.2: Deploy Docker e Heroku
+
+#### Bloco 26: Typescript
+- 26.1: Introdução ao TypeScript
+- 26.2: Tipagem Estática e Generics
+- 26.3: Express com TypeScript
