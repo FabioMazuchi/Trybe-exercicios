@@ -2,7 +2,9 @@ import Car from './Car';
 import Colors from './Colors';
 import Doors from './Doors'; 
 import Directions from './Directions';
-import Pizza from './Pizza';
+import SugarPizza from './SuggarPizza';
+import VegetarianPizza from './VegetarianPizza';
+import CommonPizza from './CommonPizza';
 
 const gol = new Car('Volksvagen', Colors.PRATA, 4);
 
@@ -38,12 +40,18 @@ gol.closeTheDoor(Doors.ATRAS_DO_CARONA);
 gol.speedUp();
 
 console.log('\n========= PIZZARIA ============');
-const calabreza: Pizza = { flavor: 'Calabreza', slices: 8 }
-const marguerita: Pizza = { flavor: 'Marguerita', slices: 6 }
-const nutela: Pizza = { flavor: 'Nutela', slices: 4 }
+const calabreza: CommonPizza = { flavor: 'Calabresa', slices: 6 }
+const frango: CommonPizza = { flavor: 'Frango', slices: 8 }
+const pepperoni: CommonPizza = { flavor: 'Pepperoni', slices: 8 }
+const marguerita: VegetarianPizza = { flavor: 'Marguerita', slices: 8 }
+const palmito: VegetarianPizza = { flavor: 'Palmito', slices: 8 }
+const goiabadaQueijo: SugarPizza = { flavor: 'Goiabada com Queijo', slices: 4 }
 
 console.log(calabreza);
+console.log(frango);
+console.log(pepperoni);
 console.log(marguerita);
-console.log(nutela);
+console.log(palmito);
+console.log(goiabadaQueijo);
 
 
