@@ -1,0 +1,19 @@
+{
+  "name": "dia-02-tipagem-estatica-e-generics",
+  "version": "1.0.0",
+  "description": "### Neste dia aprendi:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/node": "^17.0.40"
+  },
+  "dependencies": {
+    "typescript": "^4.7.3"
+  }
+}
