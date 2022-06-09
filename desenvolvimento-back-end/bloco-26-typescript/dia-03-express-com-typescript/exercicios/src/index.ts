@@ -1,5 +1,5 @@
 import express from 'express';
-import { StatusCodes } from 'http-status-codes';
+import router from './routes';
 
 const app = express();
 
@@ -7,9 +7,7 @@ app.use(express.json());
 
 const PORT = 3000;
 
-app.get('/', (req, res) => {
-  res.status(StatusCodes.OK).send('Express + TypeScript')
-});
+app.use(router);
 
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
