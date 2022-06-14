@@ -1,5 +1,5 @@
 import * as userModel from '../models/userModel';
-import { IUser } from '../interfaces';
+import { IUser, UserCredentials } from '../interfaces';
 
 const MESSAGES = {
   USER_NOT_FOUND: 'User not found',
@@ -43,4 +43,13 @@ export async function remove(id: number) {
 
   if (data === null) return { status: 404, error: { message: MESSAGES.USER_NOT_FOUND } };
   return { status: 200, data };
+}
+
+export async function login(userCredentials: UserCredentials) {
+  const data = await userModel.getByEmail(userCredentials.email);
+
+  if (data === null || data.email !== userCredentials.email) {
+    return { status: 403, error: { message: MESSAGES.UNAUTHORIZED } };
+  }
+  return { status: 200, data: { token: 'fake token' } };
 }

@@ -1,5 +1,5 @@
 import { Response, Request } from 'express';
-import { IUser } from '../interfaces';
+import { IUser, UserCredentials } from '../interfaces';
 import * as userService from '../services/userService'; 
 
 export async function getAll(req: Request, res: Response) {
@@ -39,6 +39,15 @@ export async function update(req: Request, res: Response) {
 export async function remove(req: Request, res: Response) {
   const { id } = req.params;
   const { status, data, error } = await userService.remove(Number(id));
+  
+  return error
+    ? res.status(status).json({ error })
+    : res.status(status).json(data);
+}
+
+export async function login(req: Request, res: Response) {
+  const userCredencials = req.body as UserCredentials;
+  const { status, data, error } = await userService.login(userCredencials);
   
   return error
     ? res.status(status).json({ error })

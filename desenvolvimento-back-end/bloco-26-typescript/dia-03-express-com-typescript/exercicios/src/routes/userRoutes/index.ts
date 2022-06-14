@@ -4,6 +4,7 @@ import validateBody from '../../middlewares/userMiddleware';
 
 const userRouter = Router();
 
+userRouter.post('/', userController.login);
 userRouter.get('/:id', userController.getById);
 userRouter.get('/', userController.getAll);
 userRouter.delete('/:id', userController.remove);
