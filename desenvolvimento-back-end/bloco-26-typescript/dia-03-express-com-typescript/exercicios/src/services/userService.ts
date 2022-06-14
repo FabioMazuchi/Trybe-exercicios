@@ -37,3 +37,10 @@ export async function update(id: number, user: IUser) {
 
   return { status: 200, data };
 }
+
+export async function remove(id: number) {
+  const data = await userModel.remove(id);
+
+  if (data === null) return { status: 404, error: { message: MESSAGES.USER_NOT_FOUND } };
+  return { status: 200, data };
+}

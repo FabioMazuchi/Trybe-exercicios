@@ -45,3 +45,13 @@ export async function update(id: number, user: IUser): Promise<User> {
   const editedUser: User = { id, name, email, password };
   return editedUser;
 }
+
+export async function remove(id: number): Promise<User | null> {
+  const userDeleted = await getById(id);
+  if (!userDeleted) return null;
+
+  const query = 'DELETE FROM Users WHERE id=?';
+  await connection.execute(query, [id]);
+
+  return userDeleted;
+}

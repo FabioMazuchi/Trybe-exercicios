@@ -35,3 +35,12 @@ export async function update(req: Request, res: Response) {
     ? res.status(status).json({ error })
     : res.status(status).json(data);
 }
+
+export async function remove(req: Request, res: Response) {
+  const { id } = req.params;
+  const { status, data, error } = await userService.remove(Number(id));
+  
+  return error
+    ? res.status(status).json({ error })
+    : res.status(status).json(data);
+}

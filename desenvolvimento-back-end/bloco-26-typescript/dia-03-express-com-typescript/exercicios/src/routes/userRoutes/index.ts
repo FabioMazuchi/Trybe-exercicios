@@ -6,6 +6,7 @@ const userRouter = Router();
 
 userRouter.get('/:id', userController.getById);
 userRouter.get('/', userController.getAll);
+userRouter.delete('/:id', userController.remove);
 
 userRouter.use(validateBody);
 
