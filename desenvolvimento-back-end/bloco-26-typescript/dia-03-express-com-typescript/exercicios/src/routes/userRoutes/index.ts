@@ -10,5 +10,6 @@ userRouter.get('/', userController.getAll);
 userRouter.use(validateBody);
 
 userRouter.post('/', userController.create);
+userRouter.put('/:id', userController.update);
 
 export default userRouter;

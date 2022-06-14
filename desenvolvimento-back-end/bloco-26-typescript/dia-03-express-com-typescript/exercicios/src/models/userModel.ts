@@ -35,3 +35,13 @@ export async function create(user: IUser): Promise<User> {
 
   return newUser;
 }
+
+export async function update(id: number, user: IUser): Promise<User> {
+  const { name, email, password } = user;
+  const query = 'UPDATE Users SET name=?, email=?, password=? WHERE id=?';
+  const values = [name, email, password, id];
+
+  await connection.execute(query, values);
+  const editedUser: User = { id, name, email, password };
+  return editedUser;
+}

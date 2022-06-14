@@ -10,3 +10,8 @@ export interface IUser extends UserCredentials {
 export interface User extends IUser {
   id: number
 }
+
+export interface ObjError {
+  status: number
+  message: string
+}

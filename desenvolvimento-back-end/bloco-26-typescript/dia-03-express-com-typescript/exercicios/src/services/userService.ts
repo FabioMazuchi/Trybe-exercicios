@@ -27,3 +27,13 @@ export async function create(user: IUser) {
   const data = await userModel.create(user);
   return { status: 201, data };
 }
+
+export async function update(id: number, user: IUser) {
+  const userExists = await userModel.getById(id);
+  if (!userExists) return { status: 404, error: { message: MESSAGES.USER_NOT_FOUND } };
+
+  const data = await userModel.update(id, user);
+  if (data === null) return { status: 404, error: { message: MESSAGES.USER_NOT_FOUND } };
+
+  return { status: 200, data };
+}
