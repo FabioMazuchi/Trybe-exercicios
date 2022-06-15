@@ -26,3 +26,15 @@ export interface IPost {
 export interface Post extends IPost {
   id: number
 }
+
+export interface IProduct {
+  name: string
+  brand: string
+  price: number
+  manufacturingDate: string
+  expirationDate: string
+}
+
+export interface Product extends IProduct {
+  id: number
+}
