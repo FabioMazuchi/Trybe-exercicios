@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                                  
+    "module": "commonjs",                                
+    "rootDir": "./src", 
+    "outDir": "./dist",                                   
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,         
+    "strict": true,                                      
+    "skipLibCheck": true,
+    "lib": ["es2017", "dom"] // https://stackoverflow.com/questions/42966362/how-to-use-object-values-with-typescript     
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"] 
+}
