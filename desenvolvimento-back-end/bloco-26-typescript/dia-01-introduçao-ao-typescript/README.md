@@ -1,6 +1,6 @@
 # Dia 1 📆
 
-### Nestompilar o códigoe dia aprendi:
+### Neste dia aprendi:
 
 * Definir o que é a linguagem TypeScript
 * Compreender a relação entre a linguagem TypeScript e a linguagem JavaScript
