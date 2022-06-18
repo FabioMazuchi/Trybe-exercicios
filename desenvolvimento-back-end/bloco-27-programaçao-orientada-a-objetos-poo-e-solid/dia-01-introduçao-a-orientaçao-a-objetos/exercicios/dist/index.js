@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Cliente_1 = require("./classes/Cliente");
+const Data_1 = require("./classes/Data");
 const Estudente_1 = require("./classes/Estudente");
 const Item_1 = require("./classes/Item");
 const Pedido_1 = require("./classes/Pedido");
@@ -18,3 +19,6 @@ const items = [item1, item2, item3];
 const pedido = new Pedido_1.Pedido(cliente, items, 0.1);
 console.log(`Total: R$${pedido.total()}`);
 console.log(`Total com desconto de ${pedido.desconto}%: R$${pedido.totalDesconto()}`);
+console.log('\n========== DATE =============');
+const data = new Data_1.Data('02', '03', '1901');
+data.getMonthName();

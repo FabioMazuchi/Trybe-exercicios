@@ -1,4 +1,5 @@
 import { Cliente } from "./classes/Cliente";
+import { Data } from "./classes/Data";
 import { Estudante } from "./classes/Estudente";
 import { Item } from "./classes/Item";
 import { Pedido } from "./classes/Pedido";
@@ -22,3 +23,6 @@ const pedido = new Pedido(cliente, items, 0.1);
 console.log(`Total: R$${pedido.total()}`);
 console.log(`Total com desconto de ${pedido.desconto}%: R$${pedido.totalDesconto()}`);
 
+console.log('\n========== DATE =============');
+const data = new Data('02', '03', '1901');
+data.getMonthName();
