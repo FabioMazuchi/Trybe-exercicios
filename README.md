@@ -137,3 +137,10 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 26.1: Introdução ao TypeScript
 - 26.2: Tipagem Estática e Generics
 - 26.3: Express com TypeScript
+
+#### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
+- 27.1: Introdução à Orientação a Objetos
+- 27.2: Herança e Interfaces
+- 27.3: Polimorfismo
+- 27.4: SOLID - Introdução e Princípios S, O e D
+- 27.5: SOLID - Princípios L e I
