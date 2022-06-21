@@ -1,6 +1,7 @@
 import { Person } from "./classes/Person";
 import { Student } from "./classes/Student";
 import { Subject } from "./classes/Subject";
+import { Teacher } from "./classes/Teacher";
 import { Employee } from "./interfaces";
 
 console.log('=========== PERSON TEST ==============');
@@ -41,10 +42,16 @@ console.log(employee.generateRegistration());
 
 console.log('\n=========== SUBJECT TEST ==============');
 const matematica = new Subject('Matemáica');
-const geo = new Subject('Ge');
+// const geo = new Subject('Ge');
 
 console.log(matematica.nome);
-console.log(geo.nome);
+// console.log(geo.nome);
+
+console.log('\n=========== TEACHER TEST ==============');
+const math = new Subject('Matemática');
+const julia = new Teacher('Júlia', new Date('02-10-2019'), 1200, math);
+
+console.log(julia);
 
 
 
