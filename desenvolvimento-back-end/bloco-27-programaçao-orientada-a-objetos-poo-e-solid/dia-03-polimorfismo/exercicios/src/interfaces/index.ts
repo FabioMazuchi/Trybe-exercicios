@@ -4,3 +4,8 @@ export interface Employee {
 	admissionDate: Date
 	generateRegistration(): string
 }
+
+export interface Enrollable {
+	enrollment: string
+	generateEnrollment(): string
+}

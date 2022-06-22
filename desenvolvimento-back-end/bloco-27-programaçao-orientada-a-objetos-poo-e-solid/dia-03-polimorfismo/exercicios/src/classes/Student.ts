@@ -1,22 +1,23 @@
+import { Enrollable } from "../interfaces";
 import { Person } from "./Person";
 
-export class Student extends Person {
-	private _enrollments: string = '';
+export class Student extends Person implements Enrollable{
+	private _enrollment: string = '';
 	private _examGrades: number[] = [];
 	private _worksGrades: number[] = [];
 	
 	constructor(name: string, birthDate: Date) {
 		super(name, birthDate);
-		this._enrollments = this.generateEnrollment();
+		this._enrollment = this.generateEnrollment();
 	}
 
-	public get enrollments(): string {
-		return this._enrollments;
+	public get enrollment(): string {
+		return this._enrollment;
 	}
 
-	public set enrollments(value: string) {
+	public set enrollment(value: string) {
 		if (value.length < 16) throw new Error('A matrícula deve possuir no mínimo 16 caracteres.');
-		this._enrollments = value;
+		this._enrollment = value;
 	}
 
 	public get examGrades(): number[] {
@@ -51,8 +52,8 @@ export class Student extends Person {
 		return somaNotas / divisor;
 	}
 
-	 generateEnrollment(): string {
-    const randomStr = String(Date.now() * (Math.random() + 1)).replace(/\W/g, '');
-    return `STU${randomStr}`;
+	generateEnrollment(): string {
+    	const randomStr = String(Date.now() * (Math.random() + 1)).replace(/\W/g, '');
+    	return `STU${randomStr}`;
   }
 }
