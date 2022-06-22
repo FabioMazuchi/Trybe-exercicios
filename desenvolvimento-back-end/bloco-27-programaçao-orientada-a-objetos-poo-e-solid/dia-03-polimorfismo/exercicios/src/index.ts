@@ -1,29 +1,36 @@
 import { Employee } from "./classes/Employee";
+import { EvaluationResult } from "./classes/EvaluationResult";
+import { Exam } from "./classes/Exam";
+import { Order } from "./classes/Order";
+import { OrderItem } from "./classes/OrderItem";
 import { Student } from "./classes/Student";
 import { Subject } from "./classes/Subject";
 import { Teacher } from "./classes/Teacher";
+import { Work } from "./classes/Work";
 
-console.log('\n=========== STUDENT TEST ==============');
-const bob = new Student('Bob', new Date('01-02-2020'));
-const mary = new Student('Mary', new Date('10-03-2010'));
-
-console.log(bob);
-console.log(mary);
-
-console.log('\n=========== EMPLOYEE TEST ==============');
-const empl = new Employee('Fábio', new Date('09-01-1984'), 2350);
-console.log(empl);
-
-console.log('\n=========== SUBJECT TEST ==============');
-const matematica = new Subject('Matemáica');
-
-console.log(matematica.nome);
-
-console.log('\n=========== TEACHER TEST ==============');
+const carolina = new Student('Carolina da Silva', new Date('2005/03/17'))
 const math = new Subject('Matemática');
-const julia = new Teacher('Júlia', new Date('02-10-2019'), 1200, math);
+const marta = new Teacher('Marta da Silva', new Date('1980/03/30'), 2000, math);
+const examMath = new Exam(marta, 25);
+const workMath = new Work(marta, 50); 
 
-console.log(julia);
+carolina.addEvaluationResult(new EvaluationResult(examMath, 23));
+carolina.addEvaluationResult(new EvaluationResult(workMath, 42));
+
+console.log('Avaliaçoes: ', carolina.evaluationsResults);
+console.log('Soma das notas: ', carolina.somaNotas());
+console.log('Média das notas: ', carolina.mediaNotas());
+
+const lanche = new OrderItem('X-burguer', 12.5);
+const suco = new OrderItem('Suco de laranja', 4.7);
+
+const carolOrder = new Order(carolina, [lanche, suco], 'dinheiro', 0.1);
+
+console.log('Pedido da Carol: ', carolOrder);
+
+
+
+
 
 
 

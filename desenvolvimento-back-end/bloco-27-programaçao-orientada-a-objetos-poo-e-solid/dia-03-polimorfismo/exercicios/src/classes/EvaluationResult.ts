@@ -19,17 +19,9 @@ export class EvaluationResult {
 	public get score(): number {
 		return this._score
 	}
-
-	validateValueThreshold(value: number, type: string, threshold: number) {
-		if (this._evaluation.type === type && value > threshold) {
-			throw new Error(`A pontução deve ser menor que ${threshold} pontos.`);
-		}
-	}
 	
 	public set score(value: number) {
 		if (value < 0) throw new Error('A pontução deve ser positiva.');
-		this.validateValueThreshold(value, 'prova', 25);
-		this.validateValueThreshold(value, 'trabalho', 50);
 		this._score = value
 	}
 }
