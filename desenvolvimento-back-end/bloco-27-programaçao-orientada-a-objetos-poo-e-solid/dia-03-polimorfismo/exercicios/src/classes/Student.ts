@@ -1,14 +1,15 @@
 import { Enrollable } from "../interfaces";
+import { EvaluationResult } from "./EvaluationResult";
 import { Person } from "./Person";
 
 export class Student extends Person implements Enrollable{
 	private _enrollment: string = '';
-	private _examGrades: number[] = [];
-	private _worksGrades: number[] = [];
+	private _evaluationsResults: EvaluationResult[];
 	
 	constructor(name: string, birthDate: Date) {
 		super(name, birthDate);
 		this._enrollment = this.generateEnrollment();
+		this._evaluationsResults = [];
 	}
 
 	public get enrollment(): string {
@@ -20,40 +21,32 @@ export class Student extends Person implements Enrollable{
 		this._enrollment = value;
 	}
 
-	public get examGrades(): number[] {
-		return this._examGrades;
+	public get evaluationsResults(): EvaluationResult[] {
+		return this._evaluationsResults;
 	}
 
-	public set examGrades(value: number[]) {
-		if (value.length > 4) throw new Error('A pessoa estudante só pode possuir 4 notas de provas.');
-		this._examGrades = value;
+	public set evaluationsResults(value: EvaluationResult[]) {
+		this._evaluationsResults = value;
 	}
-
-	public get worksGrades(): number[] {
-		return this._worksGrades;
-	}
-
-	public set worksGrades(value: number[]) {
-		if (value.length > 2) throw new Error('A pessoa estudante só pode possuir 2 notas de trabalhos.');
-		this._worksGrades = value;
-	}
-
-	private soma(acc: number, nota: number): number { return acc + nota }
 
 	somaNotas(): number {
-		const arrayNotas = [...this._examGrades, ...this._worksGrades];
-		return arrayNotas.reduce(this.soma);
+		return [...this._evaluationsResults]
+		.reduce((acc, note) => note.score + acc, 0);
 	}
 
 	mediaNotas(): number {
+		const divisor = this._evaluationsResults.length; 
 		const somaNotas = this.somaNotas();
-		const divisor = this._examGrades.length + this._worksGrades.length; 
 
-		return somaNotas / divisor;
+		return Math.round(somaNotas / divisor);
 	}
 
 	generateEnrollment(): string {
     	const randomStr = String(Date.now() * (Math.random() + 1)).replace(/\W/g, '');
     	return `STU${randomStr}`;
   }
+
+	addEvaluationResult(value: EvaluationResult) {
+		this._evaluationsResults.push(value);
+	}
 }
