@@ -2,24 +2,36 @@ import { OrderItem } from "./OrderItem";
 import { Person } from "./Person";
 
 export class Order {
+	private _id: number;
+	private _createdAt: Date;
 	private _client: Person;
 	private _items: OrderItem[] = [];
 	private _discount = 0;
 	
 	constructor(client: Person, items: OrderItem[], private _paymentMethod: string, discount?: number) {
+		this._id = Math.trunc(Date.now() * (Math.random() + 1));
+		this._createdAt = new Date();
 		this._client = client;
 		this.items = items;
 		this.paymentMethod = _paymentMethod;
 
 		if (discount) this.discount = discount;
 	}
-	
+
+	public get createdAt(): Date {
+		return this._createdAt;
+	}
+
+	public get id(): number {
+		return this._id;
+	}
+
 	public get paymentMethod(): string {
 		return this._paymentMethod;
 	}
 
 	public set paymentMethod(value: string) {
-		if (!['dinheiro', 'catão', 'vale'].includes(value)) {
+		if (!['dinheiro', 'cartão', 'vale'].includes(value)) {
 			throw new Error('Forma de pagamento inválida.');
 		}
 		this._paymentMethod = value;
