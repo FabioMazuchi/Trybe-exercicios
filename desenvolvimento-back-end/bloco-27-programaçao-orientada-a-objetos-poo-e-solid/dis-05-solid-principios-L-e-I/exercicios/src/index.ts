@@ -1,5 +1,7 @@
+import { Car } from "./classes/Car";
 import { CepService } from "./classes/CepService";
 import { FooCepAPI } from "./classes/FooCepAPI";
+import { FuturistcCar } from "./classes/FuturisticCar";
 import { MockCepApi } from "./classes/MockCepApi";
 
 async function main() {
@@ -31,6 +33,14 @@ async function main() {
 		'->',
 		await cepSvc1.cepByAddress('street foo, betwen bar and baz', 10),
 	);
+
+	console.log('\n=========== CAR ==============');
+	const carFuturist = new FuturistcCar();
+	const car = new Car();
+
+	carFuturist.drive();
+	carFuturist.fly();
+	car.drive();
 }
 
 main();
