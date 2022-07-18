@@ -1,0 +1,26 @@
+use('exercicio');
+
+# QUERY
+db.books.find(
+  {},
+  { _id: 0, title: 1, isbn: 1, pageCount: 1 }
+).limit(3);
+
+# RETORNO
+[
+  {
+    "title": "Unlocking Android",
+    "isbn": "1933988673",
+    "pageCount": 416
+  },
+  {
+    "title": "Android in Action, Second Edition",
+    "isbn": "1935182722",
+    "pageCount": 592
+  },
+  {
+    "title": "Specification by Example",
+    "isbn": "1617290084",
+    "pageCount": 0
+  }
+]
