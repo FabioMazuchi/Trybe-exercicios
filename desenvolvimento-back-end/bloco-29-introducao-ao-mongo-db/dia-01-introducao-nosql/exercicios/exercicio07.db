@@ -1,0 +1,7 @@
+use('exercicio');
+
+# QUERY
+db.books.countDocuments();
+
+# RETORNO
+431
