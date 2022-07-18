@@ -1,0 +1,109 @@
+use('exercicio');
+
+# QUERY
+db.books.find(
+  { status: 'MEAP' },
+  { _id: 1, title: 1, authors: 1, status: 1 }
+).limit(10);
+
+# RETORNO
+[
+  {
+    "_id": 146,
+    "title": "Distributed Agile in Action",
+    "status": "MEAP",
+    "authors": [
+      "Vikas Hazrati",
+      "Balaji D Loganathan"
+    ]
+  },
+  {
+    "_id": 165,
+    "title": "Android in Practice",
+    "status": "MEAP",
+    "authors": [
+      "Matthias Kaeppler",
+      "Michael D. Galpin",
+      "Charlie Collins"
+    ]
+  },
+  {
+    "_id": 175,
+    "title": "Groovy in Action, Second Edition",
+    "status": "MEAP",
+    "authors": [
+      "Dierk König",
+      "Guillaume Laforge",
+      "Paul King",
+      "Cédric Champeau",
+      "Hamlet D'Arcy",
+      "Erik Pragt",
+      "",
+      "Jon Skeet"
+    ]
+  },
+  {
+    "_id": 189,
+    "title": "F# in Action",
+    "status": "MEAP",
+    "authors": [
+      "Amanda Laucher"
+    ]
+  },
+  {
+    "_id": 335,
+    "title": "The Engaging Web",
+    "status": "MEAP",
+    "authors": [
+      "Gabe Zichermann",
+      "Chris Cunningham"
+    ]
+  },
+  {
+    "_id": 550,
+    "title": "Big Data",
+    "status": "MEAP",
+    "authors": [
+      "Nathan Marz",
+      "James Warren"
+    ]
+  },
+  {
+    "_id": 562,
+    "title": "Java Persistence with Hibernate, Second Edition",
+    "status": "MEAP",
+    "authors": [
+      "Christian Bauer",
+      "Gavin King",
+      "",
+      "Gary Gregory"
+    ]
+  },
+  {
+    "_id": 599,
+    "title": "Augmented Reality Revealed",
+    "status": "MEAP",
+    "authors": [
+      "Robert A. Rice Jr."
+    ]
+  },
+  {
+    "_id": 607,
+    "title": "Building Well-Structured JavaScript Applications",
+    "status": "MEAP",
+    "authors": [
+      "Julio C. Ody"
+    ]
+  },
+  {
+    "_id": 637,
+    "title": "Neo4j in Action",
+    "status": "MEAP",
+    "authors": [
+      "Jonas Partner",
+      "Aleksa Vukotic",
+      "",
+      "Nicki Watt"
+    ]
+  }
+]
