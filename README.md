@@ -144,3 +144,10 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 27.3: Polimorfismo
 - 27.4: SOLID - Introdução e Princípios S, O e D
 - 27.5: SOLID - Princípios L e I
+
+#### Bloco 29: Introdução ao mongoDB
+- 29.1: MongoDB - Introdução
+- 29.2: Filter Operators
+- 29.3: Operadores de consulta
+- 29.4: Updates Simples
+- 29.5: Updates Complexos - Arrays
