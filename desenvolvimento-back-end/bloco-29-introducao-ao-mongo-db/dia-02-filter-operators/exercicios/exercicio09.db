@@ -1,6 +1,6 @@
 // QUERY
 db.superheroes.find({
-  'aspects.hairColor': { $in: ['black', 'No Hair'] }
+  'aspects.hairColor': { $in: ['Black', 'No Hair'] }
 });
 
 // RESULTS
@@ -89,6 +89,54 @@ db.superheroes.find({
   },
   {
     "_id": {
+      "$oid": "62d6ef552de05a870fb64512"
+    },
+    "name": "Abraxas",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Cosmic Entity",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64519"
+    },
+    "name": "Ajax",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Cyborg",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Black",
+      "height": 193,
+      "weight": 40.82
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451b"
+    },
+    "name": "Alfred Pennyworth",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": 178,
+      "weight": 32.65
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
       "$oid": "62d6ef552de05a870fb6451e"
     },
     "name": "Alien",
@@ -102,6 +150,53 @@ db.superheroes.find({
       "weight": 76.64
     },
     "publisher": "Dark Horse Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64520"
+    },
+    "name": "Ammo",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Black",
+      "height": 188,
+      "weight": 45.8
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64524"
+    },
+    "name": "Angel Salvadore",
+    "alignment": "good",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Black",
+      "height": 163,
+      "weight": 24.49
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64525"
+    },
+    "name": "Angel Dust",
+    "alignment": "good",
+    "gender": "Female",
+    "race": "Mutant",
+    "aspects": {
+      "eyeColor": "yellow",
+      "hairColor": "Black",
+      "height": 165,
+      "weight": 25.85
+    },
+    "publisher": "Marvel Comics"
   },
   {
     "_id": {
@@ -136,188 +231,93 @@ db.superheroes.find({
   },
   {
     "_id": {
-      "$oid": "62d6ef552de05a870fb6454f"
+      "$oid": "62d6ef552de05a870fb6452e"
     },
-    "name": "Batman",
-    "alignment": "good",
-    "gender": "Male",
-    "race": "Human",
-    "aspects": {
-      "eyeColor": "blue",
-      "hairColor": "black",
-      "height": 188,
-      "weight": 43.08
-    },
-    "publisher": "DC Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb64559"
-    },
-    "name": "Beta Ray Bill",
-    "alignment": "good",
-    "gender": "Male",
-    "aspects": {
-      "hairColor": "No Hair",
-      "height": 201,
-      "weight": 97.96
-    },
-    "publisher": "Marvel Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb6456b"
-    },
-    "name": "Bishop",
-    "alignment": "good",
+    "name": "Apocalypse",
+    "alignment": "bad",
     "gender": "Male",
     "race": "Mutant",
-    "aspects": {
-      "eyeColor": "brown",
-      "hairColor": "No Hair",
-      "height": 198,
-      "weight": 56.24
-    },
-    "publisher": "Marvel Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb64572"
-    },
-    "name": "Black Lightning",
-    "alignment": "good",
-    "gender": "Male",
-    "aspects": {
-      "eyeColor": "brown",
-      "hairColor": "No Hair",
-      "height": 185,
-      "weight": 40.82
-    },
-    "publisher": "DC Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb64574"
-    },
-    "name": "Black Manta",
-    "alignment": "bad",
-    "gender": "Male",
-    "race": "Human",
-    "aspects": {
-      "eyeColor": "black",
-      "hairColor": "No Hair",
-      "height": 188,
-      "weight": 41.72
-    },
-    "publisher": "DC Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb6457b"
-    },
-    "name": "Blaquesmith",
-    "alignment": "good",
-    "gender": "-",
-    "aspects": {
-      "eyeColor": "black",
-      "hairColor": "No Hair",
-      "height": -99,
-      "weight": -44.9
-    },
-    "publisher": "Marvel Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb64584"
-    },
-    "name": "Bloodhawk",
-    "alignment": "good",
-    "gender": "Male",
-    "race": "Mutant",
-    "aspects": {
-      "eyeColor": "black",
-      "hairColor": "No Hair",
-      "height": -99,
-      "weight": -44.9
-    },
-    "publisher": "Marvel Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb64585"
-    },
-    "name": "Bloodwraith",
-    "alignment": "bad",
-    "gender": "Male",
-    "aspects": {
-      "eyeColor": "white",
-      "hairColor": "No Hair",
-      "height": 30.5,
-      "weight": -44.9
-    },
-    "publisher": "Marvel Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb64593"
-    },
-    "name": "Brainiac",
-    "alignment": "bad",
-    "gender": "Male",
-    "race": "Android",
-    "aspects": {
-      "eyeColor": "green",
-      "hairColor": "No Hair",
-      "skinColor": "green",
-      "height": 198,
-      "weight": 61.22
-    },
-    "publisher": "DC Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb645bf"
-    },
-    "name": "Cloak",
-    "alignment": "good",
-    "gender": "Male",
-    "aspects": {
-      "eyeColor": "brown",
-      "hairColor": "black",
-      "height": 226,
-      "weight": 31.75
-    },
-    "publisher": "Marvel Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb645c9"
-    },
-    "name": "Crimson Dynamo",
-    "alignment": "good",
-    "gender": "Male",
-    "aspects": {
-      "eyeColor": "brown",
-      "hairColor": "No Hair",
-      "height": 180,
-      "weight": 47.17
-    },
-    "publisher": "Marvel Comics"
-  },
-  {
-    "_id": {
-      "$oid": "62d6ef552de05a870fb645d9"
-    },
-    "name": "Darkseid",
-    "alignment": "bad",
-    "gender": "Male",
-    "race": "New God",
     "aspects": {
       "eyeColor": "red",
-      "hairColor": "No Hair",
+      "hairColor": "Black",
       "skinColor": "grey",
-      "height": 267,
-      "weight": 370.52
+      "height": 213,
+      "weight": 61.22
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64530"
+    },
+    "name": "Aqualad",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Atlantean",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": 178,
+      "weight": 48.07
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64539"
+    },
+    "name": "Astro Boy",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Black",
+      "height": -99,
+      "weight": -44.9
+    }
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6453a"
+    },
+    "name": "Armor",
+    "alignment": "good",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "black",
+      "hairColor": "Black",
+      "height": 163,
+      "weight": 22.68
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6453e"
+    },
+    "name": "Atom Girl",
+    "alignment": "good",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "black",
+      "hairColor": "Black",
+      "height": 168,
+      "weight": 24.49
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64541"
+    },
+    "name": "Atom IV",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Black",
+      "height": -99,
+      "weight": 32.65
     },
     "publisher": "DC Comics"
   }
