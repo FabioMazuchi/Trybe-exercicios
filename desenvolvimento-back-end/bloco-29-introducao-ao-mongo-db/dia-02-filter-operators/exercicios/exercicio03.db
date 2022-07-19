@@ -1,0 +1,7 @@
+// QUERY
+db.superheroes.countDocuments({
+  'aspects.height': { $lt: 180 }
+});
+
+// RESULTS
+421
