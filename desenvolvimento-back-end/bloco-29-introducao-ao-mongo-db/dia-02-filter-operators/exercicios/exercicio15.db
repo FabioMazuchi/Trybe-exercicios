@@ -1,0 +1,132 @@
+// QUERY
+db.superheroes.find({
+  $and: [
+      {
+        "aspects.weight": { $gte: 80, $lte: 100 }
+      },
+      {
+        $or: [{ race: "Human" }, { race: "Mutant" }]
+      },
+      {
+        publisher: { $ne: "DC Comics" }
+      }
+    ]
+})
+
+// RESULTS
+[
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64555"
+    },
+    "name": "Beast",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Mutant",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blue",
+      "skinColor": "blue",
+      "height": 180,
+      "weight": 82.09
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb645e8"
+    },
+    "name": "Doctor Doom",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Brown",
+      "height": 201,
+      "weight": 84.81
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64668"
+    },
+    "name": "Iron Man",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": 198,
+      "weight": 86.62
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64692"
+    },
+    "name": "Kingpin",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "No Hair",
+      "height": 201,
+      "weight": 92.06
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb646ab"
+    },
+    "name": "Luke Cage",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Black",
+      "height": 198,
+      "weight": 86.62
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6474b"
+    },
+    "name": "Sandman",
+    "alignment": "neutral",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Brown",
+      "height": 185,
+      "weight": 92.06
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb647a8"
+    },
+    "name": "Tiger Shark",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "grey",
+      "hairColor": "No Hair",
+      "skinColor": "grey",
+      "height": 185,
+      "weight": 92.06
+    },
+    "publisher": "Marvel Comics"
+  }
+]
