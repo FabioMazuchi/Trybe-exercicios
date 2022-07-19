@@ -1,0 +1,325 @@
+// QUERY
+db.superheroes.find({
+  $and: [
+    {
+      $or: [{ 'aspects.height': 180 }, { 'aspects.height': 200 }]
+    },
+    {
+      publisher: 'Marvel Comics'
+    }
+  ]
+});
+
+// RESULTS
+[
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64528"
+    },
+    "name": "Annihilus",
+    "alignment": "bad",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "green",
+      "hairColor": "No Hair",
+      "height": 180,
+      "weight": 40.82
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64543"
+    },
+    "name": "Aurora",
+    "alignment": "good",
+    "gender": "Female",
+    "race": "Mutant",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": 180,
+      "weight": 28.57
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64555"
+    },
+    "name": "Beast",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Mutant",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blue",
+      "skinColor": "blue",
+      "height": 180,
+      "weight": 82.09
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64561"
+    },
+    "name": "Binary",
+    "alignment": "good",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": 180,
+      "weight": 24.49
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb645a7"
+    },
+    "name": "Captain Marvel",
+    "alignment": "good",
+    "gender": "Female",
+    "race": "Human-Kree",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": 180,
+      "weight": 33.56
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb645b6"
+    },
+    "name": "Changeling",
+    "alignment": "bad",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Black",
+      "height": 180,
+      "weight": 36.73
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb645c9"
+    },
+    "name": "Crimson Dynamo",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "No Hair",
+      "height": 180,
+      "weight": 47.17
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb645f8"
+    },
+    "name": "Electro",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Auburn",
+      "height": 180,
+      "weight": 33.56
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6461b"
+    },
+    "name": "Frigga",
+    "alignment": "good",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "White",
+      "height": 180,
+      "weight": 75.74
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64635"
+    },
+    "name": "Green Goblin",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Auburn",
+      "height": 180,
+      "weight": 37.64
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64652"
+    },
+    "name": "Hobgoblin",
+    "alignment": "bad",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Grey",
+      "height": 180,
+      "weight": 37.64
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64662"
+    },
+    "name": "Ink",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Mutant",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "No Hair",
+      "height": 180,
+      "weight": 36.73
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64664"
+    },
+    "name": "Iron Fist",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": 180,
+      "weight": 35.83
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb646b1"
+    },
+    "name": "Mach-IV",
+    "alignment": "bad",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Brown",
+      "height": 180,
+      "weight": 35.83
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb646c5"
+    },
+    "name": "Medusa",
+    "alignment": "good",
+    "gender": "Female",
+    "race": "Inhuman",
+    "aspects": {
+      "eyeColor": "green",
+      "hairColor": "Red",
+      "height": 180,
+      "weight": 26.76
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb646e3"
+    },
+    "name": "Moonstone",
+    "alignment": "bad",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": 180,
+      "weight": 26.76
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb646e9"
+    },
+    "name": "Multiple Man",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Brown",
+      "height": 180,
+      "weight": 31.75
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb646ea"
+    },
+    "name": "Mysterio",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "No Hair",
+      "height": 180,
+      "weight": 35.83
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb646ee"
+    },
+    "name": "Namora",
+    "alignment": "good",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": 180,
+      "weight": 38.55
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6470d"
+    },
+    "name": "Northstar",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": 180,
+      "weight": 37.64
+    },
+    "publisher": "Marvel Comics"
+  }
+]

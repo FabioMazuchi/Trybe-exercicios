@@ -1,0 +1,11 @@
+// QUERY
+db.superheroes.deleteMany({
+  publisher: 'George Lucas'
+});
+
+
+// RESULTS
+{
+  "acknowledged": true,
+  "deletedCount": 14
+}

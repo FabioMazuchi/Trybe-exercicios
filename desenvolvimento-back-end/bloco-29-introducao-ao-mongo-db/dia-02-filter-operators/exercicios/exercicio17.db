@@ -1,0 +1,8 @@
+// QUERY
+db.superheroes.countDocuments(
+  { 'aspects.hairColor': { $exists: true } }
+)
+
+
+// RESULTS
+562

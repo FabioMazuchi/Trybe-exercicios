@@ -1,0 +1,303 @@
+// QUERY
+db.superheroes.find({
+  'aspects.height': { $lt: 180 }
+});
+
+// RESULTS
+[
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64511"
+    },
+    "name": "Adam Monroe",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "NBC - Heroes"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64512"
+    },
+    "name": "Abraxas",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Cosmic Entity",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64514"
+    },
+    "name": "Agent 13",
+    "alignment": "good",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": 173,
+      "weight": 27.66
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64517"
+    },
+    "name": "Agent Bob",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Brown",
+      "height": 178,
+      "weight": 36.73
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451a"
+    },
+    "name": "Alex Woolsly",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "NBC - Heroes"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451b"
+    },
+    "name": "Alfred Pennyworth",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": 178,
+      "weight": 32.65
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451c"
+    },
+    "name": "Alex Mercer",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "Wildstorm"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451d"
+    },
+    "name": "Allan Quatermain",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "Wildstorm"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64521"
+    },
+    "name": "Ando Masahashi",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "NBC - Heroes"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64523"
+    },
+    "name": "Angel",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Vampire",
+    "aspects": {
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "Dark Horse Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64524"
+    },
+    "name": "Angel Salvadore",
+    "alignment": "good",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Black",
+      "height": 163,
+      "weight": 24.49
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64525"
+    },
+    "name": "Angel Dust",
+    "alignment": "good",
+    "gender": "Female",
+    "race": "Mutant",
+    "aspects": {
+      "eyeColor": "yellow",
+      "hairColor": "Black",
+      "height": 165,
+      "weight": 25.85
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64526"
+    },
+    "name": "Angela",
+    "alignment": "bad",
+    "gender": "Female",
+    "aspects": {
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "Image Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6452a"
+    },
+    "name": "Anti-Monitor",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "God / Eternal",
+    "aspects": {
+      "eyeColor": "yellow",
+      "hairColor": "No Hair",
+      "height": 61,
+      "weight": -44.9
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6452c"
+    },
+    "name": "Anti-Spawn",
+    "alignment": "bad",
+    "gender": "Male",
+    "aspects": {
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "Image Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6452f"
+    },
+    "name": "Aquababy",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64530"
+    },
+    "name": "Aqualad",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Atlantean",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": 178,
+      "weight": 48.07
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64533"
+    },
+    "name": "Arachne",
+    "alignment": "good",
+    "gender": "Female",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": 175,
+      "weight": 28.57
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64534"
+    },
+    "name": "Arclight",
+    "alignment": "bad",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "violet",
+      "hairColor": "Purple",
+      "height": 173,
+      "weight": 25.85
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64537"
+    },
+    "name": "Ariel",
+    "alignment": "good",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "purple",
+      "hairColor": "Pink",
+      "height": 165,
+      "weight": 26.76
+    },
+    "publisher": "Marvel Comics"
+  }
+]

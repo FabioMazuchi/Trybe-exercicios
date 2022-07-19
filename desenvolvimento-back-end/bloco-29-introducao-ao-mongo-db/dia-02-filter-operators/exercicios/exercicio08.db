@@ -1,0 +1,8 @@
+// QUERY
+db.superheroes.countDocuments({
+  'aspects.eyeColor': { $eq: 'blue' }
+});
+
+
+// RESULTS
+225
