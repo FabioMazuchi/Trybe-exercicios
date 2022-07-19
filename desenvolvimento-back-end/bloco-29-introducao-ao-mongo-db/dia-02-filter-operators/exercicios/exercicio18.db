@@ -1,0 +1,11 @@
+// QUERY
+db.superheroes.deleteOne(
+  { publisher: 'Sony Picture' }
+);
+
+
+// RESULTS
+{
+  "acknowledged": true,
+  "deletedCount": 0
+}
