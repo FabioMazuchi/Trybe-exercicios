@@ -1,0 +1,312 @@
+// QUERY
+db.superheroes.find();
+
+// RESULTS
+[
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6450c"
+    },
+    "name": "A-Bomb",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "yellow",
+      "hairColor": "No Hair",
+      "height": 203,
+      "weight": 200
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6450d"
+    },
+    "name": "Abin Sur",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Ungaran",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "No Hair",
+      "skinColor": "red",
+      "height": 185,
+      "weight": 40.82
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6450e"
+    },
+    "name": "Abe Sapien",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Icthyo Sapien",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "No Hair",
+      "skinColor": "blue",
+      "height": 191,
+      "weight": 29.48
+    },
+    "publisher": "Dark Horse Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6450f"
+    },
+    "name": "Abomination",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human / Radiation",
+    "aspects": {
+      "eyeColor": "green",
+      "hairColor": "No Hair",
+      "height": 203,
+      "weight": 200
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64510"
+    },
+    "name": "Absorbing Man",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "No Hair",
+      "height": 193,
+      "weight": 55.33
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64511"
+    },
+    "name": "Adam Monroe",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "NBC - Heroes"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64512"
+    },
+    "name": "Abraxas",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Cosmic Entity",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64513"
+    },
+    "name": "Adam Strange",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": 185,
+      "weight": 39.91
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64514"
+    },
+    "name": "Agent 13",
+    "alignment": "good",
+    "gender": "Female",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": 173,
+      "weight": 27.66
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64515"
+    },
+    "name": "Agent Zero",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "height": 191,
+      "weight": 47.17
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64516"
+    },
+    "name": "Air-Walker",
+    "alignment": "bad",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "White",
+      "height": 188,
+      "weight": 48.98
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64517"
+    },
+    "name": "Agent Bob",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Brown",
+      "height": 178,
+      "weight": 36.73
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64518"
+    },
+    "name": "Alan Scott",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Blond",
+      "height": 180,
+      "weight": 40.82
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb64519"
+    },
+    "name": "Ajax",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Cyborg",
+    "aspects": {
+      "eyeColor": "brown",
+      "hairColor": "Black",
+      "height": 193,
+      "weight": 40.82
+    },
+    "publisher": "Marvel Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451a"
+    },
+    "name": "Alex Woolsly",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "NBC - Heroes"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451b"
+    },
+    "name": "Alfred Pennyworth",
+    "alignment": "good",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "eyeColor": "blue",
+      "hairColor": "Black",
+      "height": 178,
+      "weight": 32.65
+    },
+    "publisher": "DC Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451c"
+    },
+    "name": "Alex Mercer",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Human",
+    "aspects": {
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "Wildstorm"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451d"
+    },
+    "name": "Allan Quatermain",
+    "alignment": "good",
+    "gender": "Male",
+    "aspects": {
+      "height": -99,
+      "weight": -44.9
+    },
+    "publisher": "Wildstorm"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451e"
+    },
+    "name": "Alien",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Xenomorph XX121",
+    "aspects": {
+      "hairColor": "No Hair",
+      "skinColor": "black",
+      "height": 244,
+      "weight": 76.64
+    },
+    "publisher": "Dark Horse Comics"
+  },
+  {
+    "_id": {
+      "$oid": "62d6ef552de05a870fb6451f"
+    },
+    "name": "Amazo",
+    "alignment": "bad",
+    "gender": "Male",
+    "race": "Android",
+    "aspects": {
+      "eyeColor": "red",
+      "height": 257,
+      "weight": 78.46
+    },
+    "publisher": "DC Comics"
+  }
+]
