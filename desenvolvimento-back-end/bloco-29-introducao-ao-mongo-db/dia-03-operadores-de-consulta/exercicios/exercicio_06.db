@@ -12,15 +12,7 @@ db.movies.find({
 [
   {
     "title": "Batman",
-    "category": [
-      "action",
-      "adventure"
-    ],
-    "ratings": [
-      85,
-      100,
-      102,
-      105
-    ]
+    "category": ["action", "adventure"],
+    "ratings": [85, 100, 102, 105]
   }
 ]

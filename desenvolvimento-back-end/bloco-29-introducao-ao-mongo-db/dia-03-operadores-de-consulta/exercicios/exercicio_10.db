@@ -14,41 +14,17 @@ db.movies.find({
 [
   {
     "title": "Godzilla",
-    "category": [
-      "action",
-      "adventure",
-      "sci-fi"
-    ],
-    "ratings": [
-      78,
-      52,
-      95,
-      102
-    ]
+    "category": ["action", "adventure", "sci-fi"],
+    "ratings": [78, 52, 95, 102]
   },
   {
     "title": "Home Alone",
-    "category": [
-      "family",
-      "comedy"
-    ],
-    "ratings": [
-      200,
-      99,
-      65
-    ]
+    "category": ["family", "comedy"],
+    "ratings": [200, 99, 65]
   },
   {
     "title": "Matrix",
-    "category": [
-      "sci-fi",
-      "action"
-    ],
-    "ratings": [
-      77,
-      92,
-      150,
-      180
-    ]
+    "category": ["sci-fi", "action"],
+    "ratings": [77, 92, 150, 180]
   }
 ]

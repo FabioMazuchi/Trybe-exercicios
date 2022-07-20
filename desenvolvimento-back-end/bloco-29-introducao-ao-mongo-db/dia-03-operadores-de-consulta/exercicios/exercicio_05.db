@@ -11,19 +11,10 @@ db.movies.find(
 [
   {
     "title": "Home Alone",
-    "ratings": [
-      200,
-      99,
-      65
-    ]
+    "ratings": [200, 99, 65]
   },
   {
     "title": "Pulp Fiction",
-    "ratings": [
-      110,
-      84,
-      95,
-      90
-    ]
+    "ratings": [110, 84, 95, 90]
   }
 ]
