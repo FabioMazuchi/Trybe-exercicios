@@ -1,0 +1,31 @@
+use('cinema')
+// QUERY
+db.movies.find(
+  { $and: [
+    { category: { $all: ['action', 'sci-fi'] } },
+    { imdbRating: { $gt: 7 } }
+  ]}
+)
+
+// RESULTS
+[
+  {
+    "_id": {
+      "$oid": "62d82a25bd8958b009bbda10"
+    },
+    "title": "Matrix",
+    "category": [
+      "sci-fi",
+      "action"
+    ],
+    "imdbRating": 8.7,
+    "budget": 15,
+    "ratings": [
+      77,
+      92,
+      150,
+      180
+    ],
+    "description": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence."
+  }
+]

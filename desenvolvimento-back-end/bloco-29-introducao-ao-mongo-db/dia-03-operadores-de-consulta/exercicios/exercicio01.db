@@ -1,5 +1,6 @@
-// QUERY
 use('cinema')
+
+// QUERY
 db.movies.find(
   { category: { $all: ['action', 'adventure'] } }
 )
