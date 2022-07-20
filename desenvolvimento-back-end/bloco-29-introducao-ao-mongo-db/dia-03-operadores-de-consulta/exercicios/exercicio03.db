@@ -1,0 +1,46 @@
+use('cinema')
+
+// QUERY
+db.movies.find(
+  { ratings: { $elemMatch: { $gt: 103 } } },
+  { title: 1, ratings: 1, _id: 0 }
+)
+
+// RESULTS
+[
+  {
+    "title": "Batman",
+    "ratings": [
+      85,
+      100,
+      102,
+      105
+    ]
+  },
+  {
+    "title": "Home Alone",
+    "ratings": [
+      200,
+      99,
+      65
+    ]
+  },
+  {
+    "title": "Matrix",
+    "ratings": [
+      77,
+      92,
+      150,
+      180
+    ]
+  },
+  {
+    "title": "Pulp Fiction",
+    "ratings": [
+      110,
+      84,
+      95,
+      90
+    ]
+  }
+]

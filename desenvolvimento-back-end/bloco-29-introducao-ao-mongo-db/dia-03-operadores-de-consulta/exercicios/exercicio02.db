@@ -1,4 +1,5 @@
 use('cinema')
+
 // QUERY
 db.movies.find(
   { $and: [
