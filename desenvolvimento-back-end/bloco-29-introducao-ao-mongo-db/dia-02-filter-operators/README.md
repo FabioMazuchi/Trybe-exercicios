@@ -2,7 +2,7 @@
 
 ### Neste dia aprendi:
 
-* Utilizar os operadores de comparação
+#### Utilizar os operadores de comparação
 - **$lt** (less than, menor que, <)
 - **$lte** (less than or equal, menor ou igual a, <=)
 - **$gt** (greather than, maior que, >)
@@ -12,14 +12,14 @@
 - **$in** (in, dentro de)
 - **$nin** (not in, naõ está dentro de)
 
-* Utilizar os operadores lógicos
+#### Utilizar os operadores lógicos
 - **$not** (not, inverte o resultado da expressão)
 - **$nor** (not or, semelhante ao **or**, porém trabalha com a condição false)
 
-* Utilizar o operador
+#### Utilizar o operador
 - **$exists** (exists, verifica a existência de um atributo)
 
-* Utilizar o método
+#### Utilizar o método
 - **$sort** (sort, ordenar)
 
 * Remover documentos
