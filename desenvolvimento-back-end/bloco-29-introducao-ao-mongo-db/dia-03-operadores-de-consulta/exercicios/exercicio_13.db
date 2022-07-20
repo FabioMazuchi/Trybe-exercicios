@@ -1,0 +1,21 @@
+use('cinema')
+
+// QUERY
+db.movies.find({
+  description: { $regex: /humanity.$/ }
+});
+
+// RESULTS
+[
+  {
+    "_id": {
+      "$oid": "62d82a25bd8958b009bbda0e"
+    },
+    "title": "Godzilla",
+    "category": ["action", "adventure", "sci-fi"],
+    "imdbRating": 6.6,
+    "budget": 10,
+    "ratings": [78, 52, 95, 102],
+    "description": "The world is beset by the appearance of monstrous creatures, but one of them may be the only one who can save humanity."
+  }
+]
