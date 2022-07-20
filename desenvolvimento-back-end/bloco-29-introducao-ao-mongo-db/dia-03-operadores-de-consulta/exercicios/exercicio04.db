@@ -1,0 +1,20 @@
+use('cinema')
+
+// QUERY
+db.movies.find(
+  { ratings: { $elemMatch: { $gte: 100, $lte: 105 } } },
+  { title: 1, ratings: 1, _id: 0 }
+)
+
+// RESULTS
+[
+  {
+    "title": "Batman",
+    "ratings": [85, 100, 102, 105]
+  },
+  {
+    "title": "Godzilla",
+    "ratings": [78, 52, 95, 102
+    ]
+  }
+]
