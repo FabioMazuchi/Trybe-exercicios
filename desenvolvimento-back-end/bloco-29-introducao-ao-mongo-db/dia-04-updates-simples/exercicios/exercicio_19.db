@@ -2,11 +2,15 @@ use('class');
 
 // QUERY //
 db.xmen.updateMany(
-  { class: { $not: { $exists: 'class'} } },
   {
-    $inc: { power: -100 },
-    $currentDate: { lastUpdate: { $type: 'timestamp' } }
-  }
+    $or: [
+      { occupation: 'Senior Staff', power: { $gt: 100 } },
+      { occupation: 'Junior Staff', power: { $gt: 200 } },
+    ]
+  },
+  {
+    $set: { areas: ["Students Room"] }
+  },
 )
 
 // RESULTS //
@@ -85,7 +89,10 @@ db.xmen.updateMany(
         "i": 2
       }
     },
-    "power": 500
+    "power": 500,
+    "areas": [
+      "Students Room"
+    ]
   },
   {
     "_id": {
@@ -129,7 +136,10 @@ db.xmen.updateMany(
         "i": 3
       }
     },
-    "power": 500
+    "power": 500,
+    "areas": [
+      "Students Room"
+    ]
   },
   {
     "_id": {
@@ -195,7 +205,10 @@ db.xmen.updateMany(
         "i": 1
       }
     },
-    "power": 300
+    "power": 300,
+    "areas": [
+      "Students Room"
+    ]
   },
   {
     "_id": {
@@ -264,7 +277,10 @@ db.xmen.updateMany(
         "i": 2
       }
     },
-    "power": 300
+    "power": 300,
+    "areas": [
+      "Students Room"
+    ]
   },
   {
     "_id": {
