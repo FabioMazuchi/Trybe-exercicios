@@ -2,14 +2,9 @@ use('class');
 
 // QUERY //
 db.xmen.updateMany(
+  { areas: { $exists: false }, occupation: 'Junior Staff' },
   {
-    $or: [
-      { occupation: 'Senior Staff', power: { $gt: 100 } },
-      { occupation: 'Junior Staff', power: { $gt: 200 } },
-    ]
-  },
-  {
-    $set: { areas: ["Students Room"] },
+    $set: { areas: ["Outside"] },
     $currentDate: { lastUpdate: { $type: "timestamp" } },
   },
 )
@@ -223,13 +218,16 @@ db.xmen.updateMany(
     ],
     "lastUpdate": {
       "$timestamp": {
-        "t": 1658433413,
-        "i": 4
+        "t": 1658440604,
+        "i": 1
       }
     },
     "full_name": "Joanna Cargill",
     "hero_name": "Frenesi",
-    "power": 0
+    "power": 0,
+    "areas": [
+      "Outside"
+    ]
   },
   {
     "_id": {
@@ -247,13 +245,16 @@ db.xmen.updateMany(
     ],
     "lastUpdate": {
       "$timestamp": {
-        "t": 1658433413,
-        "i": 5
+        "t": 1658440604,
+        "i": 2
       }
     },
     "full_name": "Xi'an Coy Manh",
     "hero_name": "Karma",
-    "power": 0
+    "power": 0,
+    "areas": [
+      "Outside"
+    ]
   },
   {
     "_id": {
@@ -295,13 +296,16 @@ db.xmen.updateMany(
     ],
     "lastUpdate": {
       "$timestamp": {
-        "t": 1658433413,
-        "i": 6
+        "t": 1658440604,
+        "i": 3
       }
     },
     "full_name": "Ava'Dara Naganandin",
     "hero_name": "Rapina",
-    "power": 0
+    "power": 0,
+    "areas": [
+      "Outside"
+    ]
   },
   {
     "_id": {
