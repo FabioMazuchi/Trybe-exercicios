@@ -11,6 +11,17 @@ db.movies.updateOne(
   { arrayFilters: [{ "elemento.actor": "Daniel Stern" }] }
 );
 
+// COURSE GABARITO //
+db.movies.updateOne(
+  {
+    title: "Home Alone",
+    "cast.actor": "Daniel Stern",
+  },
+  {
+    set: { "cast.$.character": "Marv" },
+  }
+);
+
 // RESULTS //
 [
   {
