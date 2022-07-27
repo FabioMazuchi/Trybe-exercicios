@@ -9,6 +9,7 @@ describe('Lens Model', () => {
 
 	before(() => {
 		sinon.stub(Model, 'create').resolves(lensMockWithId);
+		sinon.stub(Model, 'findOne').resolves(lensMockWithId);
 	});
 
 	after(() => {
@@ -21,5 +22,21 @@ describe('Lens Model', () => {
 	
 			expect(newLens).to.be.deep.equal(lensMockWithId);
 		});
+	});
+
+	describe('Searching a lens', () => {
+		it('successfully found', async () => {
+			const lensFound = await lensModel.readOne('62cf1fc6498565d94eba52cd');
+			
+			expect(lensFound).to.be.deep.equal(lensMockWithId);
+		});
+
+		it('_id not found', async () => {
+			try {
+				await lensModel.readOne('123ERRADO');
+			} catch (error: any) {
+				expect(error.message).to.be.eq('InvalidMongoId');
+			}
+		})
 	});
 });

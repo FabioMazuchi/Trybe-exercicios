@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for Frame.ts</title>
+    <title>Code coverage report for Lens.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> Frame.ts</h1>
+        <h1><a href="index.html">All files</a> Lens.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -90,28 +90,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { model as mongooseCreatemodel, Schema } from 'mongoose';
-import IFrame from '../interfaces/Frame';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import { model as mongooseCreateModel, Schema } from 'mongoose';
+import ILens from '../interfaces/Lens';
 import MongoModel from './MongoModel';
 &nbsp;
-const frameMongooseSchema = new Schema&lt;IFrame&gt;({
-  material: String,
-  color: String,
+const lensMongooseSchema = new Schema&lt;ILens&gt;({
+  degree: Number,
+  antiGlare: Boolean,
+  blueLightFilter: Boolean,
 });
 &nbsp;
-class Frame extends MongoModel&lt;IFrame&gt; {
-  constructor(model = mongooseCreatemodel('Frame', frameMongooseSchema)) {
+class Lens extends MongoModel&lt;ILens&gt; {
+  constructor(model = mongooseCreateModel('Lens', lensMongooseSchema)) {
     super(model);
   }
 }
 &nbsp;
-export default Frame;
-&nbsp;</pre></td></tr></table></pre>
+export default Lens;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
