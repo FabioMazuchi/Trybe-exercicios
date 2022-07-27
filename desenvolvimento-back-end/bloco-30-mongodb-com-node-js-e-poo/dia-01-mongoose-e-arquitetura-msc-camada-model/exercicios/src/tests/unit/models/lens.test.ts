@@ -10,6 +10,7 @@ describe('Lens Model', () => {
 	before(() => {
 		sinon.stub(Model, 'create').resolves(lensMockWithId);
 		sinon.stub(Model, 'findOne').resolves(lensMockWithId);
+		sinon.stub(Model, 'find').resolves([lensMockWithId]);
 	});
 
 	after(() => {
@@ -38,5 +39,13 @@ describe('Lens Model', () => {
 				expect(error.message).to.be.eq('InvalidMongoId');
 			}
 		})
+	});
+
+	describe('read a lens', () => {
+		it('successfully read', async () => {
+			const newLens = await lensModel.read();
+	
+			expect(newLens).to.be.deep.equal([lensMockWithId]);
+		});
 	});
 });

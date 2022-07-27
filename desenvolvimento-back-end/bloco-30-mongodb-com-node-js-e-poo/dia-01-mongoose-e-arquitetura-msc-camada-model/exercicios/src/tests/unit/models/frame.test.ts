@@ -40,7 +40,7 @@ describe('Frame Model', () => {
 	});
 
 	describe('read a frame', () => {
-		it('successfully found', async () => {
+		it('successfully read', async () => {
 			const frames = await frameModel.read();
 			expect(frames).to.be.deep.equal([frameMockWithId]);
 		});
