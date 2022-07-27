@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { Model } from 'mongoose';
 import sinon from 'sinon';
 import FrameModel from '../../../models/Frame';
-import { frameMock, frameMockWithId } from '../../mocks/framemock';
+import { frameMock, frameMockWithId } from '../../mocks/frameMock';
 
 describe('Frame Model', () => {
 	const frameModel = new FrameModel();
