@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { Model } from 'mongoose';
 import sinon from 'sinon';
 import FrameModel from '../../../models/Frame';
-import { frameMock, frameMockWithId } from '../../mocks/frameMock';
+import { frameMock, frameMockForChangeWithId, frameMockWithId } from '../../mocks/frameMock';
 
 describe('Frame Model', () => {
 	const frameModel = new FrameModel();
@@ -11,6 +11,7 @@ describe('Frame Model', () => {
 		sinon.stub(Model, 'create').resolves(frameMockWithId);
 		sinon.stub(Model, 'findOne').resolves(frameMockWithId);
 		sinon.stub(Model, 'find').resolves([frameMockWithId]);
+		sinon.stub(Model, 'findByIdAndDelete').resolves(frameMockForChangeWithId);
 	});
 
 	after(() => {
@@ -45,5 +46,19 @@ describe('Frame Model', () => {
 			expect(frames).to.be.deep.equal([frameMockWithId]);
 		});
 	});
-	
+
+	describe('deleting a frame', () => {
+		it('successful deletion', async () => {
+			const frameDeleted = await frameModel.destroy('62cf1fc6498565d94eba52cd');
+			expect(frameDeleted).to.be.deep.equal(frameMockForChangeWithId);
+		});
+
+		it('_id not found', async () => {
+			try {
+				await frameModel.destroy('ERRADO');
+			} catch (error: any) {
+				expect(error.message).to.be.eq('InvalidMongoId');
+			}
+		});
+	});
 });
