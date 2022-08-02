@@ -18,7 +18,7 @@ describe('Frame Service', () => {
 
 	describe('read a frame', () => {
 		it('successfully read', async () => {
-			const frames = await frameModel.read();
+			const frames = await frameService.read();
 			expect(frames).to.be.deep.equal(allFrameMock);
 		});
 	});
