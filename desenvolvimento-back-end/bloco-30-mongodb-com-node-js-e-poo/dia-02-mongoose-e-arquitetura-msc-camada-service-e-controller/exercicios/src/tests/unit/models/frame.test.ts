@@ -18,14 +18,14 @@ describe('Frame Model', () => {
 		sinon.restore();
 	});
 
-	describe.skip('creating a frame', () => {
+	describe('creating a frame', () => {
 		it('successfully created', async () => {
 			const newFrame = await frameModel.create(frameMock);
 			expect(newFrame).to.be.deep.equal(frameMockWithId);
 		});
 	});
 
-	describe.skip('searching a frame', () => {
+	describe('searching a frame', () => {
 		it('successfully found', async () => {
 			const framesFound = await frameModel.readOne('62cf1fc6498565d94eba52cd');
 			expect(framesFound).to.be.deep.equal(frameMockWithId);
@@ -47,7 +47,7 @@ describe('Frame Model', () => {
 		});
 	});
 
-	describe.skip('deleting a frame', () => {
+	describe('deleting a frame', () => {
 		it('successful deletion', async () => {
 			const frameDeleted = await frameModel.destroy('62cf1fc6498565d94eba52cd');
 			expect(frameDeleted).to.be.deep.equal(frameMockForChangeWithId);
