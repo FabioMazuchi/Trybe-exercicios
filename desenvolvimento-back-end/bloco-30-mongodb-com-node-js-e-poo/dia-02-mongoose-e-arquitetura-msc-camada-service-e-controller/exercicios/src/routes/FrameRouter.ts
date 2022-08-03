@@ -9,5 +9,6 @@ const frameService = new FrameService(frame);
 const frameController = new FrameController(frameService);
 
 route.get('/frame', (req, res) => frameController.read(req, res));
+route.delete('/frame', (req, res) => frameController.delete(req, res));
 
 export default route;
