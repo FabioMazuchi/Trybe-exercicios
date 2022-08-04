@@ -151,3 +151,7 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 29.3: Operadores de consulta
 - 29.4: Updates Simples
 - 29.5: Updates Complexos - Arrays
+
+#### Bloco 30: MongoDB com Noode.js e POO
+- 30.1: Mongoose e arquitetura MSC(camada Model)
+- 30.2: Mongoose e arquitetura MSC(camada Service e Controller)
