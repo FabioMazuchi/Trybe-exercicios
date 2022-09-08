@@ -236,3 +236,13 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 30.1: Mongoose e arquitetura MSC(camada Model)
 - 30.2: Mongoose e arquitetura MSC(camada Service e Controller)
 </details>
+
+## Ciência da Computação
+
+<details>
+<summary><strong>Bloco 33: Introdução à Python</strong></summary>  
+
+- 33.1: Aprendendo Python
+- 33.2: Entrada e Saída de Dados
+- 33.3: Testes
+</details>
