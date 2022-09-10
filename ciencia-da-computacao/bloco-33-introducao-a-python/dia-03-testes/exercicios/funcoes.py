@@ -46,3 +46,15 @@ def validate_email(email):
     if count > 3:
         raise ValueError("Valor maximo da extensão é 3")
     return None
+
+
+def filtra_emails_validos(emails):
+    result = []
+    for email in emails:
+        try:
+            validate_email(email)
+        except ValueError as e:
+            print(e)
+        else:
+            result.append(email)
+    return result
