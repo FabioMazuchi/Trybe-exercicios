@@ -1,4 +1,4 @@
-def fizz_buzz(numero):
+def fizzbuzz(numero):
     list = []
     for n in range(numero):
         if (n + 1) % 3 == 0 and (n + 1) % 5 == 0:
@@ -11,7 +11,3 @@ def fizz_buzz(numero):
             else:
                 list.append(n + 1)
     return list
-
-
-if __name__ == "__main__":
-    fizz_buzz(15)
