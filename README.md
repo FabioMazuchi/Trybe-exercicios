@@ -246,3 +246,11 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 33.2: Entrada e Saída de Dados
 - 33.3: Testes
 </details>
+
+<details>
+<summary><strong>Bloco 34: Padrões de Projeto</strong></summary>  
+
+- 34.1: P.O.O em Python
+- 34.2: Padrões - Iterator, Adapter, Strategy
+- 34.3: Padrões - Decorator, Observer, Factory
+</details>
