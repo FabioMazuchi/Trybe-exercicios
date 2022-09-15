@@ -1,0 +1,1 @@
+[ERRO - 15/09/2022 20:02:43]: ZeroDivisionError: division by zero
