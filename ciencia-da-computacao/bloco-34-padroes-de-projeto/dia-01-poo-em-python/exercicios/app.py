@@ -1,5 +1,8 @@
+from classes.Retangulo import Retangulo
+from classes.Quadrado import Quadrado
 from classes.Estatisticas import Estatisticas
 from classes.Tv import Tv
+from classes.Circulo import Circulo
 
 numbers = [1, 4, 5, 8, 9, 5.7, 8, 10]
 
@@ -14,6 +17,18 @@ print(tv_50)
 
 est = Estatisticas()
 
-print(f"{est.media(numbers):.1f}")
-print(f"{est.mediana(numbers):.1f}")
-print(f"{est.moda(numbers):.1f}")
+print(f"Média = {est.media(numbers):.1f}")
+print(f"Mediana = {est.mediana(numbers):.1f}")
+print(f"Moda = {est.moda(numbers):.1f}\n")
+
+quadrado = Quadrado(5)
+print(f"Área do quadrado = {quadrado.area():.1f}m²")
+print(f"Perímetro do quadrado = {quadrado.perimetro():.1f}m\n")
+
+retangulo = Retangulo(5, 8)
+print(f"Área do retângulo = {retangulo.area():.1f}m²")
+print(f"Perímetro do retângulo = {retangulo.perimetro():.1f}m\n")
+
+circulo = Circulo(10)
+print(f"Área do circulo = {circulo.area():.1f}m²")
+print(f"Perímetro do circulo = {circulo.perimetro():.1f}m")
