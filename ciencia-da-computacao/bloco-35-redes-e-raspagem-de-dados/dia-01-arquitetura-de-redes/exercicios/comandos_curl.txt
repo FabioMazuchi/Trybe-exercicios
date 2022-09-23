@@ -8,3 +8,7 @@ curl --request POST \
     --header 'Authorization: ApiKey EXAMPLE-TOKEN' \
     --data '{ "foo": "bar" }' \
     localhost:3000
+
+curl google.com
+
+curl -L google.com
