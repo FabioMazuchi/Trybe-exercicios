@@ -254,3 +254,11 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 34.2: Padrões - Iterator, Adapter, Strategy
 - 34.3: Padrões - Decorator, Observer, Factory
 </details>
+
+<details>
+<summary><strong>Bloco 35: Redes e Raspagem de Dados</strong></summary>  
+
+- 35.1: Arquitetura de Redes, Ferramentas e Segurança
+- 35.2: Raspagem de Dados
+- 36.3: Outras Ferramentas de Raspagem de Dados
+</details>
