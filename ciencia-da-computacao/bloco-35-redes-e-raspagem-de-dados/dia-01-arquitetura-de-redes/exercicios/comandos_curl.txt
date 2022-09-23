@@ -12,3 +12,7 @@ curl --request POST \
 curl google.com
 
 curl -L google.com
+
+wget betrybe.com
+
+wget github.com
