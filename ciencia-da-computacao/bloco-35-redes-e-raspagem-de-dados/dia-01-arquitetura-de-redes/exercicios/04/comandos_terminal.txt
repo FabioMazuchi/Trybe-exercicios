@@ -1,3 +1,11 @@
 nc -t 127.0.0.1 8085
 
 telnet 127.0.0.1 8085
+
+curl localhost:8085
+
+curl --request POST \
+    --data "{ \"foo\": \"bar\" }" \
+    --header 'Content-Type: application/json' \
+    --header 'Foo-Bar-Header: foo-bar' \
+    localhost:8085/foo-bar
