@@ -1,0 +1,18 @@
+curl -X POST \
+    -H 'Content-Type: application/json' \
+    -d '{ "foo": "bar" }' \
+    localhost:3000
+
+curl --request POST \
+    --header 'Content-Type: application/json' \
+    --header 'Authorization: ApiKey EXAMPLE-TOKEN' \
+    --data '{ "foo": "bar" }' \
+    localhost:3000
+
+curl google.com
+
+curl -L google.com
+
+wget betrybe.com
+
+wget github.com
