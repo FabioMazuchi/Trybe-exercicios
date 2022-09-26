@@ -13,7 +13,7 @@ preço = selector.css(".price_color::text").re_first(r"\d*\.\d{2}")
 descrição = selector.css("#product_description ~ p::text").get()
 suffix = "...more"
 if descrição.endswith(suffix):
-    description = descrição[:-len(suffix)]
+    description = descrição[: -len(suffix)]
 
 capa = BASE_URL + selector.css("#product_gallery img::attr(src)").get()
 
