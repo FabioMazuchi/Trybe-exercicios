@@ -260,5 +260,13 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 
 - 35.1: Arquitetura de Redes, Ferramentas e Segurança
 - 35.2: Raspagem de Dados
-- 36.3: Outras Ferramentas de Raspagem de Dados
+- 35.3: Outras Ferramentas de Raspagem de Dados
+</details>
+
+<details>
+<summary><strong>Bloco 36: Algoritmos</strong></summary>  
+
+- 36.1: Complexidade de Algoritmos
+- 36.2: Recursividade e Estratégias para solução de problemas
+- 36.3: Algoritmos de ordenação e busca
 </details>
