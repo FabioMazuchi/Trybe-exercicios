@@ -4,6 +4,3 @@ def count_par(n):
         if x % 2 == 0:
             count += 1
     return count
-
-
-print(count_par(5))
