@@ -270,3 +270,12 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 36.2: Recursividade e Estratégias para solução de problemas
 - 36.3: Algoritmos de ordenação e busca
 </details>
+
+<details>
+<summary><strong>Bloco 37: Estrutura de Dados I: Arrays, listas, Filas e Pilhas</strong></summary>  
+
+- 37.1: Arquitetura de Computadores
+- 37.2: Arrays
+- 37.3: Nós e Listas Encadeadas
+- 37.4: Pilhas e Filas
+</details>
