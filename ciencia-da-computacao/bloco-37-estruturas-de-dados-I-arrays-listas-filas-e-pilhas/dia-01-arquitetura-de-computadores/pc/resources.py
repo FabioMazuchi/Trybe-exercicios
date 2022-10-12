@@ -1,4 +1,5 @@
 from subprocess import check_output
+from time import sleep
 
 cpu_info = check_output("lscpu").decode("UTF-8").split("\n")
 info_desejada = {
@@ -18,17 +19,19 @@ for des_name, des_descrição in info_desejada.items():
             info = info.split(":")[-1].strip()
             print(f"{des_descrição}: {info}")
 
-
-memory_info = [
-    info
-    for info in check_output("free").decode("UTF-8").split("\n")[1].split(" ")
-    if info != ""
-]
-memory_total = int(memory_info[1]) / 1000
-memory_used = int(memory_info[2]) / 1000
-
 print("*" * 22, "Memória", "*" * 22,)
-print(
-    f"Memória total: {memory_total:.0f}MB\n"
-    f"Memória utilizada: {memory_used:.0f}MB"
-)
+while True:
+    memory_info = [
+        info
+        for info in check_output("free").decode("UTF-8").split("\n")[1]
+        .split(" ")
+        if info != ""
+    ]
+    memory_total = int(memory_info[1]) / 1000
+    memory_used = int(memory_info[2]) / 1000
+
+    print(
+        f"Memória total: {memory_total:.0f}MB\n"
+        f"Memória utilizada: {memory_used:.0f}MB"
+    )
+    sleep(1)
