@@ -10,6 +10,9 @@ def get_index_repeat(list: int):
     return result
 
 
+# Complexidade O(n³)
+
+
 if __name__ == "__main__":
     l1 = [1, 1, 3, 1, 1, 2, 3]
     l2 = [1, 1, 2, 3]
