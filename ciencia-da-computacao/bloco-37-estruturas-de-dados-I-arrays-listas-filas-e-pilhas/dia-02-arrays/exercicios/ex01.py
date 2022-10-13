@@ -16,3 +16,5 @@ if __name__ == "__main__":
 
     print(max_time_stable(list1))
     print(max_time_stable(list2))
+
+# Complexidade O(n)
