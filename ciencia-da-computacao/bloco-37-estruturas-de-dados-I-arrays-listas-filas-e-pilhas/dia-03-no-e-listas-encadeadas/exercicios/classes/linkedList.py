@@ -107,6 +107,14 @@ class LinkedList:
             position += 1
         return -1
 
+    def delete_duplicates(self):
+        list_unique_elements = self
+        while self:
+            current_node = self.remove_first()
+            if list_unique_elements.index_of(current_node) == -1:
+                list_unique_elements.insert_last(current_node.value)
+        return list_unique_elements
+
 
 # __get_node_at: O(n)
 # insert_at: O(n)
@@ -115,26 +123,34 @@ class LinkedList:
 # remove_at: O(n)
 # get_element_at: O(n)
 # index_of: O(n)
+# delete_duplicates: O(n)
 
 if __name__ == "__main__":
     list = LinkedList()
 
-    list.insert_first("Fábio")
-    print(list)
+    # list.insert_first("Fábio")
+    # print(list)
 
-    list.insert_last("Maria")
-    print(list)
-    print(list.index_of("Fábio"))
-    print(list.index_of(""))
-    print(list.index_of("Maria"))
+    # list.insert_last("Maria")
+    # print(list)
+    # print(list.index_of("Fábio"))
+    # print(list.index_of(""))
+    # print(list.index_of("Maria"))
 
-    list.insert_at("Xablau", 0)
-    print(list)
+    # list.insert_at("Xablau", 0)
+    # print(list)
 
-    list.remove_at(0)
-    print(list)
+    # list.remove_at(0)
+    # print(list)
 
-    print(list.get_element_at(1))
+    # print(list.get_element_at(1))
 
-    list.clear()
+    # list.clear()
+    # print(list)
+
+    list.insert_first(0)
+    list.insert_last(1)
+    list.insert_last(1)
+    list.insert_last(1)
     print(list)
+    print(list.delete_duplicates())
