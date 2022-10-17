@@ -12,6 +12,9 @@ class Queue:
     def enqueue(self, value):
         self.data.insert_last(value)
 
+    def dequeue(self):
+        self.data.remove_first()
+
 
 if __name__ == "__main__":
     queue = Queue()
@@ -19,4 +22,9 @@ if __name__ == "__main__":
     print(queue.is_empty())
 
     queue.enqueue(3)
+    queue.enqueue(5)
+    queue.enqueue(8)
+    print(queue.data)
+
+    queue.dequeue()
     print(queue.data)
