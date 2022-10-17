@@ -15,6 +15,9 @@ class Queue:
     def dequeue(self):
         self.data.remove_first()
 
+    def peek(self):
+        return self.data.get_element_at(0)
+
 
 if __name__ == "__main__":
     queue = Queue()
@@ -28,3 +31,4 @@ if __name__ == "__main__":
 
     queue.dequeue()
     print(queue.data)
+    print(queue.peek())
