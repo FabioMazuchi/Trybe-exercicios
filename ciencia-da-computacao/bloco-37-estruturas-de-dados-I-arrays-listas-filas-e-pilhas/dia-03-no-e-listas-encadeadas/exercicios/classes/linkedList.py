@@ -97,6 +97,16 @@ class LinkedList:
                 position -= 1
         return value_to_be_returned
 
+    def index_of(self, value):
+        position = 1
+        current_value = self.head
+        while current_value:
+            if current_value.value == value:
+                return position
+            current_value = current_value.next
+            position += 1
+        return -1
+
 
 # __get_node_at: O(n)
 # insert_at: O(n)
@@ -104,18 +114,26 @@ class LinkedList:
 # remove_last: O(1)
 # remove_at: O(n)
 # get_element_at: O(n)
+# index_of: O(n)
 
 if __name__ == "__main__":
     list = LinkedList()
 
     list.insert_first("Fábio")
     print(list)
+
     list.insert_last("Maria")
     print(list)
+    print(list.index_of("Fábio"))
+    print(list.index_of(""))
+    print(list.index_of("Maria"))
+
     list.insert_at("Xablau", 0)
     print(list)
+
     list.remove_at(0)
     print(list)
+
     print(list.get_element_at(1))
 
     list.clear()
