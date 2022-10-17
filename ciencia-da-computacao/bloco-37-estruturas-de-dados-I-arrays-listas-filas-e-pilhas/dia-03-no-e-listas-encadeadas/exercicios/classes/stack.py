@@ -15,6 +15,9 @@ class Stack:
     def pop(self):
         return self.data.remove_last()
 
+    def peek(self):
+        return self.data.get_element_at(len(self.data))
+
 
 if __name__ == "__main__":
     stack = Stack()
@@ -29,3 +32,4 @@ if __name__ == "__main__":
     print(stack.data)
     print(stack.pop())
     print(stack.data)
+    print(stack.peek())
