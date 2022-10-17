@@ -12,6 +12,9 @@ class Stack:
     def push(self, value):
         self.data.insert_last(value)
 
+    def pop(self):
+        return self.data.remove_last()
+
 
 if __name__ == "__main__":
     stack = Stack()
@@ -19,6 +22,10 @@ if __name__ == "__main__":
     print(stack.is_empty())
 
     stack.push(5)
+    stack.push(6)
+    stack.push(7)
 
     print(stack.is_empty())
+    print(stack.data)
+    print(stack.pop())
     print(stack.data)
