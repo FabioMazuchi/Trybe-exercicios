@@ -40,7 +40,7 @@ class Stack:
     def clear(self):
         self._data.clear()
 
-    def min_value(self):
+    def min_value(self):  # O(n)
         min = self._data[0]
         for value in self._data:
             if value < min:
