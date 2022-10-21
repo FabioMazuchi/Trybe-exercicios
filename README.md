@@ -279,3 +279,10 @@ O programa da Trybe conta com mais de 1.500 horas de aulas presenciais e online,
 - 37.3: Nós e Listas Encadeadas
 - 37.4: Pilhas e Filas
 </details>
+
+<details>
+<summary><strong>Bloco 38: Estrutura de Dados II: Hashmaps e Sets</strong></summary>  
+
+- 38.1: Hasmap e Dict
+- 32.2: Set
+</details>
