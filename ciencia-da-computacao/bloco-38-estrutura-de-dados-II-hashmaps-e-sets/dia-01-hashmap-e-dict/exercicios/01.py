@@ -1,4 +1,4 @@
-def word_count(words, chars):
+def word_count(words, chars):  # O(n²)
     ans = 0
     alphabet = {}
     for char in chars:
